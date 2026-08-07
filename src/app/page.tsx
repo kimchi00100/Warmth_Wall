@@ -39,11 +39,17 @@ export default function Home() {
 
   const handlePostSubmit = async (data: any) => {
     try {
-      await fetch('/api/posts', {
+      const response = await fetch('/api/posts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
+      const result = await response.json();
+      
+      if (result.isCampaignMatched) {
+        alert("캠페인 키워드 매칭! 선행 2배 이펙트가 적용됩니다!");
+      }
+      
       fetchPosts(scope);
     } catch (e) {
       console.error(e);

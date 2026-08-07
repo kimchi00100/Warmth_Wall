@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import db from '@/lib/db';
 import crypto from 'crypto';
+import { campaignData } from '@/lib/campaignData';
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -46,10 +47,17 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { content, nickname, user_id, keyword, parent_id } = body;
+    let { content, nickname, user_id, keyword, parent_id } = body;
 
     if (!content || !user_id) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+    }
+
+    let isCampaignMatched = false;
+    if (content.includes(campaignData.targetKeyword)) {
+      isCampaignMatched = true;
+      keyword = campaignData.targetKeyword;
+      content = content + " (✨캠페인 참여로 온기 2배!)";
     }
 
     const id = crypto.randomUUID();
@@ -61,7 +69,7 @@ export async function POST(request: NextRequest) {
     stmt.run(id, content, keyword || null, nickname || null, user_id, parent_id || null);
 
     const newPost = db.prepare('SELECT * FROM posts WHERE id = ?').get(id);
-    return NextResponse.json(newPost, { status: 201 });
+    return NextResponse.json({ ...newPost, isCampaignMatched }, { status: 201 });
   } catch (error) {
     console.error('Error creating post:', error);
     return NextResponse.json({ error: 'Failed to create post' }, { status: 500 });
