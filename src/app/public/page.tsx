@@ -64,9 +64,10 @@ export default function PublicWall() {
         ) : posts.length === 0 ? (
           <p className="text-center text-gray-400 py-10 bg-white rounded-xl border border-dashed border-gray-300">아직 작성된 선행이 없습니다.</p>
         ) : (
-          posts.map(post => (
-            <PostitCard key={post.id} post={post} onRepost={handleRepost} />
-          ))
+          posts.filter(p => !p.parent_id).map(post => {
+            const repostCount = posts.filter(p => p.parent_id === post.id).length;
+            return <PostitCard key={post.id} post={post} onRepost={handleRepost} repostCount={repostCount} />;
+          })
         )}
       </div>
     </main>
