@@ -9,10 +9,10 @@ export async function POST(
   try {
     const parentId = params.id;
     const body = await request.json();
-    const { session_id, nickname } = body;
+    const { user_id, nickname } = body;
 
-    if (!session_id) {
-      return NextResponse.json({ error: 'session_id is required' }, { status: 400 });
+    if (!user_id) {
+      return NextResponse.json({ error: 'Missing user_id' }, { status: 400 });
     }
 
     // Get parent post to copy content/keyword
@@ -22,22 +22,22 @@ export async function POST(
       return NextResponse.json({ error: 'Parent post not found' }, { status: 404 });
     }
 
-    const id = crypto.randomUUID();
+    const newId = crypto.randomUUID();
     const stmt = db.prepare(`
-      INSERT INTO posts (id, content, keyword, nickname, session_id, parent_id)
+      INSERT INTO posts (id, content, keyword, nickname, user_id, parent_id)
       VALUES (?, ?, ?, ?, ?, ?)
     `);
     
     stmt.run(
-      id, 
+      newId, 
       parentPost.content, 
       parentPost.keyword, 
       nickname || null, 
-      session_id, 
+      user_id, 
       parentId
     );
 
-    const newPost = db.prepare('SELECT * FROM posts WHERE id = ?').get(id);
+    const newPost = db.prepare('SELECT * FROM posts WHERE id = ?').get(newId);
     return NextResponse.json(newPost, { status: 201 });
   } catch (error) {
     console.error('Error reposting:', error);

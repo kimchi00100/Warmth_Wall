@@ -19,13 +19,13 @@ export default function PostitForm({ onSubmit }: { onSubmit: (data: any) => void
       finalContent = content + " (✨캠페인 참여로 온기 2배!)";
     }
     
-    let sessionId = localStorage.getItem('session_id');
-    if (!sessionId) {
-      sessionId = 'sess_' + Math.random().toString(36).substring(2, 11);
-      localStorage.setItem('session_id', sessionId);
+    let userId = localStorage.getItem('user_id');
+    if (!userId) {
+      alert('로그인이 필요합니다.');
+      return;
     }
 
-    onSubmit({ content: finalContent, nickname, session_id: sessionId });
+    onSubmit({ content: finalContent, nickname, user_id: userId });
     setContent('');
     setNickname('');
   };

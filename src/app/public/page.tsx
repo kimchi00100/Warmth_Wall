@@ -26,16 +26,16 @@ export default function PublicWall() {
   }, [fetchPublicPosts]);
 
   const handleRepost = async (id: string) => {
-    let sessionId = localStorage.getItem('session_id');
-    if (!sessionId) {
-      sessionId = 'sess_' + Math.random().toString(36).substring(2, 11);
-      localStorage.setItem('session_id', sessionId);
+    let userId = localStorage.getItem('user_id');
+    if (!userId) {
+      alert('로그인이 필요합니다.');
+      return;
     }
     try {
       await fetch(`/api/posts/${id}/repost`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ session_id: sessionId })
+        body: JSON.stringify({ user_id: userId })
       });
       alert('이 선행에 동참했습니다! 내 벽에 추가되었습니다.');
       // Refresh count if it changes (would need cross-component state, but reloading public posts is enough for now)
