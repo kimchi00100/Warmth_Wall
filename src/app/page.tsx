@@ -1,3 +1,4 @@
+'use client';
 import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
 
 /* ─── Types ──────────────────────────────────────────────────── */
@@ -143,7 +144,7 @@ function buildContribGrid(myPosts: Post[], weeks = 18) {
 }
 
 /* ─── Account ────────────────────────────────────────────────── */
-const MY_ID = '@dasom_ai'
+// MY_ID removed
 
 /* ─── Deterministic hash → 0–1 ──────────────────────────────── */
 function hashNum(s: string, seed: number): number {
@@ -212,56 +213,7 @@ function useScatteredLayout(posts: Post[]) {
 }
 
 /* ─── Seed data ──────────────────────────────────────────────── */
-const SEED_POSTS: Post[] = [
-  { id:'1',  color:'#FFE234', content:'버스에서 어르신께 자리를 양보했어요',   author:'@warm_bear',    timeAgo:'5분 전',   nadoroCount:14, rotation:-2.1, didNadoro:false, category:'배려', date:TODAY,     isOwn:false },
-  { id:'2',  color:'#FF9DBB', content:'비 오는 날 우산 함께 써드렸어요',       author:'@spring_sun',   timeAgo:'13분 전',  nadoroCount:6,  rotation: 1.7, didNadoro:false, category:'나눔', date:TODAY,     isOwn:false },
-  { id:'3',  color:'#7EDDD7', content:'계단에서 유모차 들어드렸어요',          author:'@sky_cloud',    timeAgo:'30분 전',  nadoroCount:11, rotation:-0.6, didNadoro:true,  category:'도움', date:TODAY,     isOwn:false },
-  { id:'5',  color:'#FF9DBB', content:'길에서 지갑 떨어진 분 찾아드렸어요',   author:'@mindle99',     timeAgo:'1시간 전', nadoroCount:22, rotation:-1.4, didNadoro:false, category:'도움', date:TODAY,     isOwn:false },
-  { id:'6',  color:'#7EDDD7', content:'편의점 앞 쓰레기 주워 버렸어요',       author:'@greenstep',    timeAgo:'2시간 전', nadoroCount:9,  rotation: 0.8, didNadoro:false, category:'환경', date:TODAY,     isOwn:false },
-  { id:'8',  color:'#C6A8F5', content:'지하철에서 길 잃은 분 안내했어요',     author:'@guide_k',      timeAgo:'3시간 전', nadoroCount:7,  rotation: 1.1, didNadoro:false, category:'도움', date:TODAY,     isOwn:false },
-  { id:'9',  color:'#FFE234', content:'할머니 장바구니 들어드렸어요',          author:'@kind_neighbor',timeAgo:'4시간 전', nadoroCount:18, rotation:-1.0, didNadoro:false, category:'도움', date:TODAY,     isOwn:false },
-  { id:'10', color:'#7EDDD7', content:'주문 기다리는 분께 먼저 양보했어요',   author:'@yooyoo_j',     timeAgo:'5시간 전', nadoroCount:3,  rotation: 2.6, didNadoro:false, category:'배려', date:TODAY,     isOwn:false },
-  { id:'11', color:'#FFBA80', content:'카페 직원분께 "수고하세요" 했어요',     author:'@warmspoon',    timeAgo:'6시간 전', nadoroCount:15, rotation:-0.3, didNadoro:false, category:'인사', date:TODAY,     isOwn:false },
-  { id:'12', color:'#9FEBA4', content:'동네 고양이한테 간식 챙겨줬어요',      author:'@street_cat',   timeAgo:'7시간 전', nadoroCount:10, rotation: 1.5, didNadoro:false, category:'환경', date:TODAY,     isOwn:false },
-  { id:'4',  color:'#FFE234', content:'카페 테이블 닦고\n나왔어요',           author:MY_ID,           timeAgo:'1시간 전', nadoroCount:5,  rotation: 2.2, didNadoro:false, category:'배려', date:TODAY,     isOwn:true  },
-  { id:'7',  color:'#FFE234', content:'엘리베이터 문\n잡아드렸어요',          author:MY_ID,           timeAgo:'3시간 전', nadoroCount:8,  rotation:-2.7, didNadoro:false, category:'도움', date:TODAY,     isOwn:true  },
-  { id:'d1', color:'#7EDDD7', content:'동네 공원\n쓰레기 봉사했어요',         author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation:-0.7, didNadoro:false, category:'환경', date:YESTERDAY, isOwn:true  },
-  { id:'d2', color:'#FFE234', content:'앞사람 커피값\n몰래 냈어요',           author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation: 1.6, didNadoro:false, category:'나눔', date:YESTERDAY, isOwn:true  },
-  { id:'d3', color:'#FF9DBB', content:'길고양이한테\n간식 챙겨줬어요',        author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation:-2.1, didNadoro:false, category:'환경', date:YESTERDAY, isOwn:true  },
-  { id:'d4', color:'#FF9DBB', content:'버스 기사님께\n감사 인사 했어요',      author:MY_ID,           timeAgo:'이틀 전',  nadoroCount:0,  rotation:-2.0, didNadoro:false, category:'인사', date:TWO_AGO,   isOwn:true  },
-  { id:'d5', color:'#7EDDD7', content:'우산 나눠\n써드렸어요',               author:MY_ID,           timeAgo:'이틀 전',  nadoroCount:0,  rotation: 1.3, didNadoro:false, category:'나눔', date:TWO_AGO,   isOwn:true  },
-  { id:'d6', color:'#FFE234', content:'무거운 짐\n들어드렸어요',             author:MY_ID,           timeAgo:'사흘 전',  nadoroCount:0,  rotation: 0.5, didNadoro:false, category:'도움', date:THREE_AGO, isOwn:true  },
-  { id:'h01', color:'#7EDDD7', content:'쓰레기 줍기 봉사',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.2, didNadoro:false, category:'환경', date:'2026-08-03', isOwn:true },
-  { id:'h02', color:'#FF9DBB', content:'노인정 방문 봉사',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.5, didNadoro:false, category:'도움', date:'2026-08-02', isOwn:true },
-  { id:'h03', color:'#FFE234', content:'후배 밥 사줬어요',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.8, didNadoro:false, category:'나눔', date:'2026-08-02', isOwn:true },
-  { id:'h04', color:'#C6A8F5', content:'택배 기사님께 음료 드림', author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.9, didNadoro:false, category:'배려', date:'2026-07-31', isOwn:true },
-  { id:'h05', color:'#9FEBA4', content:'공원 꽃 물주기',          author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 2.0, didNadoro:false, category:'환경', date:'2026-07-31', isOwn:true },
-  { id:'h06', color:'#FFE234', content:'길 안내 도움',            author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.1, didNadoro:false, category:'도움', date:'2026-07-30', isOwn:true },
-  { id:'h07', color:'#FF9DBB', content:'주차 도움드렸어요',       author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.4, didNadoro:false, category:'도움', date:'2026-07-28', isOwn:true },
-  { id:'h08', color:'#FFBA80', content:'이웃 택배 대신 받음',     author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.6, didNadoro:false, category:'배려', date:'2026-07-27', isOwn:true },
-  { id:'h09', color:'#7EDDD7', content:'재활용 분리수거 도움',    author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.3, didNadoro:false, category:'환경', date:'2026-07-25', isOwn:true },
-  { id:'h10', color:'#FFE234', content:'헌혈했어요',              author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-2.2, didNadoro:false, category:'나눔', date:'2026-07-25', isOwn:true },
-  { id:'h11', color:'#C6A8F5', content:'복지관 봉사활동',         author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.7, didNadoro:false, category:'도움', date:'2026-07-25', isOwn:true },
-  { id:'h12', color:'#FF9DBB', content:'카페 의자 정리해드림',    author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.3, didNadoro:false, category:'배려', date:'2026-07-22', isOwn:true },
-  { id:'h13', color:'#9FEBA4', content:'길고양이 밥 챙김',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.9, didNadoro:false, category:'환경', date:'2026-07-20', isOwn:true },
-  { id:'h14', color:'#FFE234', content:'새치기 양보',             author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.4, didNadoro:false, category:'배려', date:'2026-07-19', isOwn:true },
-  { id:'h15', color:'#7EDDD7', content:'장애인 도보 동행',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 2.1, didNadoro:false, category:'도움', date:'2026-07-19', isOwn:true },
-  { id:'h16', color:'#FFBA80', content:'음식 나눔 행사 참가',     author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.8, didNadoro:false, category:'나눔', date:'2026-07-16', isOwn:true },
-  { id:'h17', color:'#FF9DBB', content:'폭염에 생수 나눔',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.6, didNadoro:false, category:'나눔', date:'2026-07-14', isOwn:true },
-  { id:'h18', color:'#C6A8F5', content:'어르신 짐 들어드림',      author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.7, didNadoro:false, category:'도움', date:'2026-07-12', isOwn:true },
-  { id:'h19', color:'#FFE234', content:'아이 미아 신고 도움',     author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.5, didNadoro:false, category:'도움', date:'2026-07-10', isOwn:true },
-  { id:'h20', color:'#9FEBA4', content:'나무 물 주기',            author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.0, didNadoro:false, category:'환경', date:'2026-07-07', isOwn:true },
-  { id:'h21', color:'#FF9DBB', content:'반찬 나눔 이웃',          author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.2, didNadoro:false, category:'나눔', date:'2026-07-07', isOwn:true },
-  { id:'h22', color:'#7EDDD7', content:'우산 양보',               author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-2.0, didNadoro:false, category:'배려', date:'2026-07-04', isOwn:true },
-  { id:'h23', color:'#FFE234', content:'공중화장실 청소',         author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.3, didNadoro:false, category:'환경', date:'2026-07-01', isOwn:true },
-  { id:'h24', color:'#FFBA80', content:'식사비 익명 후원',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.8, didNadoro:false, category:'나눔', date:'2026-06-28', isOwn:true },
-  { id:'h25', color:'#C6A8F5', content:'독거노인 말벗',           author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.1, didNadoro:false, category:'도움', date:'2026-06-25', isOwn:true },
-  { id:'h26', color:'#FF9DBB', content:'지하철 자리 양보',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.4, didNadoro:false, category:'배려', date:'2026-06-22', isOwn:true },
-  { id:'h27', color:'#9FEBA4', content:'산책로 쓰레기 줍기',      author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.7, didNadoro:false, category:'환경', date:'2026-06-20', isOwn:true },
-  { id:'h28', color:'#FFE234', content:'화재 신고 도움',          author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.6, didNadoro:false, category:'도움', date:'2026-06-18', isOwn:true },
-  { id:'h29', color:'#7EDDD7', content:'옷 기부',                 author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 2.0, didNadoro:false, category:'나눔', date:'2026-06-15', isOwn:true },
-  { id:'h30', color:'#FFBA80', content:'유기견 임시보호',         author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.5, didNadoro:false, category:'환경', date:'2026-06-12', isOwn:true },
-]
+const SEED_POSTS: Post[] = []
 
 /* ─── SVG Icons ──────────────────────────────────────────────── */
 function IconWall({ size = 22 }: { size?: number }) {
@@ -561,12 +513,13 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
 
 /* ─── Diary Page Entry ───────────────────────────────────────── */
 /* ─── Profile View ───────────────────────────────────────────── */
-function ProfileView({ authorId, allPosts, onClose }: {
+function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
   authorId: string
   allPosts: Post[]
   onClose: () => void
+  currentUserId: string | null
 }) {
-  const isMe = authorId === MY_ID
+  const isMe = authorId === currentUserId
   const authorPosts = allPosts.filter(p => p.author === authorId && !p.isRepost)
   const dates = [...new Set(authorPosts.map(p => p.date))].sort((a, b) => b.localeCompare(a))
   const [selDate, setSelDate] = useState(() => dates[0] ?? TODAY)
@@ -1370,11 +1323,42 @@ const TABS: { id: TabId; icon: () => React.ReactNode; label: string; accent: str
 
 /* ─── App ────────────────────────────────────────────────────── */
 export default function App() {
+  const [userId, setUserId] = useState<string | null>(null)
+  
   const [tab, setTab]               = useState<TabId>('wall')
-  const [posts, setPosts]           = useState<Post[]>(SEED_POSTS)
+  const [posts, setPosts]           = useState<Post[]>([])
   const [showModal, setModal]       = useState(false)
   const [viewingPost, setViewingPost]       = useState<Post | null>(null)
   const [viewingProfile, setViewingProfile] = useState<string | null>(null)
+
+  useEffect(() => {
+    const id = localStorage.getItem('user_id')
+    if (id) setUserId(id)
+  }, [])
+
+  useEffect(() => {
+    if (!userId) return;
+    fetch('/api/posts?scope=public')
+      .then(r => r.json())
+      .then((data: any[]) => {
+        if (!Array.isArray(data)) return;
+        const transformed = data.map(d => ({
+          id: d.id,
+          content: d.content,
+          color: DEFAULT_COLORS[Math.floor(hashNum(d.id, 3) * DEFAULT_COLORS.length)],
+          author: d.nickname || d.user_id,
+          timeAgo: '방금 전',
+          nadoroCount: 0,
+          rotation: (hashNum(d.id, 4) - 0.5) * 4,
+          didNadoro: false,
+          category: d.keyword || '기타',
+          date: d.created_at ? d.created_at.split(' ')[0] : TODAY,
+          isOwn: d.user_id === userId,
+          photo: d.photo
+        }));
+        setPosts(transformed);
+      });
+  }, [userId]);
 
   const allMyPosts = posts.filter(p => p.isOwn)
   const myToday    = allMyPosts.filter(p => p.date === TODAY)
@@ -1382,10 +1366,12 @@ export default function App() {
   const handleNadoro = (id: string) => {
     const original = posts.find(p => p.id === id)
     if (!original) return
+    fetch(`/api/posts/${id}/repost`, { method: 'POST', body: JSON.stringify({ user_id: userId }) }).catch(e=>console.error(e));
+
     if (!original.didNadoro) {
       const repost: Post = {
         id: `repost-${id}`, content: original.content, color: original.color,
-        author: MY_ID, timeAgo: '방금 전', nadoroCount: 0,
+        author: userId || '익명', timeAgo: '방금 전', nadoroCount: 0,
         rotation: (Math.random() - 0.5) * 4,
         didNadoro: false, category: original.category,
         date: TODAY, isOwn: true, isRepost: true, repostFrom: original.author,
@@ -1395,7 +1381,6 @@ export default function App() {
         ...prev.map(p => p.id === id ? { ...p, didNadoro: true, nadoroCount: p.nadoroCount + 1 } : p),
         repost,
       ])
-      // Update viewingPost if it's the same post
       setViewingPost(prev => prev?.id === id ? { ...prev, didNadoro: true, nadoroCount: prev.nadoroCount + 1 } : prev)
     } else {
       setPosts(prev => prev
@@ -1406,12 +1391,50 @@ export default function App() {
     }
   }
 
-  const handleAdd = (content: string, color: string, category: string, photo?: string) =>
-    setPosts(prev => [{
-      id: `u${Date.now()}`, content, color, author: MY_ID, timeAgo: '방금 전',
-      nadoroCount: 0, rotation: (Math.random() - 0.5) * 4,
-      didNadoro: false, category, date: TODAY, isOwn: true, photo,
-    }, ...prev])
+  const handleAdd = (content: string, color: string, category: string, photo?: string) => {
+    fetch('/api/posts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        content,
+        nickname: userId,
+        user_id: userId,
+        keyword: category,
+        photo
+      })
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.isCampaignMatched) {
+        alert("✨캠페인 키워드 매칭! 온기 2배 적립!");
+      }
+      const newPost: Post = {
+        id: data.id || `u${Date.now()}`, content: data.content || content, color, 
+        author: userId || '익명', timeAgo: '방금 전',
+        nadoroCount: 0, rotation: (Math.random() - 0.5) * 4,
+        didNadoro: false, category: data.keyword || category, 
+        date: TODAY, isOwn: true, photo: data.photo || photo,
+      }
+      setPosts(prev => [newPost, ...prev])
+    }).catch(e => console.error(e));
+  }
+
+  if (!userId) {
+    return (
+      <div style={{ padding: 40, background: 'white', color: 'black', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <h2 style={{ marginBottom: 20 }}>로그인 / 회원가입</h2>
+        <form onSubmit={e => {
+          e.preventDefault();
+          const uid = (new FormData(e.currentTarget)).get('uid') as string;
+          localStorage.setItem('user_id', uid);
+          setUserId(uid);
+        }} style={{ display: 'flex', gap: 10 }}>
+          <input name="uid" placeholder="유저 ID 입력" required style={{ border: '2px solid black', padding: '10px 14px', fontSize: 16 }} />
+          <button type="submit" style={{ border: '2px solid black', padding: '10px 20px', background: 'black', color: 'white', cursor: 'pointer', fontSize: 16 }}>접속</button>
+        </form>
+      </div>
+    );
+  }
 
   return (
     <div style={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: INK }}>
@@ -1483,6 +1506,7 @@ export default function App() {
           authorId={viewingProfile}
           allPosts={posts}
           onClose={() => setViewingProfile(null)}
+          currentUserId={userId}
         />
       )}
     </div>

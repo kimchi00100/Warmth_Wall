@@ -47,7 +47,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    let { content, nickname, user_id, keyword, parent_id } = body;
+    let { content, nickname, user_id, keyword, parent_id, photo } = body;
 
     if (!content || !user_id) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
@@ -62,11 +62,11 @@ export async function POST(request: NextRequest) {
 
     const id = crypto.randomUUID();
     const stmt = db.prepare(`
-      INSERT INTO posts (id, content, keyword, nickname, user_id, parent_id)
-      VALUES (?, ?, ?, ?, ?, ?)
+      INSERT INTO posts (id, content, keyword, nickname, user_id, parent_id, photo)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
     `);
     
-    stmt.run(id, content, keyword || null, nickname || null, user_id, parent_id || null);
+    stmt.run(id, content, keyword || null, nickname || null, user_id, parent_id || null, photo || null);
 
     const newPost = db.prepare('SELECT * FROM posts WHERE id = ?').get(id);
     return NextResponse.json({ ...newPost, isCampaignMatched }, { status: 201 });

@@ -8,6 +8,10 @@ db.pragma('journal_mode = WAL');
 db.pragma('foreign_keys = ON');
 
 // Initialize database schema
+try {
+  db.exec('ALTER TABLE posts ADD COLUMN photo TEXT;');
+} catch (err) {}
+
 db.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id TEXT PRIMARY KEY,
@@ -23,6 +27,7 @@ db.exec(`
     nickname TEXT,
     user_id TEXT NOT NULL,
     parent_id TEXT,
+    photo TEXT,
     is_mock INTEGER DEFAULT 0,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY(user_id) REFERENCES users(id),
