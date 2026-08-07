@@ -88,6 +88,20 @@ export default function Home() {
     setPosts([]);
   };
 
+  const handleDemoSimulation = async () => {
+    try {
+      const res = await fetch('/api/cron/demo', { method: 'POST' });
+      if (res.ok) {
+        window.location.reload();
+      } else {
+        alert('시뮬레이션 실패');
+      }
+    } catch (e) {
+      console.error(e);
+      alert('시뮬레이션 중 오류 발생');
+    }
+  };
+
   return (
     <div>
       <div>
@@ -95,6 +109,7 @@ export default function Home() {
           <div>
             <span>로그인 됨</span>
             <button onClick={handleLogout}>로그아웃</button>
+            <button onClick={handleDemoSimulation} style={{ marginLeft: '10px' }}>자정 시뮬레이션 (Mock 주입)</button>
           </div>
         ) : (
           <div>
@@ -102,6 +117,7 @@ export default function Home() {
             <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
             <button onClick={handleLogin}>로그인</button>
             <button onClick={handleSignup}>회원가입</button>
+            <button onClick={handleDemoSimulation} style={{ marginLeft: '10px' }}>자정 시뮬레이션 (Mock 주입)</button>
           </div>
         )}
       </div>
