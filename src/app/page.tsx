@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
 
 /* ─── Types ──────────────────────────────────────────────────── */
@@ -28,7 +28,7 @@ const WHITE = '#FAFAFA'
 const DISP  = "'Black Han Sans', sans-serif"
 const BODY  = "'Noto Sans KR', sans-serif"
 
-const AURA  = 'linear-gradient(148deg, #DDD0FF 0%, #F2C4E0 48%, #FFE3C8 100%)'
+const AURA  = 'linear-gradient(148deg, #7C3AED 0%, #A855F7 30%, #C084FC 58%, #DDD0FF 100%)'
 const GRAIN = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`
 
 const BORDER  = `2px solid ${INK}`
@@ -109,15 +109,15 @@ function calcStreak(myPosts: Post[]): number {
   return streak
 }
 
-const GRASS_COLORS = [
-  'rgba(10,10,10,0.08)',
-  '#DDD0FF',
-  '#B89FEE',
-  '#8A5ED8',
-  '#5520B8',
+const GRAPE_COLORS = [
+  'rgba(139,92,246,0.08)',  // 0 — empty, barely tinted
+  '#EDE9FE',               // 1 — pale lavender
+  '#C4B5FD',               // 2 — soft violet
+  '#8B5CF6',               // 3 — vibrant grape
+  '#5B21B6',               // 4 — deep indigo-grape
 ]
 function grassColor(count: number) {
-  return GRASS_COLORS[Math.min(count, 4)]
+  return GRAPE_COLORS[Math.min(count, 4)]
 }
 
 function buildContribGrid(myPosts: Post[], weeks = 18) {
@@ -143,6 +143,9 @@ function buildContribGrid(myPosts: Post[], weeks = 18) {
   return result
 }
 
+/* ─── Account ────────────────────────────────────────────────── */
+// MY_ID replaced by userId
+
 /* ─── Deterministic hash → 0–1 ──────────────────────────────── */
 function hashNum(s: string, seed: number): number {
   let h = seed * 2654435761
@@ -150,19 +153,29 @@ function hashNum(s: string, seed: number): number {
   return ((h >>> 0) / 0xFFFFFFFF)
 }
 
-/* ─── Scattered canvas layout ───────────────────────────────── */
-const S_NUM_COLS = 3
-const S_COL_W    = 158
-const S_COL_GAP  = 48
-const S_COL_SLOT = S_COL_W + S_COL_GAP
-const S_PAD_X    = 40
-const S_PAD_Y    = 36
-const S_X_JITTER = 22
-const S_Y_EXTRA  = 52
+/* ─── Scattered canvas layout ─────────────────────────────────
+   True cork-board scatter: canvas is ~1.8× wide and ~2× tall
+   the viewport. Posts are assigned to a loose zone grid but with
+   jitter so large (~85% of zone size) that all row/column
+   alignment disappears — pure 2D scatter like a real bulletin
+   board. Initial view is centered on the canvas.                */
+const S_NUM_COLS = 4   // zone columns (invisible grid for even coverage)
 
-function useScatteredLayout(posts: Post[]) {
+function useScatteredLayout(posts: Post[], viewW: number, viewH: number) {
   return useMemo(() => {
-    const colH = Array(S_NUM_COLS).fill(S_PAD_Y)
+    const vw = Math.max(viewW, 375)
+    const vh = Math.max(viewH, 500)
+
+    if (posts.length === 0) return { items: [], canvasW: vw * 1.8, canvasH: vh * 1.8 }
+
+    // Canvas slightly bigger than viewport — posts concentrated in center, gentle panning
+    const canvasW = Math.round(vw * 1.42)
+    const canvasH = Math.round(Math.max(vh * 1.55, posts.length * 55))
+
+    const ROWS = Math.ceil(posts.length / S_NUM_COLS)
+    const ZONE_W = canvasW / S_NUM_COLS
+    const ZONE_H = canvasH / ROWS
+
     type Rect = { x: number; y: number; w: number; h: number }
     const placed: Rect[] = []
 
@@ -171,35 +184,98 @@ function useScatteredLayout(posts: Post[]) {
       const cfg = SIZE_CFG[v]
       const cardW = cfg.w
       const cardH = post.photo ? cfg.minH + PHOTO_H : cfg.minH
+
       const col = i % S_NUM_COLS
+      const row = Math.floor(i / S_NUM_COLS)
+
+      // Zone center
+      const cx = (col + 0.5) * ZONE_W
+      const cy = (row + 0.5) * ZONE_H
+
+      // Jitter ±75% of zone — breaks row/col alignment while keeping posts near center
       const r1 = hashNum(post.id, 1)
       const r2 = hashNum(post.id, 2)
-      const xBase = S_PAD_X + col * S_COL_SLOT
-      const x = xBase + (r1 - 0.5) * 2 * S_X_JITTER
-      let y = colH[col] + r2 * S_Y_EXTRA
+      const jX = (r1 - 0.5) * ZONE_W * 1.5
+      const jY = (r2 - 0.5) * ZONE_H * 1.5
 
-      let tries = 0
-      while (tries < 8) {
+      let x = Math.max(8, Math.min(canvasW - cardW - 8, cx - cardW / 2 + jX))
+      let y = Math.max(8, Math.min(canvasH - cardH - 8, cy - cardH / 2 + jY))
+
+      // Collision nudge — try alternating x and y bumps
+      for (let t = 0; t < 12; t++) {
         const hit = placed.find(p =>
-          x < p.x + p.w + 8 && x + cardW > p.x - 8 &&
-          y < p.y + p.h + 8 && y + cardH > p.y - 8
+          x < p.x + p.w + 10 && x + cardW > p.x - 10 &&
+          y < p.y + p.h + 10 && y + cardH > p.y - 10
         )
         if (!hit) break
-        y = hit.y + hit.h + 14
-        tries++
+        if (t % 2 === 0) {
+          y = hit.y + hit.h + 12 + hashNum(post.id, t + 5) * 18
+        } else {
+          x = hit.x + hit.w + 12 + hashNum(post.id, t + 6) * 18
+        }
+        x = Math.max(8, Math.min(canvasW - cardW - 8, x))
+        y = Math.max(8, Math.min(canvasH - cardH - 8, y))
       }
 
       placed.push({ x, y, w: cardW, h: cardH })
-      colH[col] = y + cardH + 16
-
       return { post, v, x, y }
     })
 
-    const canvasW = S_PAD_X * 2 + S_NUM_COLS * S_COL_SLOT + S_X_JITTER * 2
-    const canvasH = Math.max(...colH) + S_PAD_Y
     return { items, canvasW, canvasH }
-  }, [posts])
+  }, [posts, viewW, viewH])
 }
+
+/* ─── Seed data ──────────────────────────────────────────────── */
+const SEED_POSTS: Post[] = [
+  { id:'1',  color:'#FFE234', content:'버스에서 어르신께 자리를 양보했어요',   author:'@warm_bear',    timeAgo:'5분 전',   nadoroCount:14, rotation:-2.1, didNadoro:false, category:'배려', date:TODAY,     isOwn:false },
+  { id:'2',  color:'#FF9DBB', content:'비 오는 날 우산 함께 써드렸어요',       author:'@spring_sun',   timeAgo:'13분 전',  nadoroCount:6,  rotation: 1.7, didNadoro:false, category:'나눔', date:TODAY,     isOwn:false },
+  { id:'3',  color:'#7EDDD7', content:'계단에서 유모차 들어드렸어요',          author:'@sky_cloud',    timeAgo:'30분 전',  nadoroCount:11, rotation:-0.6, didNadoro:true,  category:'도움', date:TODAY,     isOwn:false },
+  { id:'5',  color:'#FF9DBB', content:'길에서 지갑 떨어진 분 찾아드렸어요',   author:'@mindle99',     timeAgo:'1시간 전', nadoroCount:22, rotation:-1.4, didNadoro:false, category:'도움', date:TODAY,     isOwn:false },
+  { id:'6',  color:'#7EDDD7', content:'편의점 앞 쓰레기 주워 버렸어요',       author:'@greenstep',    timeAgo:'2시간 전', nadoroCount:9,  rotation: 0.8, didNadoro:false, category:'환경', date:TODAY,     isOwn:false },
+  { id:'8',  color:'#C6A8F5', content:'지하철에서 길 잃은 분 안내했어요',     author:'@guide_k',      timeAgo:'3시간 전', nadoroCount:7,  rotation: 1.1, didNadoro:false, category:'도움', date:TODAY,     isOwn:false },
+  { id:'9',  color:'#FFE234', content:'할머니 장바구니 들어드렸어요',          author:'@kind_neighbor',timeAgo:'4시간 전', nadoroCount:18, rotation:-1.0, didNadoro:false, category:'도움', date:TODAY,     isOwn:false },
+  { id:'10', color:'#7EDDD7', content:'주문 기다리는 분께 먼저 양보했어요',   author:'@yooyoo_j',     timeAgo:'5시간 전', nadoroCount:3,  rotation: 2.6, didNadoro:false, category:'배려', date:TODAY,     isOwn:false },
+  { id:'11', color:'#FFBA80', content:'카페 직원분께 "수고하세요" 했어요',     author:'@warmspoon',    timeAgo:'6시간 전', nadoroCount:15, rotation:-0.3, didNadoro:false, category:'인사', date:TODAY,     isOwn:false },
+  { id:'12', color:'#9FEBA4', content:'동네 고양이한테 간식 챙겨줬어요',      author:'@street_cat',   timeAgo:'7시간 전', nadoroCount:10, rotation: 1.5, didNadoro:false, category:'환경', date:TODAY,     isOwn:false },
+  { id:'4',  color:'#FFE234', content:'카페 테이블 닦고\n나왔어요',           author:MY_ID,           timeAgo:'1시간 전', nadoroCount:5,  rotation: 2.2, didNadoro:false, category:'배려', date:TODAY,     isOwn:true  },
+  { id:'7',  color:'#FFE234', content:'엘리베이터 문\n잡아드렸어요',          author:MY_ID,           timeAgo:'3시간 전', nadoroCount:8,  rotation:-2.7, didNadoro:false, category:'도움', date:TODAY,     isOwn:true  },
+  { id:'d1', color:'#7EDDD7', content:'동네 공원\n쓰레기 봉사했어요',         author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation:-0.7, didNadoro:false, category:'환경', date:YESTERDAY, isOwn:true  },
+  { id:'d2', color:'#FFE234', content:'앞사람 커피값\n몰래 냈어요',           author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation: 1.6, didNadoro:false, category:'나눔', date:YESTERDAY, isOwn:true  },
+  { id:'d3', color:'#FF9DBB', content:'길고양이한테\n간식 챙겨줬어요',        author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation:-2.1, didNadoro:false, category:'환경', date:YESTERDAY, isOwn:true  },
+  { id:'d4', color:'#FF9DBB', content:'버스 기사님께\n감사 인사 했어요',      author:MY_ID,           timeAgo:'이틀 전',  nadoroCount:0,  rotation:-2.0, didNadoro:false, category:'인사', date:TWO_AGO,   isOwn:true  },
+  { id:'d5', color:'#7EDDD7', content:'우산 나눠\n써드렸어요',               author:MY_ID,           timeAgo:'이틀 전',  nadoroCount:0,  rotation: 1.3, didNadoro:false, category:'나눔', date:TWO_AGO,   isOwn:true  },
+  { id:'d6', color:'#FFE234', content:'무거운 짐\n들어드렸어요',             author:MY_ID,           timeAgo:'사흘 전',  nadoroCount:0,  rotation: 0.5, didNadoro:false, category:'도움', date:THREE_AGO, isOwn:true  },
+  { id:'h01', color:'#7EDDD7', content:'쓰레기 줍기 봉사',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.2, didNadoro:false, category:'환경', date:'2026-08-03', isOwn:true },
+  { id:'h02', color:'#FF9DBB', content:'노인정 방문 봉사',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.5, didNadoro:false, category:'도움', date:'2026-08-02', isOwn:true },
+  { id:'h03', color:'#FFE234', content:'후배 밥 사줬어요',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.8, didNadoro:false, category:'나눔', date:'2026-08-02', isOwn:true },
+  { id:'h04', color:'#C6A8F5', content:'택배 기사님께 음료 드림', author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.9, didNadoro:false, category:'배려', date:'2026-07-31', isOwn:true },
+  { id:'h05', color:'#9FEBA4', content:'공원 꽃 물주기',          author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 2.0, didNadoro:false, category:'환경', date:'2026-07-31', isOwn:true },
+  { id:'h06', color:'#FFE234', content:'길 안내 도움',            author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.1, didNadoro:false, category:'도움', date:'2026-07-30', isOwn:true },
+  { id:'h07', color:'#FF9DBB', content:'주차 도움드렸어요',       author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.4, didNadoro:false, category:'도움', date:'2026-07-28', isOwn:true },
+  { id:'h08', color:'#FFBA80', content:'이웃 택배 대신 받음',     author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.6, didNadoro:false, category:'배려', date:'2026-07-27', isOwn:true },
+  { id:'h09', color:'#7EDDD7', content:'재활용 분리수거 도움',    author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.3, didNadoro:false, category:'환경', date:'2026-07-25', isOwn:true },
+  { id:'h10', color:'#FFE234', content:'헌혈했어요',              author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-2.2, didNadoro:false, category:'나눔', date:'2026-07-25', isOwn:true },
+  { id:'h11', color:'#C6A8F5', content:'복지관 봉사활동',         author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.7, didNadoro:false, category:'도움', date:'2026-07-25', isOwn:true },
+  { id:'h12', color:'#FF9DBB', content:'카페 의자 정리해드림',    author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.3, didNadoro:false, category:'배려', date:'2026-07-22', isOwn:true },
+  { id:'h13', color:'#9FEBA4', content:'길고양이 밥 챙김',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.9, didNadoro:false, category:'환경', date:'2026-07-20', isOwn:true },
+  { id:'h14', color:'#FFE234', content:'새치기 양보',             author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.4, didNadoro:false, category:'배려', date:'2026-07-19', isOwn:true },
+  { id:'h15', color:'#7EDDD7', content:'장애인 도보 동행',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 2.1, didNadoro:false, category:'도움', date:'2026-07-19', isOwn:true },
+  { id:'h16', color:'#FFBA80', content:'음식 나눔 행사 참가',     author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.8, didNadoro:false, category:'나눔', date:'2026-07-16', isOwn:true },
+  { id:'h17', color:'#FF9DBB', content:'폭염에 생수 나눔',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.6, didNadoro:false, category:'나눔', date:'2026-07-14', isOwn:true },
+  { id:'h18', color:'#C6A8F5', content:'어르신 짐 들어드림',      author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.7, didNadoro:false, category:'도움', date:'2026-07-12', isOwn:true },
+  { id:'h19', color:'#FFE234', content:'아이 미아 신고 도움',     author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.5, didNadoro:false, category:'도움', date:'2026-07-10', isOwn:true },
+  { id:'h20', color:'#9FEBA4', content:'나무 물 주기',            author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.0, didNadoro:false, category:'환경', date:'2026-07-07', isOwn:true },
+  { id:'h21', color:'#FF9DBB', content:'반찬 나눔 이웃',          author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.2, didNadoro:false, category:'나눔', date:'2026-07-07', isOwn:true },
+  { id:'h22', color:'#7EDDD7', content:'우산 양보',               author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-2.0, didNadoro:false, category:'배려', date:'2026-07-04', isOwn:true },
+  { id:'h23', color:'#FFE234', content:'공중화장실 청소',         author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.3, didNadoro:false, category:'환경', date:'2026-07-01', isOwn:true },
+  { id:'h24', color:'#FFBA80', content:'식사비 익명 후원',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.8, didNadoro:false, category:'나눔', date:'2026-06-28', isOwn:true },
+  { id:'h25', color:'#C6A8F5', content:'독거노인 말벗',           author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 1.1, didNadoro:false, category:'도움', date:'2026-06-25', isOwn:true },
+  { id:'h26', color:'#FF9DBB', content:'지하철 자리 양보',        author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.4, didNadoro:false, category:'배려', date:'2026-06-22', isOwn:true },
+  { id:'h27', color:'#9FEBA4', content:'산책로 쓰레기 줍기',      author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 0.7, didNadoro:false, category:'환경', date:'2026-06-20', isOwn:true },
+  { id:'h28', color:'#FFE234', content:'화재 신고 도움',          author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-1.6, didNadoro:false, category:'도움', date:'2026-06-18', isOwn:true },
+  { id:'h29', color:'#7EDDD7', content:'옷 기부',                 author:MY_ID, timeAgo:'', nadoroCount:0, rotation: 2.0, didNadoro:false, category:'나눔', date:'2026-06-15', isOwn:true },
+  { id:'h30', color:'#FFBA80', content:'유기견 임시보호',         author:MY_ID, timeAgo:'', nadoroCount:0, rotation:-0.5, didNadoro:false, category:'환경', date:'2026-06-12', isOwn:true },
+]
 
 /* ─── SVG Icons ──────────────────────────────────────────────── */
 function IconWall({ size = 22 }: { size?: number }) {
@@ -410,10 +486,13 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="modal-in" style={{ width: '100%', maxWidth: 480, background: WHITE, border: BORDER, borderBottom: 'none', boxShadow: `0 -6px 0 ${INK}`, borderRadius: '4px 4px 0 0', maxHeight: '88vh', overflowY: 'auto' }}>
+        {/* Color bar */}
         <div style={{ height: 10, background: post.color, borderBottom: BORDER }} />
+
         <div style={{ padding: '0 20px 40px' }}>
           <div style={{ width: 36, height: 4, borderRadius: '2px', background: 'rgba(10,10,10,0.15)', margin: '14px auto 18px' }} />
 
+          {/* Header row */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
             <span style={{
               fontSize: '11px', background: post.color, color: INK,
@@ -425,22 +504,29 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
             </button>
           </div>
 
+          {/* Photo */}
           {post.photo && (
             <div style={{ border: BORDER, borderRadius: '2px', overflow: 'hidden', marginBottom: 18 }}>
               <img src={post.photo} alt="" style={{ width: '100%', maxHeight: 220, objectFit: 'cover', display: 'block' }} />
             </div>
           )}
 
+          {/* Repost badge */}
           {post.isRepost && post.repostFrom && (
             <div style={{ background: INK, color: WHITE, padding: '5px 12px', marginBottom: 12, fontSize: '10px', fontFamily: BODY, fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: 4, borderRadius: '2px' }}>
               ↗ {post.repostFrom}님과 공동 선행
             </div>
           )}
 
+          {/* Content */}
           <p style={{ fontFamily: BODY, fontSize: '20px', fontWeight: 700, color: INK, lineHeight: 1.65, whiteSpace: 'pre-wrap', margin: '0 0 12px' }}>{post.content}</p>
+
           <div style={{ fontFamily: BODY, fontSize: '12px', color: 'rgba(10,10,10,0.38)', fontWeight: 500, marginBottom: 22 }}>{post.timeAgo}</div>
+
+          {/* Divider */}
           <div style={{ height: 2, background: 'rgba(10,10,10,0.1)', marginBottom: 18 }} />
 
+          {/* Nadoro row */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 22 }}>
             <div style={{ fontFamily: BODY, fontSize: '14px', fontWeight: 600, color: INK }}>
               나도요 <span style={{ fontFamily: DISP, fontSize: '26px', color: INK }}>{post.nadoroCount}</span>명
@@ -458,8 +544,10 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
             )}
           </div>
 
+          {/* Divider */}
           <div style={{ height: 2, background: 'rgba(10,10,10,0.1)', marginBottom: 18 }} />
 
+          {/* Author */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
               <div style={{ fontFamily: DISP, fontSize: '19px', color: INK }}>{post.author}</div>
@@ -485,41 +573,38 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
   )
 }
 
+/* ─── Diary Page Entry ───────────────────────────────────────── */
 /* ─── Profile View ───────────────────────────────────────────── */
-function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
+function ProfileView({ authorId, currentUserId, allPosts, onClose }: { currentUserId: string,
   authorId: string
   allPosts: Post[]
   onClose: () => void
-  currentUserId: string | null
 }) {
   const isMe = authorId === currentUserId
-  const authorPosts = allPosts.filter(p => p.author === authorId && !p.isRepost)
-  const dates = [...new Set(authorPosts.map(p => p.date))].sort((a, b) => b.localeCompare(a))
+  // Originals count for the 잔디밭 grid; all posts (incl. reposts) show in the diary list
+  const originalPosts = allPosts.filter(p => p.author === authorId && !p.isRepost)
+  const allAuthorPosts = allPosts.filter(p => p.author === authorId)
+  const dates = [...new Set(allAuthorPosts.map(p => p.date))].sort((a, b) => b.localeCompare(a))
   const [selDate, setSelDate] = useState(() => dates[0] ?? TODAY)
-  const profileGrid = useMemo(() => buildContribGrid(authorPosts, 18), [authorPosts])
+  const profileGrid = useMemo(() => buildContribGrid(originalPosts, 18), [originalPosts])
   const grassRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (grassRef.current) grassRef.current.scrollLeft = grassRef.current.scrollWidth
   }, [])
 
-  const entries = authorPosts.filter(p => p.date === selDate)
+  const entries = allAuthorPosts.filter(p => p.date === selDate)
   const prevDate = dates.find(d => d < selDate) ?? null
   const nextDate = [...dates].reverse().find(d => d > selDate) ?? null
-
-  const CELL = 13
-  const CGAP = 3
-  const CSLOT = CELL + CGAP
-  const DAY_LABELS = ['월','화','수','목','금','토','일']
-  const PAPER_BG   = '#EDE6D3'
-  const PAPER_RULE = 'repeating-linear-gradient(transparent, transparent 31px, rgba(70,100,200,0.07) 31px, rgba(70,100,200,0.07) 32px)'
 
   return (
     <div
       style={{ position: 'fixed', inset: 0, zIndex: 500, background: 'rgba(10,10,10,0.8)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', backdropFilter: 'blur(6px)' }}
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="modal-in" style={{ width: '100%', maxWidth: 480, height: '92vh', background: INK, border: BORDER, borderBottom: 'none', boxShadow: `0 -8px 0 ${INK}, -4px 0 0 ${INK}, 4px 0 0 ${INK}`, borderRadius: '6px 6px 0 0', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+      <div className="modal-in" style={{ width: '100%', maxWidth: 480, height: '96vh', background: INK, border: BORDER, borderBottom: 'none', boxShadow: `0 -8px 0 ${INK}, -4px 0 0 ${INK}, 4px 0 0 ${INK}`, borderRadius: '6px 6px 0 0', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+
+        {/* Header */}
         <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER, padding: '14px 18px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             <button onClick={onClose} style={{ background: 'transparent', border: BORDER, width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', borderRadius: '2px', boxShadow: '2px 2px 0 rgba(250,250,250,0.08)', flexShrink: 0 }}>
@@ -532,13 +617,17 @@ function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
               </div>
             </div>
             <div style={{ marginLeft: 'auto', fontFamily: BODY, fontSize: '11px', color: 'rgba(250,250,250,0.32)', fontWeight: 600 }}>
-              총 {authorPosts.length}개
+              총 {allAuthorPosts.length}개
             </div>
           </div>
         </div>
 
+        {/* 포도밭 */}
         <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER, padding: '12px 16px 13px' }}>
-          <div style={{ fontFamily: BODY, fontSize: '10px', color: 'rgba(250,250,250,0.35)', fontWeight: 700, marginBottom: 8, letterSpacing: '0.4px' }}>선행 잔디밭</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 8 }}>
+            <div style={{ width: 4, height: 20, background: 'linear-gradient(180deg,#C4B5FD 0%,#8B5CF6 50%,#5B21B6 100%)', borderRadius: '2px', flexShrink: 0 }} />
+            <span style={{ fontFamily: BODY, fontSize: '10px', color: 'rgba(250,250,250,0.35)', fontWeight: 700, letterSpacing: '0.4px' }}>선행 포도밭</span>
+          </div>
           <div ref={grassRef} style={{ overflowX: 'auto', scrollbarWidth: 'none' }}>
             <div style={{ display: 'inline-flex', flexDirection: 'column', gap: CGAP }}>
               <div style={{ display: 'flex', marginLeft: 22 }}>
@@ -562,9 +651,10 @@ function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
                         style={{
                           width: CELL, height: CELL, flexShrink: 0,
                           background: cell.isFuture ? 'transparent' : grassColor(cell.count),
-                          border: isSelected ? '2px solid #FFE234' : cell.isToday ? '2px solid rgba(250,250,250,0.5)' : '1px solid rgba(255,255,255,0.06)',
+                          border: isSelected ? '2px solid #C4B5FD' : cell.isToday ? '2px solid #8B5CF6' : '1px solid rgba(139,92,246,0.12)',
                           borderRadius: '2px', cursor: cell.isFuture ? 'default' : 'pointer',
                           padding: 0, transition: 'transform 0.1s ease', boxSizing: 'border-box',
+                          boxShadow: isSelected ? '0 0 0 1px rgba(196,181,253,0.4)' : 'none',
                         }}
                         onMouseEnter={e => { if (!cell.isFuture) (e.currentTarget as HTMLElement).style.transform = 'scale(1.4)' }}
                         onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'scale(1)' }}
@@ -576,21 +666,24 @@ function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
             </div>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 5, marginTop: 10, justifyContent: 'flex-end' }}>
-            <span style={{ fontFamily: BODY, fontSize: '9px', color: 'rgba(250,250,250,0.3)', fontWeight: 600 }}>적음</span>
-            {GRASS_COLORS.map((c, i) => (
-              <div key={i} style={{ width: CELL, height: CELL, background: c, border: '1px solid rgba(255,255,255,0.1)', borderRadius: '2px' }} />
+            <span style={{ fontFamily: BODY, fontSize: '9px', color: 'rgba(139,92,246,0.45)', fontWeight: 600 }}>적음</span>
+            {GRAPE_COLORS.map((c, i) => (
+              <div key={i} style={{ width: 9, height: 9, background: c, borderRadius: '50%', border: '1px solid rgba(139,92,246,0.25)', flexShrink: 0 }} />
             ))}
-            <span style={{ fontFamily: BODY, fontSize: '9px', color: 'rgba(250,250,250,0.3)', fontWeight: 600 }}>많음</span>
+            <span style={{ fontFamily: BODY, fontSize: '9px', color: 'rgba(139,92,246,0.45)', fontWeight: 600 }}>많음</span>
           </div>
         </div>
 
+        {/* Notebook page */}
         <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
+          {/* Spiral binding */}
           <div style={{ width: 30, background: '#1A1A1A', borderRight: BORDER, display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 16, gap: 13, flexShrink: 0, overflowY: 'hidden' }}>
             {Array.from({ length: 20 }).map((_, i) => (
               <div key={i} style={{ width: 16, height: 16, borderRadius: '50%', border: '2px solid rgba(150,150,150,0.32)', background: '#111', boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.85)', flexShrink: 0 }} />
             ))}
           </div>
 
+          {/* Scrollable page */}
           <div style={{ flex: 1, overflowY: 'auto', background: PAPER_BG, backgroundImage: PAPER_RULE, position: 'relative' }}>
             <div style={{ position: 'absolute', left: 38, top: 0, bottom: 0, width: 1, background: 'rgba(200,50,40,0.2)', pointerEvents: 'none' }} />
             <div style={{ padding: '20px 14px 28px 10px', position: 'relative', zIndex: 2 }}>
@@ -636,6 +729,7 @@ function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
           </div>
         </div>
 
+        {/* Date nav — jumps between dates that actually have posts */}
         <div style={{ background: INK, borderTop: BORDER, flexShrink: 0, display: 'flex', alignItems: 'stretch' }}>
           <button
             disabled={!prevDate}
@@ -719,29 +813,15 @@ function WallTab({ posts, onNadoro, onSelectPost }: {
     return list
   }, [posts, catFilter, query])
 
-  const { items, canvasW, canvasH } = useScatteredLayout(wallPosts)
-
   const containerRef  = useRef<HTMLDivElement>(null)
   const [containerSize, setContainerSize] = useState({ w: 375, h: 600 })
+
+  const { items, canvasW, canvasH } = useScatteredLayout(wallPosts, containerSize.w, containerSize.h)
   const [offset, setOffset] = useState({ x: 0, y: 0 })
   const dragging   = useRef(false)
   const dragOrigin = useRef({ mx: 0, my: 0, ox: 0, oy: 0 })
   const dragDist   = useRef(0)
   const centeredOnce = useRef(false)
-
-  useEffect(() => {
-    if (!centeredOnce.current && containerSize.w > 100 && canvasW > 0) {
-      centeredOnce.current = true
-      const cx = -Math.max(0, Math.floor((canvasW - containerSize.w) / 2))
-      setOffset({ x: cx, y: 0 })
-    }
-  }, [containerSize.w, canvasW])
-
-  useEffect(() => {
-    if (!centeredOnce.current) return
-    const cx = -Math.max(0, Math.floor((canvasW - containerSize.w) / 2))
-    setOffset({ x: cx, y: 0 })
-  }, [catFilter, query])
 
   useEffect(() => {
     if (!containerRef.current) return
@@ -754,6 +834,26 @@ function WallTab({ posts, onNadoro, onSelectPost }: {
     x: Math.min(0, Math.max(Math.min(0, containerSize.w - canvasW), ox)),
     y: Math.min(0, Math.max(Math.min(0, containerSize.h - canvasH), oy)),
   }), [containerSize, canvasW, canvasH])
+
+  const centerOffset = useCallback(() => {
+    const cx = -Math.max(0, Math.floor((canvasW - containerSize.w) / 2))
+    const cy = -Math.max(0, Math.floor((canvasH - containerSize.h) / 2))
+    return clamp(cx, cy)
+  }, [canvasW, canvasH, containerSize, clamp])
+
+  // Center on both axes when layout is first ready
+  useEffect(() => {
+    if (!centeredOnce.current && containerSize.w > 100 && canvasW > 0) {
+      centeredOnce.current = true
+      setOffset(centerOffset())
+    }
+  }, [containerSize.w, containerSize.h, canvasW, canvasH, centerOffset])
+
+  // Re-center when filter/search changes
+  useEffect(() => {
+    if (!centeredOnce.current) return
+    setOffset(centerOffset())
+  }, [catFilter, query, centerOffset])
 
   const onPtrDown = (e: React.PointerEvent<HTMLDivElement>) => {
     dragDist.current = 0
@@ -773,6 +873,8 @@ function WallTab({ posts, onNadoro, onSelectPost }: {
     const wasDrag = dragDist.current >= 8
     dragging.current = false
     if (wasDrag) return
+    // Tap detected — find the card under the pointer using elementFromPoint
+    // (pointer capture means e.target is the container, not the actual card)
     const el = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement | null
     if (!el || el.closest('button')) return
     const cardEl = el.closest('[data-postid]') as HTMLElement | null
@@ -782,7 +884,7 @@ function WallTab({ posts, onNadoro, onSelectPost }: {
     if (found) onSelectPost(found.post)
   }
 
-  const STEP = S_COL_SLOT
+  const STEP = 120
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (document.activeElement?.tagName === 'INPUT' || document.activeElement?.tagName === 'TEXTAREA') return
@@ -965,7 +1067,7 @@ const DAY_LABELS = ['월','화','수','목','금','토','일']
 const PAPER_BG   = '#EDE6D3'
 const PAPER_RULE = 'repeating-linear-gradient(transparent, transparent 31px, rgba(70,100,200,0.07) 31px, rgba(70,100,200,0.07) 32px)'
 
-function DiaryTab({ myPosts, onSelectPost, userId }: { myPosts: Post[]; onSelectPost: (post: Post) => void; userId: string }) {
+function DiaryTab({ myPosts, onSelectPost }: { myPosts: Post[]; onSelectPost: (post: Post) => void }) {
   const [selDate, setSelDate] = useState(TODAY)
   const grassRef = useRef<HTMLDivElement>(null)
 
@@ -986,24 +1088,33 @@ function DiaryTab({ myPosts, onSelectPost, userId }: { myPosts: Post[]; onSelect
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column', background: INK }}>
 
+      {/* Header */}
       <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER }}>
-        <div style={{ padding: '14px 18px 13px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 }}>
-          <div>
-            {/* MY_ID에서 userId로 교체되어 치명적 런타임 에러 차단 */}
-            <div style={{ fontFamily: DISP, color: WHITE, fontSize: '30px', lineHeight: 1, letterSpacing: '-0.5px' }}>{userId}</div>
-            <div style={{ fontFamily: BODY, fontSize: '11px', color: 'rgba(250,250,250,0.38)', margin: '5px 0 0', fontWeight: 500 }}>선행 다이어리</div>
-          </div>
-          {streak > 0 && (
-            <div style={{ flexShrink: 0, background: '#FFE234', border: BORDER, boxShadow: HS_SM, padding: '7px 13px', borderRadius: '2px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}>
-              <span style={{ fontFamily: DISP, fontSize: '20px', color: INK, lineHeight: 1 }}>{streak}일</span>
-              <span style={{ fontFamily: BODY, fontSize: '9px', fontWeight: 700, color: INK, opacity: 0.65 }}>연속 선행</span>
-            </div>
-          )}
+        <div style={{ padding: '14px 18px 13px' }}>
+          <div style={{ fontFamily: DISP, color: WHITE, fontSize: '30px', lineHeight: 1, letterSpacing: '-0.5px' }}>{MY_ID}</div>
+          <div style={{ fontFamily: BODY, fontSize: '11px', color: 'rgba(250,250,250,0.38)', margin: '5px 0 0', fontWeight: 500 }}>선행 다이어리</div>
         </div>
       </div>
 
-      <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER, padding: '12px 16px 14px' }}>
-        <div style={{ fontFamily: BODY, fontSize: '10px', color: 'rgba(250,250,250,0.35)', fontWeight: 700, marginBottom: 8, letterSpacing: '0.4px' }}>나의 선행 잔디밭</div>
+      {/* 포도밭 */}
+      <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER, padding: '14px 16px 14px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+          {/* 타이틀 + stroke bar */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <div style={{ width: 5, height: 32, background: 'linear-gradient(180deg,#EDE9FE 0%,#8B5CF6 50%,#4C1D95 100%)', borderRadius: '3px', flexShrink: 0, boxShadow: '0 0 10px rgba(139,92,246,0.7)' }} />
+            <div>
+              <div style={{ fontFamily: BODY, fontSize: '15px', fontWeight: 900, letterSpacing: '0.5px', background: 'linear-gradient(90deg,#EDE9FE 0%,#C4B5FD 40%,#8B5CF6 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.1 }}>나의 선행 포도밭</div>
+              <div style={{ fontFamily: BODY, fontSize: '10px', color: 'rgba(139,92,246,0.5)', fontWeight: 600, marginTop: 2 }}>선행을 기록한 날을 눌러보세요</div>
+            </div>
+          </div>
+          {/* 연속 선행 배지 */}
+          {streak > 0 && (
+            <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg,rgba(109,40,217,0.35),rgba(139,92,246,0.2))', border: '2px solid #7C3AED', borderRadius: '6px', padding: '8px 14px', boxShadow: '0 0 14px rgba(139,92,246,0.45), inset 0 1px 0 rgba(196,181,253,0.15)', gap: 2 }}>
+              <span style={{ fontFamily: DISP, fontSize: '22px', lineHeight: 1, background: 'linear-gradient(135deg,#EDE9FE,#C4B5FD,#8B5CF6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{streak}일</span>
+              <span style={{ fontFamily: BODY, fontSize: '10px', fontWeight: 800, color: '#A78BFA', letterSpacing: '0.3px' }}>연속 선행 🍇</span>
+            </div>
+          )}
+        </div>
         <div ref={grassRef} style={{ overflowX: 'auto', scrollbarWidth: 'none' }}>
           <div style={{ display: 'inline-flex', flexDirection: 'column', gap: CGAP }}>
             <div style={{ display: 'flex', marginLeft: 22 }}>
@@ -1029,9 +1140,10 @@ function DiaryTab({ myPosts, onSelectPost, userId }: { myPosts: Post[]; onSelect
                       style={{
                         width: CELL, height: CELL, flexShrink: 0,
                         background: cell.isFuture ? 'transparent' : grassColor(cell.count),
-                        border: isSelected ? `2px solid #FFE234` : cell.isToday ? `2px solid rgba(250,250,250,0.5)` : '1px solid rgba(255,255,255,0.06)',
+                        border: isSelected ? `2px solid #C4B5FD` : cell.isToday ? `2px solid #8B5CF6` : '1px solid rgba(139,92,246,0.12)',
                         borderRadius: '2px', cursor: cell.isFuture ? 'default' : 'pointer',
                         padding: 0, transition: 'transform 0.1s ease', boxSizing: 'border-box',
+                        boxShadow: isSelected ? '0 0 0 1px rgba(196,181,253,0.4)' : 'none',
                       }}
                       onMouseEnter={e => { if (!cell.isFuture) (e.currentTarget as HTMLElement).style.transform = 'scale(1.4)' }}
                       onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'scale(1)' }}
@@ -1042,26 +1154,24 @@ function DiaryTab({ myPosts, onSelectPost, userId }: { myPosts: Post[]; onSelect
             ))}
           </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 5, marginTop: 10, justifyContent: 'flex-end' }}>
-          <span style={{ fontFamily: BODY, fontSize: '9px', color: 'rgba(250,250,250,0.3)', fontWeight: 600 }}>적음</span>
-          {GRASS_COLORS.map((c, i) => (
-            <div key={i} style={{ width: CELL, height: CELL, background: c, border: '1px solid rgba(255,255,255,0.1)', borderRadius: '2px' }} />
-          ))}
-          <span style={{ fontFamily: BODY, fontSize: '9px', color: 'rgba(250,250,250,0.3)', fontWeight: 600 }}>많음</span>
-        </div>
       </div>
 
+      {/* Notebook page area */}
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
+        {/* Spiral binding */}
         <div style={{ width: 30, background: '#1A1A1A', borderRight: BORDER, display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 16, gap: 13, flexShrink: 0, overflowY: 'hidden' }}>
           {Array.from({ length: 20 }).map((_, i) => (
             <div key={i} style={{ width: 16, height: 16, borderRadius: '50%', border: '2px solid rgba(150,150,150,0.32)', background: '#111', boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.85)', flexShrink: 0 }} />
           ))}
         </div>
 
+        {/* Page content — scrollable */}
         <div style={{ flex: 1, overflowY: 'auto', background: PAPER_BG, backgroundImage: PAPER_RULE, position: 'relative' }}>
+          {/* Red margin line */}
           <div style={{ position: 'absolute', left: 38, top: 0, bottom: 0, width: 1, background: 'rgba(200,50,40,0.2)', pointerEvents: 'none' }} />
 
           <div style={{ padding: '20px 14px 28px 10px', position: 'relative', zIndex: 2 }}>
+            {/* Date heading */}
             <div style={{ marginBottom: 24, paddingLeft: 10 }}>
               <div style={{ fontFamily: DISP, fontSize: '22px', color: INK, paddingBottom: 6, borderBottom: '2px solid rgba(10,10,10,0.12)', display: 'inline-block' }}>
                 {fmtDate(selDate)}
@@ -1102,6 +1212,7 @@ function DiaryTab({ myPosts, onSelectPost, userId }: { myPosts: Post[]; onSelect
         </div>
       </div>
 
+      {/* Date navigation */}
       <div style={{ background: INK, borderTop: BORDER, flexShrink: 0, display: 'flex', alignItems: 'stretch' }}>
         <button
           disabled={!canPrev}
@@ -1283,213 +1394,108 @@ const TABS: { id: TabId; icon: () => React.ReactNode; label: string; accent: str
   { id: 'diary', icon: () => <IconBook  size={20} />, label: '다이어리',    accent: '#FF9DBB' },
 ]
 
-/* ─── Fallback Auth Component ────────────────────────────────── */
-function FallbackAuth({ onAuthSuccess }: { onAuthSuccess: (uid: string) => void }) {
-  const [isSignUp, setIsSignUp] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [nickname, setNickname] = useState('');
+/* ─── App ────────────────────────────────────────────────────── */
+
+function FallbackAuth({ onLogin }: { onLogin: (id: string) => void }) {
+  const [nickname, setNickname] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [mode, setMode] = useState<'login' | 'register'>('login')
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const endpoint = isSignUp ? '/api/auth/signup' : '/api/auth/login';
-    const payload = isSignUp ? { email, password, nickname } : { email, password };
-
-    try {
-      const res = await fetch(endpoint, {
+    e.preventDefault()
+    if (mode === 'register') {
+      const res = await fetch('/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (!res.ok) {
-        alert(isSignUp ? '회원가입에 실패했습니다.' : '로그인에 실패했습니다.');
-        return;
-      }
-      const data = await res.json();
-      const uid = data.user_id || email;
-      localStorage.setItem('user_id', uid);
-      if (data.nickname) localStorage.setItem('nickname', data.nickname);
-      onAuthSuccess(uid);
-    } catch (err) {
-      console.error(err);
-      alert('에러가 발생했습니다.');
-    }
-  };
-
-  const handleSimulateMidnight = async () => {
-    try {
-      const res = await fetch('/api/cron/demo', { method: 'POST' });
+        body: JSON.stringify({ user_id: nickname, email, password })
+      })
       if (res.ok) {
-        alert('자정 시뮬레이션(Mock 주입) 완료!');
-        window.location.reload();
+        alert('회원가입 완료! 로그인해주세요.')
+        setMode('login')
       } else {
-        alert('시뮬레이션 실패');
+        alert('회원가입 실패')
       }
-    } catch (e) {
-      console.error(e);
-      alert('호출 중 에러 발생');
+    } else {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: nickname, password })
+      })
+      if (res.ok) {
+        localStorage.setItem('user_id', nickname)
+        onLogin(nickname)
+      } else {
+        alert('로그인 실패')
+      }
     }
-  };
+  }
 
   return (
-    <div style={{ padding: 40, background: 'white', color: 'black', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <h2 style={{ marginBottom: 20 }}>{isSignUp ? '회원가입' : '로그인'} (임시)</h2>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 10, width: '100%', maxWidth: 300 }}>
-        {isSignUp && (
-          <input
-            type="text"
-            placeholder="@닉네임 입력"
-            value={nickname}
-            onChange={(e) => setNickname(e.target.value)}
-            required
-            style={{ border: '2px solid black', padding: '10px 14px', fontSize: 16 }}
-          />
+    <div style={{ padding: 40, color: '#fff', background: '#0A0A0A', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <h1 style={{ fontSize: 24, marginBottom: 20 }}>{mode === 'login' ? '로그인' : '회원가입'}</h1>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12, width: 300 }}>
+        <input placeholder="@닉네임 (user_id)" value={nickname} onChange={e => setNickname(e.target.value)} style={{ padding: 10, color: '#000' }} required />
+        {mode === 'register' && (
+          <input type="email" placeholder="이메일" value={email} onChange={e => setEmail(e.target.value)} style={{ padding: 10, color: '#000' }} required />
         )}
-        <input
-          type="email"
-          placeholder="이메일 입력"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          style={{ border: '2px solid black', padding: '10px 14px', fontSize: 16 }}
-        />
-        <input
-          type="password"
-          placeholder="비밀번호 입력"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-          style={{ border: '2px solid black', padding: '10px 14px', fontSize: 16 }}
-        />
-        <button type="submit" style={{ border: '2px solid black', padding: '10px 20px', background: 'black', color: 'white', cursor: 'pointer', fontSize: 16 }}>
-          {isSignUp ? '가입하기' : '로그인'}
+        <input type="password" placeholder="비밀번호" value={password} onChange={e => setPassword(e.target.value)} style={{ padding: 10, color: '#000' }} required />
+        <button type="submit" style={{ padding: 12, background: '#7C3AED', color: '#fff', border: 'none', cursor: 'pointer' }}>
+          {mode === 'login' ? '로그인' : '회원가입'}
         </button>
       </form>
-      <button 
-        onClick={() => setIsSignUp(!isSignUp)} 
-        style={{ marginTop: 20, background: 'none', border: 'none', textDecoration: 'underline', cursor: 'pointer', fontSize: 14 }}
-      >
-        {isSignUp ? '이미 계정이 있으신가요? 로그인' : '계정이 없으신가요? 회원가입'}
+      <button onClick={() => setMode(m => m === 'login' ? 'register' : 'login')} style={{ marginTop: 20, background: 'none', color: '#888', border: 'none', cursor: 'pointer' }}>
+        {mode === 'login' ? '회원가입하러 가기' : '로그인하러 가기'}
       </button>
-
-      <div style={{ marginTop: 60, borderTop: '1px solid #ccc', paddingTop: 20 }}>
-        <button 
-          onClick={handleSimulateMidnight} 
-          style={{ padding: '8px 16px', fontSize: 12, cursor: 'pointer' }}
-        >
-          자정 시뮬레이션 (Mock 주입)
-        </button>
-      </div>
     </div>
-  );
+  )
 }
 
-/* ─── App ────────────────────────────────────────────────────── */
 export default function App() {
-  const [userId, setUserId] = useState<string | null>(null)
-  
   const [tab, setTab]               = useState<TabId>('wall')
-  const [posts, setPosts]           = useState<Post[]>([])
+  const [posts, setPosts]           = useState<Post[]>(SEED_POSTS)
   const [showModal, setModal]       = useState(false)
   const [viewingPost, setViewingPost]       = useState<Post | null>(null)
   const [viewingProfile, setViewingProfile] = useState<string | null>(null)
 
-  useEffect(() => {
-    const id = localStorage.getItem('user_id')
-    if (id) setUserId(id)
-  }, [])
-
-  useEffect(() => {
-    if (!userId) return;
-    fetch('/api/posts?scope=public')
-      .then(r => r.json())
-      .then((data: any[]) => {
-        if (!Array.isArray(data)) return;
-        const transformed = data.map(d => ({
-          id: d.id,
-          content: d.content,
-          color: DEFAULT_COLORS[Math.floor(hashNum(d.id, 3) * DEFAULT_COLORS.length)],
-          author: d.nickname || d.user_id,
-          timeAgo: '방금 전',
-          nadoroCount: 0,
-          rotation: (hashNum(d.id, 4) - 0.5) * 4,
-          didNadoro: false,
-          category: d.keyword || '기타',
-          date: d.created_at ? d.created_at.split(' ')[0] : TODAY,
-          isOwn: d.user_id === userId,
-          photo: d.photo
-        }));
-        setPosts(transformed);
-      });
-  }, [userId]);
-
   const allMyPosts = posts.filter(p => p.isOwn)
   const myToday    = allMyPosts.filter(p => p.date === TODAY)
 
-  const handleNadoro = (id: string) => {
-    const original = posts.find(p => p.id === id)
-    if (!original) return
-    
-    fetch(`/api/posts/${id}/repost`, { 
-      method: 'POST', 
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ user_id: userId }) 
-    }).catch(e => console.error(e));
-
-    if (!original.didNadoro) {
-      const repost: Post = {
-        id: `repost-${id}`, content: original.content, color: original.color,
-        author: localStorage.getItem('nickname') || userId || '익명', timeAgo: '방금 전', nadoroCount: 0,
-        rotation: (Math.random() - 0.5) * 4,
-        didNadoro: false, category: original.category,
-        date: TODAY, isOwn: true, isRepost: true, repostFrom: original.author,
-        photo: original.photo,
-      }
-      setPosts(prev => [
-        ...prev.map(p => p.id === id ? { ...p, didNadoro: true, nadoroCount: p.nadoroCount + 1 } : p),
-        repost,
-      ])
-      setViewingPost(prev => prev?.id === id ? { ...prev, didNadoro: true, nadoroCount: prev.nadoroCount + 1 } : prev)
-    } else {
-      setPosts(prev => prev
-        .map(p => p.id === id ? { ...p, didNadoro: false, nadoroCount: p.nadoroCount - 1 } : p)
-        .filter(p => p.id !== `repost-${id}`)
-      )
-      setViewingPost(prev => prev?.id === id ? { ...prev, didNadoro: false, nadoroCount: prev.nadoroCount - 1 } : prev)
-    }
-  }
-
-  const handleAdd = (content: string, color: string, category: string, photo?: string) => {
-    const currentNickname = localStorage.getItem('nickname') || userId;
-    fetch('/api/posts', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        content,
-        nickname: currentNickname,
-        user_id: userId,
-        keyword: category,
-        photo
+  const handleNadoro = async (id: string) => {
+    try {
+      const original = posts.find(p => p.id === id)
+      if (!original) return
+      
+      const res = await fetch('/api/posts', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'repost',
+          postId: id,
+          user_id: MY_ID
+        })
       })
-    })
-    .then(r => r.json())
-    .then(data => {
-      if (data.isCampaignMatched) {
-        alert("✨캠페인 키워드 매칭! 온기 2배 적립!");
+      if (res.ok) {
+        fetchPosts(MY_ID)
       }
-      const newPost: Post = {
-        id: data.id || `u${Date.now()}`, content: data.content || content, color, 
-        author: currentNickname || '익명', timeAgo: '방금 전',
-        nadoroCount: 0, rotation: (Math.random() - 0.5) * 4,
-        didNadoro: false, category: data.keyword || category, 
-        date: TODAY, isOwn: true, photo: data.photo || photo,
-      }
-      setPosts(prev => [newPost, ...prev])
-    }).catch(e => console.error(e));
+    } catch (e) { console.error(e) }
   }
 
-  if (!userId) {
-    return <FallbackAuth onAuthSuccess={(uid) => setUserId(uid)} />
+  const handleAdd = async (content: string, color: string, category: string, photo?: string) => {
+    try {
+      const res = await fetch('/api/posts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ content, color, category, author: MY_ID, photo })
+      })
+      if (res.ok) {
+        const data = await res.json()
+        if (data.isCampaignMatched) {
+          alert('✨캠페인 키워드 매칭! 효과가 2배가 됩니다!✨')
+        }
+        fetchPosts(MY_ID)
+      }
+    } catch (e) { console.error(e) }
   }
 
   return (
@@ -1513,7 +1519,6 @@ export default function App() {
           <DiaryTab
             myPosts={allMyPosts}
             onSelectPost={post => setViewingPost(post)}
-            userId={userId}
           />
         )}
       </div>
@@ -1561,9 +1566,9 @@ export default function App() {
       {viewingProfile && (
         <ProfileView
           authorId={viewingProfile}
+          currentUserId={MY_ID}
           allPosts={posts}
           onClose={() => setViewingProfile(null)}
-          currentUserId={userId}
         />
       )}
     </div>
