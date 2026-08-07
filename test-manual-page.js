@@ -4,8 +4,21 @@ const puppeteer = require('puppeteer');
   const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();
   
+  console.log('Navigating to http://localhost:3000/test...');
   await page.goto('http://localhost:3000/test', { waitUntil: 'networkidle2' });
   
+  // 0. Campaign 2x Effect Test
+  console.log('=== Campaign 2x Effect Test ===');
+  await page.type('input[placeholder="Content"]', '이웃에게 인사 했습니다!');
+  await page.click('#btn-create');
+  await new Promise(r => setTimeout(r, 1000));
+  const createOutput = await page.$eval('#output', el => el.innerText);
+  if (createOutput.includes('✨캠페인 참여로 온기 2배!')) {
+    console.log('=> SUCCESS: Campaign 2x effect triggered successfully!');
+  } else {
+    console.log('=> FAILURE: Campaign 2x effect string not found in output.');
+  }
+
   // 1. Get Briefing
   await page.click('#btn-briefing');
   await new Promise(r => setTimeout(r, 1000));

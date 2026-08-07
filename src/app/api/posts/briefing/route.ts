@@ -19,10 +19,38 @@ export async function GET() {
 
     const topKeyword = topKeywordRow?.keyword || '따뜻한 마음';
 
-    // 3. Fallback AI logic (simulated since we don't have an API key)
+    // 3. AI Briefing logic
+    let aiBriefing = null;
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (apiKey) {
+      try {
+        const prompt = `오늘 다솜마을에는 총 ${totalToday}건의 선행이 있었고, 가장 많이 언급된 키워드는 '${topKeyword}'입니다. 이 데이터를 바탕으로 주민들에게 1~2문장의 따뜻한 격려 브리핑을 평어체(해요체)로 작성해주세요.`;
+        
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }]
+          })
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          if (data.candidates && data.candidates[0].content.parts[0].text) {
+            aiBriefing = data.candidates[0].content.parts[0].text.trim();
+          }
+        } else {
+          console.error('Gemini API Error Response:', await response.text());
+        }
+      } catch (e) {
+        console.error('Gemini API Fetch Error:', e);
+      }
+    }
+
+    // Fallback if AI fails or no key
     const fallbackMessage = `오늘 다솜마을에는 ${totalToday}건의 따뜻한 선행이 모였어요! 주로 '${topKeyword}' 관련 선행이 많았네요.`;
 
-    return NextResponse.json({ briefing: fallbackMessage });
+    return NextResponse.json({ briefing: aiBriefing || fallbackMessage });
   } catch (error) {
     console.error('Error generating AI briefing:', error);
     return NextResponse.json({ error: 'Failed to generate briefing' }, { status: 500 });

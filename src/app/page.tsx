@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback } from 'react';
 import ScopeToggle from '@/components/ScopeToggle';
 import PostitForm from '@/components/PostitForm';
 import PostitCard from '@/components/PostitCard';
+import CampaignBanner from '@/components/CampaignBanner';
 
 export default function Home() {
   const [scope, setScope] = useState<'today' | 'all'>('today');
@@ -54,6 +55,7 @@ export default function Home() {
         </a>
       </header>
       
+      <CampaignBanner />
       <PostitForm onSubmit={handlePostSubmit} />
       
       <ScopeToggle scope={scope} onChange={setScope} />
