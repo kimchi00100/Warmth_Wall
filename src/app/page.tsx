@@ -143,9 +143,6 @@ function buildContribGrid(myPosts: Post[], weeks = 18) {
   return result
 }
 
-/* ─── Account ────────────────────────────────────────────────── */
-// MY_ID removed
-
 /* ─── Deterministic hash → 0–1 ──────────────────────────────── */
 function hashNum(s: string, seed: number): number {
   let h = seed * 2654435761
@@ -153,18 +150,15 @@ function hashNum(s: string, seed: number): number {
   return ((h >>> 0) / 0xFFFFFFFF)
 }
 
-/* ─── Scattered canvas layout ─────────────────────────────────
-   3 columns on a canvas ~2× the viewport width so the centered
-   initial view shows all three columns, with posts spilling
-   slightly off both sides to hint at draggability.              */
+/* ─── Scattered canvas layout ───────────────────────────────── */
 const S_NUM_COLS = 3
 const S_COL_W    = 158
 const S_COL_GAP  = 48
 const S_COL_SLOT = S_COL_W + S_COL_GAP
 const S_PAD_X    = 40
 const S_PAD_Y    = 36
-const S_X_JITTER = 22   // ±pixels horizontal scatter within column
-const S_Y_EXTRA  = 52   // 0–N pixels extra vertical gap per row
+const S_X_JITTER = 22
+const S_Y_EXTRA  = 52
 
 function useScatteredLayout(posts: Post[]) {
   return useMemo(() => {
@@ -177,18 +171,13 @@ function useScatteredLayout(posts: Post[]) {
       const cfg = SIZE_CFG[v]
       const cardW = cfg.w
       const cardH = post.photo ? cfg.minH + PHOTO_H : cfg.minH
-
-      // Round-robin guarantees all columns fill evenly
       const col = i % S_NUM_COLS
-
-      const r1 = hashNum(post.id, 1)   // x jitter
-      const r2 = hashNum(post.id, 2)   // y extra gap
-
+      const r1 = hashNum(post.id, 1)
+      const r2 = hashNum(post.id, 2)
       const xBase = S_PAD_X + col * S_COL_SLOT
       const x = xBase + (r1 - 0.5) * 2 * S_X_JITTER
       let y = colH[col] + r2 * S_Y_EXTRA
 
-      // Nudge down if overlapping a placed card
       let tries = 0
       while (tries < 8) {
         const hit = placed.find(p =>
@@ -211,9 +200,6 @@ function useScatteredLayout(posts: Post[]) {
     return { items, canvasW, canvasH }
   }, [posts])
 }
-
-/* ─── Seed data ──────────────────────────────────────────────── */
-const SEED_POSTS: Post[] = []
 
 /* ─── SVG Icons ──────────────────────────────────────────────── */
 function IconWall({ size = 22 }: { size?: number }) {
@@ -424,13 +410,10 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="modal-in" style={{ width: '100%', maxWidth: 480, background: WHITE, border: BORDER, borderBottom: 'none', boxShadow: `0 -6px 0 ${INK}`, borderRadius: '4px 4px 0 0', maxHeight: '88vh', overflowY: 'auto' }}>
-        {/* Color bar */}
         <div style={{ height: 10, background: post.color, borderBottom: BORDER }} />
-
         <div style={{ padding: '0 20px 40px' }}>
           <div style={{ width: 36, height: 4, borderRadius: '2px', background: 'rgba(10,10,10,0.15)', margin: '14px auto 18px' }} />
 
-          {/* Header row */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
             <span style={{
               fontSize: '11px', background: post.color, color: INK,
@@ -442,29 +425,22 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
             </button>
           </div>
 
-          {/* Photo */}
           {post.photo && (
             <div style={{ border: BORDER, borderRadius: '2px', overflow: 'hidden', marginBottom: 18 }}>
               <img src={post.photo} alt="" style={{ width: '100%', maxHeight: 220, objectFit: 'cover', display: 'block' }} />
             </div>
           )}
 
-          {/* Repost badge */}
           {post.isRepost && post.repostFrom && (
             <div style={{ background: INK, color: WHITE, padding: '5px 12px', marginBottom: 12, fontSize: '10px', fontFamily: BODY, fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: 4, borderRadius: '2px' }}>
               ↗ {post.repostFrom}님과 공동 선행
             </div>
           )}
 
-          {/* Content */}
           <p style={{ fontFamily: BODY, fontSize: '20px', fontWeight: 700, color: INK, lineHeight: 1.65, whiteSpace: 'pre-wrap', margin: '0 0 12px' }}>{post.content}</p>
-
           <div style={{ fontFamily: BODY, fontSize: '12px', color: 'rgba(10,10,10,0.38)', fontWeight: 500, marginBottom: 22 }}>{post.timeAgo}</div>
-
-          {/* Divider */}
           <div style={{ height: 2, background: 'rgba(10,10,10,0.1)', marginBottom: 18 }} />
 
-          {/* Nadoro row */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 22 }}>
             <div style={{ fontFamily: BODY, fontSize: '14px', fontWeight: 600, color: INK }}>
               나도요 <span style={{ fontFamily: DISP, fontSize: '26px', color: INK }}>{post.nadoroCount}</span>명
@@ -482,10 +458,8 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
             )}
           </div>
 
-          {/* Divider */}
           <div style={{ height: 2, background: 'rgba(10,10,10,0.1)', marginBottom: 18 }} />
 
-          {/* Author */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
               <div style={{ fontFamily: DISP, fontSize: '19px', color: INK }}>{post.author}</div>
@@ -511,7 +485,6 @@ function PostDetailModal({ post, onClose, onViewProfile, onNadoro }: {
   )
 }
 
-/* ─── Diary Page Entry ───────────────────────────────────────── */
 /* ─── Profile View ───────────────────────────────────────────── */
 function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
   authorId: string
@@ -534,14 +507,19 @@ function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
   const prevDate = dates.find(d => d < selDate) ?? null
   const nextDate = [...dates].reverse().find(d => d > selDate) ?? null
 
+  const CELL = 13
+  const CGAP = 3
+  const CSLOT = CELL + CGAP
+  const DAY_LABELS = ['월','화','수','목','금','토','일']
+  const PAPER_BG   = '#EDE6D3'
+  const PAPER_RULE = 'repeating-linear-gradient(transparent, transparent 31px, rgba(70,100,200,0.07) 31px, rgba(70,100,200,0.07) 32px)'
+
   return (
     <div
       style={{ position: 'fixed', inset: 0, zIndex: 500, background: 'rgba(10,10,10,0.8)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', backdropFilter: 'blur(6px)' }}
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="modal-in" style={{ width: '100%', maxWidth: 480, height: '92vh', background: INK, border: BORDER, borderBottom: 'none', boxShadow: `0 -8px 0 ${INK}, -4px 0 0 ${INK}, 4px 0 0 ${INK}`, borderRadius: '6px 6px 0 0', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-
-        {/* Header */}
         <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER, padding: '14px 18px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             <button onClick={onClose} style={{ background: 'transparent', border: BORDER, width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', borderRadius: '2px', boxShadow: '2px 2px 0 rgba(250,250,250,0.08)', flexShrink: 0 }}>
@@ -559,7 +537,6 @@ function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
           </div>
         </div>
 
-        {/* 잔디밭 */}
         <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER, padding: '12px 16px 13px' }}>
           <div style={{ fontFamily: BODY, fontSize: '10px', color: 'rgba(250,250,250,0.35)', fontWeight: 700, marginBottom: 8, letterSpacing: '0.4px' }}>선행 잔디밭</div>
           <div ref={grassRef} style={{ overflowX: 'auto', scrollbarWidth: 'none' }}>
@@ -607,16 +584,13 @@ function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
           </div>
         </div>
 
-        {/* Notebook page */}
         <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
-          {/* Spiral binding */}
           <div style={{ width: 30, background: '#1A1A1A', borderRight: BORDER, display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 16, gap: 13, flexShrink: 0, overflowY: 'hidden' }}>
             {Array.from({ length: 20 }).map((_, i) => (
               <div key={i} style={{ width: 16, height: 16, borderRadius: '50%', border: '2px solid rgba(150,150,150,0.32)', background: '#111', boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.85)', flexShrink: 0 }} />
             ))}
           </div>
 
-          {/* Scrollable page */}
           <div style={{ flex: 1, overflowY: 'auto', background: PAPER_BG, backgroundImage: PAPER_RULE, position: 'relative' }}>
             <div style={{ position: 'absolute', left: 38, top: 0, bottom: 0, width: 1, background: 'rgba(200,50,40,0.2)', pointerEvents: 'none' }} />
             <div style={{ padding: '20px 14px 28px 10px', position: 'relative', zIndex: 2 }}>
@@ -662,7 +636,6 @@ function ProfileView({ authorId, allPosts, onClose, currentUserId }: {
           </div>
         </div>
 
-        {/* Date nav — jumps between dates that actually have posts */}
         <div style={{ background: INK, borderTop: BORDER, flexShrink: 0, display: 'flex', alignItems: 'stretch' }}>
           <button
             disabled={!prevDate}
@@ -756,7 +729,6 @@ function WallTab({ posts, onNadoro, onSelectPost }: {
   const dragDist   = useRef(0)
   const centeredOnce = useRef(false)
 
-  // Center the canvas when layout is ready
   useEffect(() => {
     if (!centeredOnce.current && containerSize.w > 100 && canvasW > 0) {
       centeredOnce.current = true
@@ -765,7 +737,6 @@ function WallTab({ posts, onNadoro, onSelectPost }: {
     }
   }, [containerSize.w, canvasW])
 
-  // Reset to center when filter/search changes
   useEffect(() => {
     if (!centeredOnce.current) return
     const cx = -Math.max(0, Math.floor((canvasW - containerSize.w) / 2))
@@ -802,8 +773,6 @@ function WallTab({ posts, onNadoro, onSelectPost }: {
     const wasDrag = dragDist.current >= 8
     dragging.current = false
     if (wasDrag) return
-    // Tap detected — find the card under the pointer using elementFromPoint
-    // (pointer capture means e.target is the container, not the actual card)
     const el = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement | null
     if (!el || el.closest('button')) return
     const cardEl = el.closest('[data-postid]') as HTMLElement | null
@@ -996,7 +965,7 @@ const DAY_LABELS = ['월','화','수','목','금','토','일']
 const PAPER_BG   = '#EDE6D3'
 const PAPER_RULE = 'repeating-linear-gradient(transparent, transparent 31px, rgba(70,100,200,0.07) 31px, rgba(70,100,200,0.07) 32px)'
 
-function DiaryTab({ myPosts, onSelectPost }: { myPosts: Post[]; onSelectPost: (post: Post) => void }) {
+function DiaryTab({ myPosts, onSelectPost, userId }: { myPosts: Post[]; onSelectPost: (post: Post) => void; userId: string }) {
   const [selDate, setSelDate] = useState(TODAY)
   const grassRef = useRef<HTMLDivElement>(null)
 
@@ -1017,11 +986,11 @@ function DiaryTab({ myPosts, onSelectPost }: { myPosts: Post[]; onSelectPost: (p
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column', background: INK }}>
 
-      {/* Header */}
       <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER }}>
         <div style={{ padding: '14px 18px 13px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 }}>
           <div>
-            <div style={{ fontFamily: DISP, color: WHITE, fontSize: '30px', lineHeight: 1, letterSpacing: '-0.5px' }}>{MY_ID}</div>
+            {/* MY_ID에서 userId로 교체되어 치명적 런타임 에러 차단 */}
+            <div style={{ fontFamily: DISP, color: WHITE, fontSize: '30px', lineHeight: 1, letterSpacing: '-0.5px' }}>{userId}</div>
             <div style={{ fontFamily: BODY, fontSize: '11px', color: 'rgba(250,250,250,0.38)', margin: '5px 0 0', fontWeight: 500 }}>선행 다이어리</div>
           </div>
           {streak > 0 && (
@@ -1033,7 +1002,6 @@ function DiaryTab({ myPosts, onSelectPost }: { myPosts: Post[]; onSelectPost: (p
         </div>
       </div>
 
-      {/* Grass grid */}
       <div style={{ background: INK, flexShrink: 0, borderBottom: BORDER, padding: '12px 16px 14px' }}>
         <div style={{ fontFamily: BODY, fontSize: '10px', color: 'rgba(250,250,250,0.35)', fontWeight: 700, marginBottom: 8, letterSpacing: '0.4px' }}>나의 선행 잔디밭</div>
         <div ref={grassRef} style={{ overflowX: 'auto', scrollbarWidth: 'none' }}>
@@ -1083,22 +1051,17 @@ function DiaryTab({ myPosts, onSelectPost }: { myPosts: Post[]; onSelectPost: (p
         </div>
       </div>
 
-      {/* Notebook page area */}
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
-        {/* Spiral binding */}
         <div style={{ width: 30, background: '#1A1A1A', borderRight: BORDER, display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 16, gap: 13, flexShrink: 0, overflowY: 'hidden' }}>
           {Array.from({ length: 20 }).map((_, i) => (
             <div key={i} style={{ width: 16, height: 16, borderRadius: '50%', border: '2px solid rgba(150,150,150,0.32)', background: '#111', boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.85)', flexShrink: 0 }} />
           ))}
         </div>
 
-        {/* Page content — scrollable */}
         <div style={{ flex: 1, overflowY: 'auto', background: PAPER_BG, backgroundImage: PAPER_RULE, position: 'relative' }}>
-          {/* Red margin line */}
           <div style={{ position: 'absolute', left: 38, top: 0, bottom: 0, width: 1, background: 'rgba(200,50,40,0.2)', pointerEvents: 'none' }} />
 
           <div style={{ padding: '20px 14px 28px 10px', position: 'relative', zIndex: 2 }}>
-            {/* Date heading */}
             <div style={{ marginBottom: 24, paddingLeft: 10 }}>
               <div style={{ fontFamily: DISP, fontSize: '22px', color: INK, paddingBottom: 6, borderBottom: '2px solid rgba(10,10,10,0.12)', display: 'inline-block' }}>
                 {fmtDate(selDate)}
@@ -1139,7 +1102,6 @@ function DiaryTab({ myPosts, onSelectPost }: { myPosts: Post[]; onSelectPost: (p
         </div>
       </div>
 
-      {/* Date navigation */}
       <div style={{ background: INK, borderTop: BORDER, flexShrink: 0, display: 'flex', alignItems: 'stretch' }}>
         <button
           disabled={!canPrev}
@@ -1321,6 +1283,107 @@ const TABS: { id: TabId; icon: () => React.ReactNode; label: string; accent: str
   { id: 'diary', icon: () => <IconBook  size={20} />, label: '다이어리',    accent: '#FF9DBB' },
 ]
 
+/* ─── Fallback Auth Component ────────────────────────────────── */
+function FallbackAuth({ onAuthSuccess }: { onAuthSuccess: (uid: string) => void }) {
+  const [isSignUp, setIsSignUp] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [nickname, setNickname] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const endpoint = isSignUp ? '/api/auth/signup' : '/api/auth/login';
+    const payload = isSignUp ? { email, password, nickname } : { email, password };
+
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) {
+        alert(isSignUp ? '회원가입에 실패했습니다.' : '로그인에 실패했습니다.');
+        return;
+      }
+      const data = await res.json();
+      const uid = data.user_id || email;
+      localStorage.setItem('user_id', uid);
+      if (data.nickname) localStorage.setItem('nickname', data.nickname);
+      onAuthSuccess(uid);
+    } catch (err) {
+      console.error(err);
+      alert('에러가 발생했습니다.');
+    }
+  };
+
+  const handleSimulateMidnight = async () => {
+    try {
+      const res = await fetch('/api/cron/demo', { method: 'POST' });
+      if (res.ok) {
+        alert('자정 시뮬레이션(Mock 주입) 완료!');
+        window.location.reload();
+      } else {
+        alert('시뮬레이션 실패');
+      }
+    } catch (e) {
+      console.error(e);
+      alert('호출 중 에러 발생');
+    }
+  };
+
+  return (
+    <div style={{ padding: 40, background: 'white', color: 'black', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <h2 style={{ marginBottom: 20 }}>{isSignUp ? '회원가입' : '로그인'} (임시)</h2>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 10, width: '100%', maxWidth: 300 }}>
+        {isSignUp && (
+          <input
+            type="text"
+            placeholder="@닉네임 입력"
+            value={nickname}
+            onChange={(e) => setNickname(e.target.value)}
+            required
+            style={{ border: '2px solid black', padding: '10px 14px', fontSize: 16 }}
+          />
+        )}
+        <input
+          type="email"
+          placeholder="이메일 입력"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          style={{ border: '2px solid black', padding: '10px 14px', fontSize: 16 }}
+        />
+        <input
+          type="password"
+          placeholder="비밀번호 입력"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+          style={{ border: '2px solid black', padding: '10px 14px', fontSize: 16 }}
+        />
+        <button type="submit" style={{ border: '2px solid black', padding: '10px 20px', background: 'black', color: 'white', cursor: 'pointer', fontSize: 16 }}>
+          {isSignUp ? '가입하기' : '로그인'}
+        </button>
+      </form>
+      <button 
+        onClick={() => setIsSignUp(!isSignUp)} 
+        style={{ marginTop: 20, background: 'none', border: 'none', textDecoration: 'underline', cursor: 'pointer', fontSize: 14 }}
+      >
+        {isSignUp ? '이미 계정이 있으신가요? 로그인' : '계정이 없으신가요? 회원가입'}
+      </button>
+
+      <div style={{ marginTop: 60, borderTop: '1px solid #ccc', paddingTop: 20 }}>
+        <button 
+          onClick={handleSimulateMidnight} 
+          style={{ padding: '8px 16px', fontSize: 12, cursor: 'pointer' }}
+        >
+          자정 시뮬레이션 (Mock 주입)
+        </button>
+      </div>
+    </div>
+  );
+}
+
 /* ─── App ────────────────────────────────────────────────────── */
 export default function App() {
   const [userId, setUserId] = useState<string | null>(null)
@@ -1366,12 +1429,17 @@ export default function App() {
   const handleNadoro = (id: string) => {
     const original = posts.find(p => p.id === id)
     if (!original) return
-    fetch(`/api/posts/${id}/repost`, { method: 'POST', body: JSON.stringify({ user_id: userId }) }).catch(e=>console.error(e));
+    
+    fetch(`/api/posts/${id}/repost`, { 
+      method: 'POST', 
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ user_id: userId }) 
+    }).catch(e => console.error(e));
 
     if (!original.didNadoro) {
       const repost: Post = {
         id: `repost-${id}`, content: original.content, color: original.color,
-        author: userId || '익명', timeAgo: '방금 전', nadoroCount: 0,
+        author: localStorage.getItem('nickname') || userId || '익명', timeAgo: '방금 전', nadoroCount: 0,
         rotation: (Math.random() - 0.5) * 4,
         didNadoro: false, category: original.category,
         date: TODAY, isOwn: true, isRepost: true, repostFrom: original.author,
@@ -1392,12 +1460,13 @@ export default function App() {
   }
 
   const handleAdd = (content: string, color: string, category: string, photo?: string) => {
+    const currentNickname = localStorage.getItem('nickname') || userId;
     fetch('/api/posts', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         content,
-        nickname: userId,
+        nickname: currentNickname,
         user_id: userId,
         keyword: category,
         photo
@@ -1410,7 +1479,7 @@ export default function App() {
       }
       const newPost: Post = {
         id: data.id || `u${Date.now()}`, content: data.content || content, color, 
-        author: userId || '익명', timeAgo: '방금 전',
+        author: currentNickname || '익명', timeAgo: '방금 전',
         nadoroCount: 0, rotation: (Math.random() - 0.5) * 4,
         didNadoro: false, category: data.keyword || category, 
         date: TODAY, isOwn: true, photo: data.photo || photo,
@@ -1420,20 +1489,7 @@ export default function App() {
   }
 
   if (!userId) {
-    return (
-      <div style={{ padding: 40, background: 'white', color: 'black', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-        <h2 style={{ marginBottom: 20 }}>로그인 / 회원가입</h2>
-        <form onSubmit={e => {
-          e.preventDefault();
-          const uid = (new FormData(e.currentTarget)).get('uid') as string;
-          localStorage.setItem('user_id', uid);
-          setUserId(uid);
-        }} style={{ display: 'flex', gap: 10 }}>
-          <input name="uid" placeholder="유저 ID 입력" required style={{ border: '2px solid black', padding: '10px 14px', fontSize: 16 }} />
-          <button type="submit" style={{ border: '2px solid black', padding: '10px 20px', background: 'black', color: 'white', cursor: 'pointer', fontSize: 16 }}>접속</button>
-        </form>
-      </div>
-    );
+    return <FallbackAuth onAuthSuccess={(uid) => setUserId(uid)} />
   }
 
   return (
@@ -1457,6 +1513,7 @@ export default function App() {
           <DiaryTab
             myPosts={allMyPosts}
             onSelectPost={post => setViewingPost(post)}
+            userId={userId}
           />
         )}
       </div>
