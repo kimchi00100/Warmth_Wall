@@ -34,3 +34,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+ 
+# Security and personal files
+.env
+*.key
+id_rsa
+*credentials*
+*research*
+*memo*
+personal/
+notes/
+.agents/
+project_state.md
+hackathon_strategy.md
+*.db
+*.db-*
