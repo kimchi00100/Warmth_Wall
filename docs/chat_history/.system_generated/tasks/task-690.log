@@ -1,0 +1,130 @@
+Deleted branch public-deploy (was f45a941).
+Switched to a new branch 'public-deploy'
+rm '.agents/rules/antigravity_core_rules.md'
+rm '.eslintrc.json'
+rm '.gitignore'
+rm 'README.md'
+rm 'hackathon_strategy.md'
+rm 'layout-screenshot.png'
+rm 'next.config.mjs'
+rm 'package-lock.json'
+rm 'package.json'
+rm 'postcss.config.mjs'
+rm 'project_state.md'
+rm 'src/app/api/posts/[id]/repost/route.ts'
+rm 'src/app/api/posts/briefing/route.ts'
+rm 'src/app/api/posts/count/today/route.ts'
+rm 'src/app/api/posts/route.ts'
+rm 'src/app/favicon.ico'
+rm 'src/app/fonts/GeistMonoVF.woff'
+rm 'src/app/fonts/GeistVF.woff'
+rm 'src/app/globals.css'
+rm 'src/app/layout.tsx'
+rm 'src/app/page.tsx'
+rm 'src/app/public/page.tsx'
+rm 'src/app/test-layout/page.tsx'
+rm 'src/app/test/page.tsx'
+rm 'src/components/BriefingBanner.tsx'
+rm 'src/components/CampaignBanner.tsx'
+rm 'src/components/PostitCard.tsx'
+rm 'src/components/PostitForm.tsx'
+rm 'src/components/ScopeToggle.tsx'
+rm 'src/components/WarmthCounter.tsx'
+rm 'src/lib/campaignData.ts'
+rm 'src/lib/db.ts'
+rm 'src/lib/mockData.ts'
+rm 'tailwind.config.ts'
+rm 'test-api-v2.ts'
+rm 'test-api-v3.js'
+rm 'test-api.js'
+rm 'test-campaign-ui.js'
+rm 'test-db.ts'
+rm 'test-manual-page.js'
+rm 'test-repost.js'
+rm 'test-ui.js'
+rm 'tsconfig.json'
+rm 'visual-test.js'
+warning: in the working copy of '.eslintrc.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'next.config.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'postcss.config.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/api/posts/[id]/repost/route.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/api/posts/briefing/route.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/api/posts/count/today/route.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/api/posts/route.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/globals.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/layout.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/public/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/test-layout/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/test/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/BriefingBanner.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/CampaignBanner.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/PostitCard.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/PostitForm.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/ScopeToggle.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/WarmthCounter.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/campaignData.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/db.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/mockData.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tailwind.config.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-api-v2.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-api-v3.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-api.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-campaign-ui.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-db.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-manual-page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-repost.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-ui.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'visual-test.js', LF will be replaced by CRLF the next time Git touches it
+[public-deploy (root-commit) 541c018] Auto deploy: 최종 배포 (README 추가)
+ 41 files changed, 7899 insertions(+)
+ create mode 100644 .eslintrc.json
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 layout-screenshot.png
+ create mode 100644 next.config.mjs
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 postcss.config.mjs
+ create mode 100644 src/app/api/posts/[id]/repost/route.ts
+ create mode 100644 src/app/api/posts/briefing/route.ts
+ create mode 100644 src/app/api/posts/count/today/route.ts
+ create mode 100644 src/app/api/posts/route.ts
+ create mode 100644 src/app/favicon.ico
+ create mode 100644 src/app/fonts/GeistMonoVF.woff
+ create mode 100644 src/app/fonts/GeistVF.woff
+ create mode 100644 src/app/globals.css
+ create mode 100644 src/app/layout.tsx
+ create mode 100644 src/app/page.tsx
+ create mode 100644 src/app/public/page.tsx
+ create mode 100644 src/app/test-layout/page.tsx
+ create mode 100644 src/app/test/page.tsx
+ create mode 100644 src/components/BriefingBanner.tsx
+ create mode 100644 src/components/CampaignBanner.tsx
+ create mode 100644 src/components/PostitCard.tsx
+ create mode 100644 src/components/PostitForm.tsx
+ create mode 100644 src/components/ScopeToggle.tsx
+ create mode 100644 src/components/WarmthCounter.tsx
+ create mode 100644 src/lib/campaignData.ts
+ create mode 100644 src/lib/db.ts
+ create mode 100644 src/lib/mockData.ts
+ create mode 100644 tailwind.config.ts
+ create mode 100644 test-api-v2.ts
+ create mode 100644 test-api-v3.js
+ create mode 100644 test-api.js
+ create mode 100644 test-campaign-ui.js
+ create mode 100644 test-db.ts
+ create mode 100644 test-manual-page.js
+ create mode 100644 test-repost.js
+ create mode 100644 test-ui.js
+ create mode 100644 tsconfig.json
+ create mode 100644 visual-test.js
+To https://github.com/kimchi00100/Dasom_Warmth_Wall.git
+ + f45a941...541c018 public-deploy -> main (forced update)
+Switched to branch 'local-dev'
+Your branch is up to date with 'origin-a/local-dev'.

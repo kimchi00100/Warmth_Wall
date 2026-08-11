@@ -1,0 +1,16 @@
+--- PREPARING TEST DATA ---
+Updated 10 mock posts to yesterday.
+
+--- GET /api/posts?scope=today&session_id=mock_session_id ---
+Today count (should be 10): 10
+
+--- GET /api/posts?scope=all&session_id=mock_session_id ---
+All count (should be 20): 20
+
+--- POST /api/posts/[id]/repost ---
+Repost status: 201
+New repost ID: 6357169c-1a54-4829-b964-30933094db12
+
+--- VERIFY REPOST COUNT IN DB ---
+Original Post ID: 176735e4-8cc0-446c-966d-3d875a5376c4
+Child count in DB: 1

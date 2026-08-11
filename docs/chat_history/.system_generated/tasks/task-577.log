@@ -1,0 +1,3 @@
+Navigating to http://localhost:3000/...
+=== Campaign 2x Effect UI Test ===
+=> FAILURE: Effect not found in post text. Post text: null

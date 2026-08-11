@@ -1,0 +1,13 @@
+
+> warmth-wall@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 3.2s
+ ○ Compiling /api/posts ...
+ ✓ Compiled /api/posts in 519ms (60 modules)
+ POST /api/posts 201 in 719ms
+ GET /api/posts?scope=public 200 in 18ms

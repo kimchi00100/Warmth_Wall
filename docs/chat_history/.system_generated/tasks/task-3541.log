@@ -1,0 +1,23 @@
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git add . 
+warning: in the working copy of 'backup.bat', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git commit -m "feat: implement grape field seeding, midnight reset UI toggle, and own post deletion" 
+[local-dev a42d399] feat: implement grape field seeding, midnight reset UI toggle, and own post deletion
+ 11 files changed, 725 insertions(+), 72 deletions(-)
+ create mode 100644 backup.bat
+ create mode 100644 generate_68_posts.js
+ create mode 100644 move_dates.js
+ create mode 100644 patch_ui2.py
+ create mode 100644 patch_zoom.py
+ create mode 100644 restore.py
+ create mode 100644 seed_grape_field.js
+ create mode 100644 set_event.js
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git push origin-a local-dev 
+To https://github.com/kimchi00100/Warmth_Wall.git
+   4f138a7..a42d399  local-dev -> local-dev
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git push origin-b local-dev 
+To https://github.com/kimchi00100/Dasom_Warmth_Wall.git
+   ab9f4c4..a42d399  local-dev -> local-dev

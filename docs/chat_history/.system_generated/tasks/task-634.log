@@ -1,0 +1,72 @@
+=== AI Briefing Test ===
+{
+  "briefing": "오늘 우리 다솜마을에는 '친절'이라는 고운 마음이 모여 무려 21건의 따뜻한 선행이 이어졌어요. \n\n서로에게 다정한 이웃이 되어주신 주민 여러분 덕분에 오늘도 우리 마을은 훈훈함으로 가득하네요."
+}
+
+=== Repost & Scope=Today Verify ===
+[Repost Result]
+{
+  "id": "d8c97469-0429-4f34-8a2c-dbf27542df4e",
+  "content": "오늘 이웃에게 먼저 인사 했어요! (✨캠페인 참여로 온기 2배!)",
+  "keyword": null,
+  "nickname": null,
+  "session_id": "manual_test_session_id",
+  "parent_id": "54621c5d-a39b-4c4c-bc29-3c7156ed57cf",
+  "is_mock": 0,
+  "created_at": "2026-08-07 11:59:27"
+}
+
+[Auto-Fetch scope=today]
+Count: 5
+Data: [
+  {
+    "id": "d8c97469-0429-4f34-8a2c-dbf27542df4e",
+    "content": "오늘 이웃에게 먼저 인사 했어요! (✨캠페인 참여로 온기 2배!)",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "54621c5d-a39b-4c4c-bc29-3c7156ed57cf",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:59:27"
+  },
+  {
+    "id": "23f0b61a-318c-47df-98ac-d3654325b72c",
+    "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "3d4616c5-52e0-4008-9148-ef8b8c6c7ab5",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:51:48"
+  },
+  {
+    "id": "3d4616c5-52e0-4008-9148-ef8b8c6c7ab5",
+    "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "d5e73112-8649-49a4-b994-35232b5b7f1d",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:50:04"
+  },
+  {
+    "id": "d5e73112-8649-49a4-b994-35232b5b7f1d",
+    "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "1fa116db-309e-43c5-89cd-8738e26a866d",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:49:17"
+  },
+  {
+    "id": "1fa116db-309e-43c5-89cd-8738e26a866d",
+    "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "b49bd8da-d0f7-4bb3-b56d-4fb7f985a113",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:37:25"
+  }
+]

@@ -1,0 +1,114 @@
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/api/posts/count/today/route.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/public/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/PostitCard.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/PostitForm.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/ScopeToggle.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/WarmthCounter.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-api-v2.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-ui.js', LF will be replaced by CRLF the next time Git touches it
+[local-dev 866ca94] Auto backup: 단계 4 완료 ('우리의 벽' 및 총량 카운터)
+ 12 files changed, 783 insertions(+), 106 deletions(-)
+ create mode 100644 src/app/api/posts/count/today/route.ts
+ create mode 100644 src/app/public/page.tsx
+ create mode 100644 src/components/PostitCard.tsx
+ create mode 100644 src/components/PostitForm.tsx
+ create mode 100644 src/components/ScopeToggle.tsx
+ create mode 100644 src/components/WarmthCounter.tsx
+ create mode 100644 test-api-v2.ts
+ create mode 100644 test-ui.js
+To https://github.com/kimchi00100/Warmth_Wall.git
+   973ad77..866ca94  local-dev -> local-dev
+Deleted branch public-deploy (was 03983e8).
+Switched to a new branch 'public-deploy'
+rm '.agents/rules/antigravity_core_rules.md'
+rm '.eslintrc.json'
+rm '.gitignore'
+rm 'README.md'
+rm 'hackathon_strategy.md'
+rm 'next.config.mjs'
+rm 'package-lock.json'
+rm 'package.json'
+rm 'postcss.config.mjs'
+rm 'project_state.md'
+rm 'src/app/api/posts/[id]/repost/route.ts'
+rm 'src/app/api/posts/count/today/route.ts'
+rm 'src/app/api/posts/route.ts'
+rm 'src/app/favicon.ico'
+rm 'src/app/fonts/GeistMonoVF.woff'
+rm 'src/app/fonts/GeistVF.woff'
+rm 'src/app/globals.css'
+rm 'src/app/layout.tsx'
+rm 'src/app/page.tsx'
+rm 'src/app/public/page.tsx'
+rm 'src/components/PostitCard.tsx'
+rm 'src/components/PostitForm.tsx'
+rm 'src/components/ScopeToggle.tsx'
+rm 'src/components/WarmthCounter.tsx'
+rm 'src/lib/db.ts'
+rm 'src/lib/mockData.ts'
+rm 'tailwind.config.ts'
+rm 'test-api-v2.ts'
+rm 'test-api.js'
+rm 'test-db.ts'
+rm 'test-ui.js'
+rm 'tsconfig.json'
+warning: in the working copy of '.eslintrc.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'next.config.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'postcss.config.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/api/posts/[id]/repost/route.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/api/posts/count/today/route.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/api/posts/route.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/globals.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/layout.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/public/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/PostitCard.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/PostitForm.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/ScopeToggle.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/WarmthCounter.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/db.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/mockData.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tailwind.config.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-api-v2.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-api.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-db.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test-ui.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+[public-deploy (root-commit) b4e6a05] Auto deploy: 단계 4 ('우리의 벽' 및 총량 카운터) 완료
+ 29 files changed, 7434 insertions(+)
+ create mode 100644 .eslintrc.json
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 next.config.mjs
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 postcss.config.mjs
+ create mode 100644 src/app/api/posts/[id]/repost/route.ts
+ create mode 100644 src/app/api/posts/count/today/route.ts
+ create mode 100644 src/app/api/posts/route.ts
+ create mode 100644 src/app/favicon.ico
+ create mode 100644 src/app/fonts/GeistMonoVF.woff
+ create mode 100644 src/app/fonts/GeistVF.woff
+ create mode 100644 src/app/globals.css
+ create mode 100644 src/app/layout.tsx
+ create mode 100644 src/app/page.tsx
+ create mode 100644 src/app/public/page.tsx
+ create mode 100644 src/components/PostitCard.tsx
+ create mode 100644 src/components/PostitForm.tsx
+ create mode 100644 src/components/ScopeToggle.tsx
+ create mode 100644 src/components/WarmthCounter.tsx
+ create mode 100644 src/lib/db.ts
+ create mode 100644 src/lib/mockData.ts
+ create mode 100644 tailwind.config.ts
+ create mode 100644 test-api-v2.ts
+ create mode 100644 test-api.js
+ create mode 100644 test-db.ts
+ create mode 100644 test-ui.js
+ create mode 100644 tsconfig.json

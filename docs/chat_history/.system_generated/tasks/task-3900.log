@@ -1,0 +1,1237 @@
+
+> warmth-wall@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.9s
+ ○ Compiling / ...
+ ✓ Compiled / in 3s (501 modules)
+ ✓ Compiled in 571ms (245 modules)
+ GET / 200 in 3649ms
+ ✓ Compiled /api/posts/briefing in 327ms (286 modules)
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 718ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 130ms
+ ✓ Compiled /api/auth/signup in 124ms (290 modules)
+ POST /api/auth/signup 400 in 180ms
+ ✓ Compiled /api/auth/login in 127ms (292 modules)
+ POST /api/auth/login 401 in 290ms
+ POST /api/auth/signup 201 in 89ms
+ ✓ Compiled /api/posts in 175ms (292 modules)
+ ✓ Compiled (294 modules)
+ POST /api/auth/attend 200 in 473ms
+ POST /api/auth/attend 200 in 488ms
+ GET /api/posts?scope=public 200 in 501ms
+ ✓ Compiled /api/auth/me in 183ms (296 modules)
+ GET /api/auth/me?user_id=ca9cc956-9342-41f5-ba06-c0f8bdd3252c 200 in 336ms
+ GET /api/posts?scope=public 200 in 348ms
+ GET /api/auth/me?user_id=ca9cc956-9342-41f5-ba06-c0f8bdd3252c 200 in 21ms
+ POST /api/auth/login 200 in 105ms
+ POST /api/auth/attend 200 in 44ms
+ POST /api/auth/attend 200 in 41ms
+ GET /api/posts?scope=public 200 in 81ms
+ GET /api/auth/me?user_id=ca9cc956-9342-41f5-ba06-c0f8bdd3252c 200 in 113ms
+ GET /api/posts?scope=public 200 in 110ms
+ GET /api/auth/me?user_id=ca9cc956-9342-41f5-ba06-c0f8bdd3252c 200 in 14ms
+ POST /api/auth/login 200 in 105ms
+ POST /api/auth/attend 200 in 20ms
+ POST /api/auth/attend 200 in 41ms
+ GET /api/posts?scope=public 200 in 51ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 68ms
+ GET /api/posts?scope=public 200 in 128ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 92ms
+ POST /api/auth/signup 201 in 105ms
+ POST /api/auth/attend 200 in 31ms
+ POST /api/auth/attend 200 in 49ms
+ GET /api/posts?scope=public 200 in 63ms
+ GET /api/auth/me?user_id=29dc6048-7920-47d1-9022-f941c9035237 200 in 104ms
+ GET /api/posts?scope=public 200 in 141ms
+ GET /api/auth/me?user_id=29dc6048-7920-47d1-9022-f941c9035237 200 in 129ms
+ POST /api/auth/login 200 in 87ms
+ POST /api/auth/attend 200 in 48ms
+ POST /api/auth/attend 200 in 47ms
+ GET /api/posts?scope=public 200 in 51ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 32ms
+ GET /api/posts?scope=public 200 in 54ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 15ms
+ POST /api/posts 201 in 14ms
+ POST /api/auth/attend 200 in 15ms
+ GET /api/posts?scope=public 200 in 22ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 18ms
+ POST /api/posts 201 in 12ms
+ POST /api/auth/attend 200 in 15ms
+ GET /api/posts?scope=public 200 in 20ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 19ms
+ POST /api/posts 201 in 15ms
+ POST /api/auth/attend 200 in 17ms
+ GET /api/posts?scope=public 200 in 22ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 20ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1133ms (539 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1411ms
+ GET / 200 in 143ms
+ ✓ Compiled /api/posts in 402ms (286 modules)
+ ✓ Compiled (291 modules)
+ GET /api/posts?scope=public 200 in 509ms
+ POST /api/auth/attend 200 in 521ms
+ POST /api/auth/attend 200 in 535ms
+ GET /api/posts?scope=public 200 in 19ms
+ ✓ Compiled /api/auth/me in 99ms (293 modules)
+ GET /api/auth/me?user_id=@dasom_ai 200 in 148ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 13ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 959ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 113ms
+ ✓ Compiled /api/auth/login in 173ms (288 modules)
+ POST /api/auth/login 200 in 308ms
+ ✓ Compiled /api/posts in 133ms (290 modules)
+ ✓ Compiled (292 modules)
+ GET /api/posts?scope=public 200 in 325ms
+ POST /api/auth/attend 200 in 375ms
+ POST /api/auth/attend 200 in 378ms
+ GET /api/posts?scope=public 200 in 77ms
+ ✓ Compiled /api/auth/me in 167ms (294 modules)
+ GET /api/auth/me?user_id=@dasom_ai 200 in 263ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 37ms
+ POST /api/posts 201 in 14ms
+ POST /api/auth/attend 200 in 17ms
+ GET /api/posts?scope=public 200 in 24ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 17ms
+ POST /api/posts 201 in 11ms
+ POST /api/auth/attend 200 in 11ms
+ GET /api/posts?scope=public 200 in 19ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 45ms
+ GET / 200 in 127ms
+ ✓ Compiled /api/posts in 339ms (286 modules)
+ ✓ Compiled (291 modules)
+ POST /api/auth/attend 200 in 310ms
+ POST /api/auth/attend 200 in 307ms
+ GET /api/posts?scope=public 200 in 316ms
+ ✓ Compiled /api/auth/me in 250ms (293 modules)
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 808ms
+ ✓ Compiled in 1ms (293 modules)
+ GET /api/posts?scope=public 200 in 460ms
+ ✓ Compiled in 0ms (293 modules)
+ ✓ Compiled in 0ms (293 modules)
+ GET /api/auth/me?user_id=@dasom_ai 200 in 806ms
+ ✓ Compiled in 1ms (293 modules)
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 897ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 686ms
+ ✓ Compiled /api/auth/login in 163ms (296 modules)
+ POST /api/auth/login 200 in 279ms
+ POST /api/auth/attend 200 in 45ms
+ POST /api/auth/attend 200 in 45ms
+ GET /api/posts?scope=public 200 in 43ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 29ms
+ GET /api/posts?scope=public 200 in 46ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 32ms
+ POST /api/posts 201 in 55ms
+ POST /api/auth/attend 200 in 14ms
+ GET /api/posts?scope=public 200 in 23ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 15ms
+ POST /api/posts 201 in 17ms
+ POST /api/auth/attend 200 in 14ms
+ GET /api/posts?scope=public 200 in 21ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 14ms
+ ✓ Compiled /api/posts/[id]/repost in 224ms (293 modules)
+ POST /api/posts/575c502a-4f46-4e2e-b0ed-a3ae682d3521/repost 201 in 941ms
+ POST /api/auth/attend 200 in 17ms
+ GET /api/posts?scope=public 200 in 26ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 31ms
+ POST /api/posts 201 in 11ms
+ GET / 200 in 202ms
+ ✓ Compiled /api/posts/briefing in 225ms (295 modules)
+ POST /api/auth/attend 200 in 157ms
+ POST /api/auth/attend 200 in 156ms
+ GET /api/posts?scope=public 200 in 166ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 45ms
+ GET /api/posts?scope=public 200 in 80ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 111ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 598ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 125ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1213ms (543 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1267ms
+ ✓ Compiled in 1100ms (501 modules)
+ ✓ Compiled /api/posts in 130ms (286 modules)
+ ✓ Compiled (289 modules)
+ POST /api/auth/attend 200 in 442ms
+ GET /api/posts?scope=public 200 in 470ms
+ ✓ Compiled /api/auth/me in 117ms (291 modules)
+ GET /api/auth/me?user_id=@dasom_ai 200 in 177ms
+ GET / 200 in 140ms
+ ✓ Compiled /api/posts in 297ms (286 modules)
+ ✓ Compiled (291 modules)
+ POST /api/auth/attend 200 in 301ms
+ POST /api/auth/attend 200 in 302ms
+ GET /api/posts?scope=public 200 in 311ms
+ ✓ Compiled /api/auth/me in 225ms (293 modules)
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 858ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 450ms
+ GET /api/posts?scope=public 200 in 456ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 21ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 165ms
+ ✓ Compiled in 818ms (538 modules)
+ POST /api/auth/attend 200 in 47ms
+ GET /api/posts?scope=public 200 in 58ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 23ms
+ ✓ Compiled in 553ms (536 modules)
+ POST /api/auth/attend 200 in 32ms
+ GET /api/posts?scope=public 200 in 43ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 17ms
+ GET / 200 in 116ms
+ ✓ Compiled /api/posts/briefing in 286ms (293 modules)
+ POST /api/auth/attend 200 in 413ms
+ POST /api/auth/attend 200 in 414ms
+ GET /api/posts?scope=public 200 in 340ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 34ms
+ GET /api/posts?scope=public 200 in 44ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 25ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 843ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 137ms
+ GET / 200 in 118ms
+ GET /api/posts?scope=public 200 in 33ms
+ POST /api/auth/attend 200 in 49ms
+ POST /api/auth/attend 200 in 50ms
+ GET /api/posts?scope=public 200 in 54ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 29ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 19ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 247ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 97ms
+ GET / 200 in 58ms
+ POST /api/auth/attend 200 in 23ms
+ POST /api/auth/attend 200 in 60ms
+ GET /api/posts?scope=public 200 in 64ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 36ms
+ GET /api/posts?scope=public 200 in 26ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 28ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 265ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 102ms
+ GET / 200 in 35ms
+ POST /api/auth/attend 200 in 28ms
+ POST /api/auth/attend 200 in 27ms
+ GET /api/posts?scope=public 200 in 52ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 57ms
+ GET /api/posts?scope=public 200 in 54ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 64ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 257ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 102ms
+ ✓ Compiled /api/posts/[id]/repost in 298ms (295 modules)
+ POST /api/posts/c5d2048d-a5fb-451b-b5ab-68f25e807df2/repost 201 in 380ms
+ POST /api/auth/attend 200 in 19ms
+ GET /api/posts?scope=public 200 in 29ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 30ms
+ ✓ Compiled /api/posts/[id] in 142ms (297 modules)
+ DELETE /api/posts/c5d2048d-a5fb-451b-b5ab-68f25e807df2?user_id=@dasom_ai 200 in 695ms
+ GET /api/posts?scope=public 200 in 19ms
+ POST /api/auth/attend 200 in 28ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 18ms
+ GET / 200 in 126ms
+ POST /api/auth/attend 200 in 81ms
+ POST /api/auth/attend 200 in 78ms
+ GET /api/posts?scope=public 200 in 31ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 18ms
+ GET /api/posts?scope=public 200 in 25ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 27ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 295ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 117ms
+ GET / 200 in 58ms
+ POST /api/auth/attend 200 in 28ms
+ GET /api/posts?scope=public 200 in 52ms
+ POST /api/auth/attend 200 in 67ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 175ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 95ms
+ GET /api/posts?scope=public 200 in 81ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 46ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 144ms
+ POST /api/posts 201 in 11ms
+ POST /api/auth/attend 200 in 16ms
+ GET /api/posts?scope=public 200 in 23ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 22ms
+ ✓ Compiled /api/cron/event in 238ms (295 modules)
+Gemini API Error Response: 401 {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/cron/event 200 in 554ms
+ GET / 200 in 65ms
+ POST /api/auth/attend 200 in 59ms
+ POST /api/auth/attend 200 in 87ms
+ GET /api/posts?scope=public 200 in 96ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 182ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 68ms
+ GET /api/posts?scope=public 200 in 63ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 51ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 160ms
+ ✓ Compiled /api/posts/[id]/repost in 106ms (297 modules)
+ POST /api/posts/fe4ee98c-1871-4d98-b353-efe881bf6e81/repost 201 in 155ms
+ POST /api/auth/attend 200 in 16ms
+ GET /api/posts?scope=public 200 in 20ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 54ms
+ ✓ Compiled /api/posts/[id] in 143ms (299 modules)
+ DELETE /api/posts/fe4ee98c-1871-4d98-b353-efe881bf6e81?user_id=@dasom_ai 200 in 202ms
+ GET /api/posts?scope=public 200 in 23ms
+ POST /api/auth/attend 200 in 35ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 23ms
+ GET / 200 in 62ms
+ POST /api/auth/attend 200 in 57ms
+ POST /api/auth/attend 200 in 56ms
+ GET /api/posts?scope=public 200 in 60ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 29ms
+ GET /api/posts?scope=public 200 in 54ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 41ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 324ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 157ms
+ GET / 200 in 60ms
+ GET /api/posts?scope=public 200 in 38ms
+ POST /api/auth/attend 200 in 55ms
+ POST /api/auth/attend 200 in 54ms
+ GET /api/posts?scope=public 200 in 30ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 14ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 22ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 283ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 118ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 16ms
+ POST /api/posts/589c9fb9-b382-4e40-9727-6e48d912b14e/repost 201 in 27ms
+ POST /api/auth/attend 200 in 19ms
+ GET /api/posts?scope=public 200 in 24ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 14ms
+ DELETE /api/posts/589c9fb9-b382-4e40-9727-6e48d912b14e?user_id=@dasom_ai 200 in 24ms
+ POST /api/auth/attend 200 in 27ms
+ GET /api/posts?scope=public 200 in 37ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 21ms
+ GET / 200 in 74ms
+ POST /api/auth/attend 200 in 25ms
+ POST /api/auth/attend 200 in 24ms
+ GET /api/posts?scope=public 200 in 46ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 41ms
+ GET /api/posts?scope=public 200 in 34ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 23ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 258ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 126ms
+ ✓ Compiled /api/auth/login in 211ms (300 modules)
+ POST /api/auth/login 200 in 325ms
+ POST /api/auth/attend 200 in 35ms
+ POST /api/auth/attend 200 in 34ms
+ GET /api/posts?scope=public 200 in 42ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 26ms
+ GET /api/posts?scope=public 200 in 40ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 19ms
+ POST /api/posts/b5ff5693-47bf-4a51-bd7d-2365f6be08ac/repost 201 in 30ms
+ POST /api/auth/attend 200 in 20ms
+ GET /api/posts?scope=public 200 in 27ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 16ms
+ DELETE /api/posts/b5ff5693-47bf-4a51-bd7d-2365f6be08ac?user_id=@dasom_ai 200 in 19ms
+ POST /api/auth/attend 200 in 15ms
+ GET /api/posts?scope=public 200 in 23ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 13ms
+ GET / 200 in 70ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 259ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 121ms
+ GET / 200 in 36ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 255ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 109ms
+ GET / 200 in 90ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 123ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 106ms
+ GET / 200 in 66ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 269ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 105ms
+ ✓ Compiled /api/auth/signup in 284ms (288 modules)
+ POST /api/auth/signup 400 in 371ms
+ POST /api/auth/signup 201 in 106ms
+ ✓ Compiled /api/auth/attend in 139ms (290 modules)
+ ✓ Compiled (292 modules)
+ POST /api/auth/attend 200 in 396ms
+ POST /api/auth/attend 200 in 396ms
+ GET /api/posts?scope=public 200 in 418ms
+ ✓ Compiled /api/auth/me in 490ms (294 modules)
+ GET /api/posts?scope=public 200 in 713ms
+ GET /api/auth/me?user_id=167d518e-f6db-4402-89c5-45291a7f43b4 200 in 756ms
+ GET /api/auth/me?user_id=167d518e-f6db-4402-89c5-45291a7f43b4 200 in 47ms
+ ✓ Compiled /api/auth/login in 168ms (296 modules)
+ POST /api/auth/login 200 in 295ms
+ POST /api/auth/attend 200 in 39ms
+ POST /api/auth/attend 200 in 46ms
+ GET /api/posts?scope=public 200 in 54ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 45ms
+ GET /api/posts?scope=public 200 in 42ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 27ms
+ POST /api/posts 201 in 17ms
+ POST /api/auth/attend 200 in 13ms
+ GET /api/posts?scope=public 200 in 21ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 17ms
+ ✓ Compiled /api/posts/[id]/repost in 344ms (293 modules)
+ POST /api/posts/589c9fb9-b382-4e40-9727-6e48d912b14e/repost 201 in 467ms
+ POST /api/auth/attend 200 in 85ms
+ GET /api/posts?scope=public 200 in 115ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 197ms
+ GET / 200 in 129ms
+ ✓ Compiled /api/posts/briefing in 163ms (295 modules)
+ GET /api/posts?scope=public 200 in 282ms
+ POST /api/auth/attend 200 in 302ms
+ POST /api/auth/attend 200 in 300ms
+ GET /api/posts?scope=public 200 in 49ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 88ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 23ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 627ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 116ms
+ GET / 200 in 122ms
+ POST /api/auth/attend 200 in 56ms
+ POST /api/auth/attend 200 in 56ms
+ GET /api/posts?scope=public 200 in 74ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 22ms
+ GET /api/posts?scope=public 200 in 38ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 30ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 240ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 145ms
+ ✓ Compiled /api/cron/event in 130ms (295 modules)
+Gemini API Error Response: 401 {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/cron/event 200 in 426ms
+ GET / 200 in 78ms
+ POST /api/auth/attend 200 in 51ms
+ POST /api/auth/attend 200 in 52ms
+ GET /api/posts?scope=public 200 in 61ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 137ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 33ms
+ GET /api/posts?scope=public 200 in 50ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 127ms
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 227ms
+ ✓ Compiled /api/posts/[id]/repost in 113ms (297 modules)
+ POST /api/posts/fe4ee98c-1871-4d98-b353-efe881bf6e81/repost 201 in 174ms
+ POST /api/auth/attend 200 in 16ms
+ GET /api/posts?scope=public 200 in 25ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 20ms
+ ✓ Compiled in 795ms (501 modules)
+ ✓ Compiled in 141ms (245 modules)
+ ✓ Compiled /api/posts in 80ms (286 modules)
+ ✓ Compiled (289 modules)
+ GET /api/posts?scope=public 200 in 254ms
+ POST /api/auth/attend 200 in 271ms
+ ✓ Compiled /api/auth/me in 95ms (291 modules)
+ GET /api/auth/me?user_id=@dasom_ai 200 in 147ms

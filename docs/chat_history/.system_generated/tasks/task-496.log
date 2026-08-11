@@ -1,0 +1,191 @@
+
+> warmth-wall@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 3.8s
+ ○ Compiling /api/posts/briefing ...
+ ✓ Compiled /api/posts/briefing in 681ms (59 modules)
+Gemini API Error Response: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+ GET /api/posts/briefing 200 in 1182ms
+ ✓ Compiled /api/posts in 114ms (62 modules)
+ GET /api/posts?scope=public 200 in 172ms
+ ✓ Compiled /api/posts/[id]/repost in 126ms (64 modules)
+ POST /api/posts/d5e73112-8649-49a4-b994-35232b5b7f1d/repost 201 in 756ms
+ GET /api/posts?scope=today&session_id=manual_test_session_id 200 in 14ms
+ ✓ Compiled in 35ms
+ ✓ Compiled /api/posts/briefing in 86ms (59 modules)
+ GET /api/posts/briefing 200 in 5213ms
+ ✓ Compiled /api/posts in 71ms (62 modules)
+ GET /api/posts?scope=public 200 in 109ms
+ ✓ Compiled /api/posts/[id]/repost in 89ms (64 modules)
+ POST /api/posts/3d4616c5-52e0-4008-9148-ef8b8c6c7ab5/repost 201 in 141ms
+ GET /api/posts?scope=today&session_id=manual_test_session_id 200 in 19ms
+ ○ Compiling /test ...
+ ✓ Compiled /test in 5.3s (517 modules)
+ ✓ Compiled in 808ms (244 modules)
+ GET /test 200 in 6200ms
+ ○ Compiling /api/posts/briefing ...
+ ✓ Compiled /api/posts in 3.7s (287 modules)
+ ✓ Compiled (317 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 1085ms (577 modules)
+ GET / 200 in 1307ms
+ GET /api/posts/briefing 200 in 29ms
+ GET /api/posts?scope=today&session_id=sess_4cs559ccp 200 in 47ms
+ GET /api/posts/briefing 200 in 65ms
+ GET /api/posts?scope=today&session_id=sess_4cs559ccp 200 in 56ms
+ GET /favicon.ico 200 in 193ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts?scope=today&session_id=sess_4cs559ccp 200 in 11ms
+ GET / 200 in 46ms
+ GET /favicon.ico 200 in 19ms
+ GET /api/posts?scope=today&session_id=sess_7yus3kmgz 200 in 23ms
+ GET /api/posts?scope=today&session_id=sess_7yus3kmgz 200 in 21ms
+ POST /api/posts 201 in 20ms
+ GET /api/posts?scope=today&session_id=sess_7yus3kmgz 200 in 13ms
+ GET /api/posts/briefing 200 in 2488ms
+ GET /api/posts/briefing 200 in 8967ms
+ GET /api/posts?scope=public 200 in 14ms
+ ✓ Compiled /api/posts/[id]/repost in 202ms (64 modules)
+ POST /api/posts/54621c5d-a39b-4c4c-bc29-3c7156ed57cf/repost 201 in 284ms
+ GET /api/posts?scope=today&session_id=manual_test_session_id 200 in 14ms
+ ✓ Compiled in 499ms (251 modules)
+ ○ Compiling /test-layout ...
+ ✓ Compiled /test-layout in 878ms (506 modules)
+ GET /test-layout 200 in 1328ms
+ ✓ Compiled /public in 437ms (263 modules)
+ ✓ Compiled in 877ms (262 modules)
+ ✓ Compiled /api/posts/briefing in 470ms (319 modules)
+ GET / 200 in 2487ms
+ GET /public 200 in 2469ms
+ GET /api/posts/briefing 200 in 1443ms
+ GET / 200 in 40ms
+ ✓ Compiled /api/posts in 294ms (292 modules)
+ ✓ Compiled (322 modules)
+ GET /api/posts/briefing 200 in 663ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 729ms
+ GET /favicon.ico 200 in 928ms
+ GET /api/posts/briefing 200 in 43ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 64ms
+ ✓ Compiled /public in 142ms (348 modules)
+ GET /public 200 in 321ms
+ ✓ Compiled /api/posts/count/today in 231ms (350 modules)
+ GET /api/posts?scope=public 200 in 461ms
+ GET /api/posts/briefing 200 in 465ms
+ GET /api/posts/count/today 200 in 474ms
+ GET /api/posts?scope=public 200 in 29ms
+ GET /api/posts/briefing 200 in 33ms
+ GET /api/posts/count/today 200 in 36ms
+ ✓ Compiled /api/posts/[id]/repost in 362ms (352 modules)
+ POST /api/posts/06ae12ba-5d4f-4d26-a20e-8ece0aaa2741/repost 201 in 420ms
+ GET /api/posts?scope=public 200 in 11ms
+ POST /api/posts/37869dac-5a39-42ca-bc38-1f5dacacfe2b/repost 201 in 16ms
+ GET /api/posts?scope=public 200 in 11ms
+ POST /api/posts/9988c4ae-dee3-4643-8d75-cdce0e316541/repost 201 in 16ms
+ GET /api/posts?scope=public 200 in 12ms
+ POST /api/posts/44dc1dba-9ef9-46cc-8c84-88b38b8c3bc0/repost 201 in 17ms
+ GET /api/posts?scope=public 200 in 10ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 14ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 21ms
+ GET / 200 in 88ms
+ GET /favicon.ico 200 in 36ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 63ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 15ms
+ POST /api/posts 201 in 14ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 15ms
+ GET /api/posts/briefing 200 in 5061ms
+ GET /public 200 in 73ms
+ GET /api/posts/briefing 200 in 1430ms
+ GET /api/posts?scope=public 200 in 39ms
+ GET /api/posts/count/today 200 in 47ms
+ GET /api/posts?scope=public 200 in 36ms
+ GET /api/posts/count/today 200 in 76ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 14ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 18ms
+ GET /api/posts/briefing 200 in 2531ms
+ GET /public 200 in 59ms
+ GET /api/posts/count/today 200 in 29ms
+ GET /api/posts?scope=public 200 in 33ms
+ GET /api/posts/count/today 200 in 22ms
+ GET /api/posts?scope=public 200 in 31ms
+ POST /api/posts/09cb496e-bafb-4e1c-ad48-5c5066d3da33/repost 201 in 25ms
+ GET /api/posts?scope=public 200 in 9ms
+ GET /api/posts/briefing 200 in 6284ms
+ GET /api/posts/briefing 200 in 6132ms
+ GET / 200 in 82ms
+ GET /api/posts/briefing 200 in 24ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 31ms
+ GET /api/posts/briefing 200 in 30ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 57ms
+ GET / 200 in 22ms
+ GET /favicon.ico 200 in 20ms
+ GET /api/posts/briefing 200 in 28ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 35ms
+ GET /api/posts/briefing 200 in 30ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 32ms
+ GET /public 200 in 73ms
+ GET /api/posts/briefing 200 in 31ms
+ GET /api/posts/count/today 200 in 42ms
+ GET /api/posts?scope=public 200 in 49ms
+ GET /api/posts/briefing 200 in 48ms
+ GET /api/posts/count/today 200 in 51ms
+ GET /api/posts?scope=public 200 in 49ms
+ GET / 200 in 40ms
+ GET /api/posts/briefing 200 in 49ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 55ms
+ GET /api/posts/briefing 200 in 41ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 50ms
+ GET / 200 in 51ms
+ GET /favicon.ico 200 in 34ms
+ GET /api/posts/briefing 200 in 31ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 39ms
+ GET /api/posts/briefing 200 in 30ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 26ms
+ GET /api/posts?scope=all&session_id=sess_8lq36g3gd 200 in 10ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 12ms
+ GET /public 200 in 40ms
+ GET /api/posts/briefing 200 in 23ms
+ GET /api/posts?scope=public 200 in 23ms
+ GET /api/posts/count/today 200 in 36ms
+ GET /api/posts/briefing 200 in 37ms
+ GET /api/posts?scope=public 200 in 44ms
+ GET /api/posts/count/today 200 in 53ms
+ GET /public 200 in 132ms
+ GET /favicon.ico 200 in 33ms
+ GET /api/posts/briefing 200 in 53ms
+ GET /api/posts/count/today 200 in 98ms
+ GET /api/posts?scope=public 200 in 117ms
+ GET /api/posts/briefing 200 in 131ms
+ GET /api/posts/count/today 200 in 99ms
+ GET /api/posts?scope=public 200 in 106ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 11ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 299ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 1530ms (626 modules)
+ GET / 200 in 924ms
+ GET /api/posts/briefing 200 in 41ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 52ms
+ GET /favicon.ico 200 in 96ms
+ GET /api/posts/briefing 200 in 105ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 108ms
+ ✓ Compiled in 929ms (631 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 360ms
+ ✓ Compiled in 633ms (350 modules)
+ GET /favicon.ico 200 in 35ms
+ GET /api/posts/briefing 200 in 32ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 16ms
+ GET /api/posts/briefing 200 in 23ms
+ GET /api/posts?scope=today&session_id=sess_8lq36g3gd 200 in 12ms

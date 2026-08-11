@@ -1,0 +1,67 @@
+
+> warmth-wall@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 17.3s
+ ○ Compiling / ...
+ ✓ Compiled / in 18.5s (501 modules)
+ ✓ Compiled in 1102ms (245 modules)
+ GET / 200 in 1647ms
+ ○ Compiling /api/posts/briefing ...
+ ✓ Compiled /favicon.ico in 904ms (286 modules)
+ ✓ Compiled (320 modules)
+ POST /api/auth/attend 200 in 3667ms
+ POST /api/auth/attend 200 in 3671ms
+ GET /api/posts?scope=public 200 in 3715ms
+ GET /favicon.ico 200 in 3807ms
+ ✓ Compiled /api/auth/me in 253ms (322 modules)
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 4621ms
+ ✓ Compiled in 0ms (322 modules)
+ GET /api/posts?scope=public 200 in 517ms
+ ✓ Compiled in 0ms (322 modules)
+ ✓ Compiled in 0ms (322 modules)
+ GET /api/auth/me?user_id=@dasom_ai 200 in 1400ms
+ ✓ Compiled in 1ms (322 modules)
+Gemini API Error Response: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "ACCESS_TOKEN_TYPE_UNSUPPORTED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 1514ms
+ GET /api/auth/me?user_id=@dasom_ai 200 in 550ms

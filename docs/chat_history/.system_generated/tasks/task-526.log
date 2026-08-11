@@ -1,0 +1,62 @@
+=== AI Briefing Test ===
+{
+  "briefing": "오늘 다솜마을에는 '친절'이라는 따스한 마음이 모여 총 18건의 정겨운 선행이 피어났어요. 이웃을 향한 주민 여러분의 다정한 배려 덕분에 오늘도 우리 마을이 한층 더 포근해졌네요."
+}
+
+=== Repost & Scope=Today Verify ===
+[Repost Result]
+{
+  "id": "23f0b61a-318c-47df-98ac-d3654325b72c",
+  "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+  "keyword": null,
+  "nickname": null,
+  "session_id": "manual_test_session_id",
+  "parent_id": "3d4616c5-52e0-4008-9148-ef8b8c6c7ab5",
+  "is_mock": 0,
+  "created_at": "2026-08-07 11:51:48"
+}
+
+[Auto-Fetch scope=today]
+Count: 4
+Data: [
+  {
+    "id": "23f0b61a-318c-47df-98ac-d3654325b72c",
+    "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "3d4616c5-52e0-4008-9148-ef8b8c6c7ab5",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:51:48"
+  },
+  {
+    "id": "3d4616c5-52e0-4008-9148-ef8b8c6c7ab5",
+    "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "d5e73112-8649-49a4-b994-35232b5b7f1d",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:50:04"
+  },
+  {
+    "id": "d5e73112-8649-49a4-b994-35232b5b7f1d",
+    "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "1fa116db-309e-43c5-89cd-8738e26a866d",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:49:17"
+  },
+  {
+    "id": "1fa116db-309e-43c5-89cd-8738e26a866d",
+    "content": "UI 테스트를 위한 자동 작성 포스트잇입니다.",
+    "keyword": null,
+    "nickname": null,
+    "session_id": "manual_test_session_id",
+    "parent_id": "b49bd8da-d0f7-4bb3-b56d-4fb7f985a113",
+    "is_mock": 0,
+    "created_at": "2026-08-07 11:37:25"
+  }
+]

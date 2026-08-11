@@ -1,0 +1,575 @@
+
+> warmth-wall@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 14.6s (519 modules)
+ ✓ Compiled in 920ms (245 modules)
+ GET / 200 in 15589ms
+ GET / 200 in 345ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.3s (490 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 2451ms
+ ✓ Compiled /api/posts in 361ms (287 modules)
+ ✓ Compiled (291 modules)
+ GET /api/posts?scope=all 200 in 1195ms
+ GET /api/posts/briefing 200 in 1215ms
+ GET /api/posts?scope=all 200 in 44ms
+ GET /api/posts/briefing 200 in 48ms
+ GET / 200 in 103ms
+ GET /api/posts/briefing 200 in 26ms
+ GET /api/posts?scope=all 200 in 52ms
+ GET /api/posts/briefing 200 in 143ms
+ GET /api/posts?scope=all 200 in 75ms
+ ✓ Compiled /api/auth/signup in 264ms (294 modules)
+ POST /api/auth/signup 400 in 342ms
+ POST /api/auth/signup 400 in 14ms
+ POST /api/auth/signup 400 in 39ms
+ POST /api/auth/signup 400 in 14ms
+ POST /api/auth/signup 400 in 12ms
+ ✓ Compiled /api/auth/login in 137ms (296 modules)
+ POST /api/auth/login 400 in 188ms
+ POST /api/auth/signup 400 in 13ms
+ POST /api/auth/signup 400 in 13ms
+ POST /api/auth/signup 400 in 13ms
+ POST /api/auth/login 400 in 10ms
+ GET / 200 in 141ms
+ GET /api/posts/briefing 200 in 38ms
+ GET /api/posts/briefing 200 in 57ms
+ GET / 200 in 84ms
+ GET /api/posts/briefing 200 in 26ms
+ GET /api/posts/briefing 200 in 38ms
+ POST /api/auth/login 400 in 52ms
+ POST /api/auth/login 400 in 10ms
+ POST /api/auth/login 400 in 10ms
+ POST /api/auth/login 400 in 9ms
+ POST /api/auth/login 400 in 14ms
+ POST /api/auth/login 400 in 15ms
+ POST /api/auth/signup 400 in 12ms
+ ✓ Compiled in 1076ms (533 modules)
+ ✓ Compiled /_not-found in 507ms (522 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 793ms
+ GET / 200 in 78ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 37ms
+ ✓ Compiled /api/posts/briefing in 189ms (291 modules)
+ GET /api/posts/briefing 200 in 264ms
+ GET /api/posts/briefing 200 in 17ms
+ ✓ Compiled in 1416ms (534 modules)
+ ✓ Compiled in 300ms (247 modules)
+ GET / 200 in 73ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 56ms
+ GET /api/posts/briefing 200 in 45ms
+ GET /api/posts/briefing 200 in 65ms
+ GET / 200 in 85ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 38ms
+ GET /api/posts/briefing 200 in 53ms
+ GET /api/posts/briefing 200 in 100ms
+ ✓ Compiled /api/auth/signup in 159ms (291 modules)
+ POST /api/auth/signup 400 in 207ms
+ POST /api/auth/signup 201 in 103ms
+ ✓ Compiled /api/posts in 336ms (294 modules)
+ GET /api/posts?scope=all 200 in 383ms
+ GET /api/posts?scope=all 200 in 24ms
+ POST /api/posts 201 in 20ms
+ GET /api/posts?scope=all 200 in 10ms
+ POST /api/auth/signup 201 in 193ms
+ GET /api/posts?scope=all 200 in 16ms
+ GET /api/posts?scope=all 200 in 140ms
+ POST /api/posts 201 in 10ms
+ GET /api/posts?scope=all 200 in 14ms
+ ✓ Compiled /api/posts/[id]/repost in 155ms (290 modules)
+ POST /api/posts/540f4750-eff7-4791-aebe-6b025718f4ca/repost 201 in 939ms
+ POST /api/posts/540f4750-eff7-4791-aebe-6b025718f4ca/repost 201 in 308ms
+ GET /api/posts?scope=all 200 in 21ms
+ GET /api/posts?scope=all 200 in 38ms
+ POST /api/posts/f305db50-a86a-4952-b43f-fd8e8e9c424b/repost 201 in 21ms
+ GET /api/posts?scope=all 200 in 18ms
+ GET / 200 in 131ms
+ ✓ Compiled /api/posts in 214ms (286 modules)
+ ✓ Compiled (290 modules)
+ GET / 200 in 402ms
+ GET /api/posts?scope=all 200 in 21ms
+ GET /api/posts?scope=all 200 in 42ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 10.240207502s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "10s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 491ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 10.074647986s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "10s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 158ms
+ ⨯ ./src/app/globals.css
+Module not found: Can't resolve 'tailwindcss'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/globals.css
+ ○ Compiling /_error ...
+ ⨯ ./src/app/globals.css
+Module not found: Can't resolve 'tailwindcss'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/globals.css
+ GET / 500 in 86ms
+ GET / 500 in 145ms
+ ⨯ ./src/app/globals.css
+Module not found: Can't resolve 'tailwindcss'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/globals.css
+ ⨯ ./src/app/page.tsx
+Error: 
+  x Unterminated string constant
+      ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1622:1]
+ 1622 |       if (res.ok) {
+ 1623 |         const data = await res.json()
+ 1624 |         if (data.isCampaignMatched) {
+ 1625 |           alert('?⑥틺?섏씤 ?ㅼ썙??留ㅼ묶! ?④낵媛 2諛곌? ?⑸땲????)
+      :                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 1626 |         }
+ 1627 |         fetchPosts()
+ 1627 |       }
+      `----
+
+  x Expected ',', got '}'
+      ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1623:1]
+ 1623 |         const data = await res.json()
+ 1624 |         if (data.isCampaignMatched) {
+ 1625 |           alert('?⑥틺?섏씤 ?ㅼ썙??留ㅼ묶! ?④낵媛 2諛곌? ?⑸땲????)
+ 1626 |         }
+      :         ^
+ 1627 |         fetchPosts()
+ 1628 |       }
+ 1628 |     } catch (e) { console.error(e) }
+      `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x Unexpected token `div`. Expected jsx identifier
+      ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1466:1]
+ 1466 |   const ok = content.trim().length > 0 && (category !== '기타' || customCat.trim().length > 0)
+ 1467 | 
+ 1468 |   return (
+ 1469 |     <div
+      :      ^^^
+ 1470 |       style={{ position: 'fixed', inset: 0, background: 'rgba(10,10,10,0.72)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', zIndex: 300, backdropFilter: 'blur(4px)' }}
+ 1471 |       onClick={e => { if (e.target === e.currentTarget) onClose() }}
+ 1471 |     >
+      `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | import boardBg from '@/imports/chatgptimage.png'
+ 3 | 
+ 4 | /* ─── Types ──────────────────────────────────────────────────── */
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/globals.css
+Module not found: Can't resolve 'tailwindcss'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/globals.css

@@ -1,0 +1,24 @@
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project_state.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/db.ts', LF will be replaced by CRLF the next time Git touches it
+[local-dev 09f4bdf] Auto backup: Clean up folders and update project_state.md
+ 18 files changed, 103 insertions(+), 854 deletions(-)
+ rename hackathon_strategy.md => docs/hackathon_strategy.md (100%)
+ rename layout-screenshot.png => docs/layout-screenshot.png (100%)
+ delete mode 100644 replace_ui.js
+ delete mode 100644 test-api-v2.ts
+ delete mode 100644 test-api-v3.js
+ delete mode 100644 test-api.js
+ delete mode 100644 test-auth.js
+ delete mode 100644 test-campaign-ui.js
+ delete mode 100644 test-campaign.js
+ delete mode 100644 test-db.ts
+ delete mode 100644 test-demo.js
+ delete mode 100644 test-manual-page.js
+ delete mode 100644 test-repost.js
+ delete mode 100644 test-ui.js
+ delete mode 100644 visual-test.js
+To https://github.com/kimchi00100/Warmth_Wall.git
+   ab9f4c4..09f4bdf  local-dev -> local-dev
+To https://github.com/kimchi00100/Dasom_Warmth_Wall.git
+ + 30bf648...09f4bdf local-dev -> main (forced update)

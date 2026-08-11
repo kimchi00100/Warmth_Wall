@@ -1,0 +1,9 @@
+Navigating to http://localhost:3000...
+Initial posts loaded (scope=today): 10
+Writing a new postit...
+Posts after submit (scope=today): 11
+=> SUCCESS: New postit rendered immediately!
+Clicking "전체" toggle...
+Posts after toggle (scope=all): 21
+=> SUCCESS: Data replaced successfully on toggle!
+=> SUCCESS: No browser console errors detected.

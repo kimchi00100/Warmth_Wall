@@ -1,0 +1,8 @@
+[local-dev b731ea4] Auto backup: Figma Auth & Logic Integration
+ 7 files changed, 408 insertions(+), 211 deletions(-)
+ create mode 100644 src/imports/chatgptimage.png
+ create mode 100644 src/imports/image-1.png
+ create mode 100644 src/imports/image-2.png
+ create mode 100644 src/imports/image.png
+To https://github.com/kimchi00100/Warmth_Wall.git
+   0028bb7..b731ea4  local-dev -> local-dev

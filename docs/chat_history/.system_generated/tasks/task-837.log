@@ -1,0 +1,14 @@
+Fetching initial briefing...
+Briefing 1: {
+  briefing: "오늘 다솜마을에는 2건의 선행이 전해지며 '따뜻한 마음'이라는 온기가 가득 채워졌어요. 이웃을 향한 여러분의 고운 마음 덕분에 우리 마을의 오늘이 한층 더 포근해졌네요."
+}
+
+Running demo simulation...
+Simulation result: 201 { message: '자정 시뮬레이션 데이터 주입 완료' }
+
+Fetching updated briefing...
+Briefing 2: {
+  briefing: "오늘 다솜마을에는 서로를 향한 따뜻한 **'도움'**의 손길이 무려 9번이나 모였어요. \n" +
+    '\n' +
+    '이웃을 위해 선뜻 마음을 내어주신 여러분 덕분에 우리 마을이 한층 더 온기 가득한 하루가 되었네요.'
+}

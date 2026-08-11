@@ -1,0 +1,96 @@
+
+> warmth-wall@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 6.7s
+ ○ Compiling /api/posts ...
+ ✓ Compiled /api/posts in 1076ms (60 modules)
+ GET /api/posts?scope=today&session_id=mock_session_id 200 in 1297ms
+ GET /api/posts?scope=all&session_id=mock_session_id 200 in 20ms
+ ✓ Compiled /api/posts/[id]/repost in 106ms (62 modules)
+ POST /api/posts/176735e4-8cc0-446c-966d-3d875a5376c4/repost 201 in 776ms
+ ○ Compiling / ...
+ ✓ Compiled / in 7.3s (520 modules)
+ ✓ Compiled in 475ms (246 modules)
+ GET / 200 in 7938ms
+ ○ Compiling /api/posts ...
+ ✓ Compiled /api/posts in 3.6s (288 modules)
+ ✓ Compiled (316 modules)
+ GET /api/posts?scope=today&session_id=sess_bphoqw18o 200 in 3985ms
+ GET /favicon.ico 200 in 4049ms
+ GET /api/posts?scope=today&session_id=sess_bphoqw18o 200 in 140ms
+ POST /api/posts 201 in 19ms
+ GET /api/posts?scope=today&session_id=sess_bphoqw18o 200 in 12ms
+ GET /api/posts?scope=all&session_id=sess_bphoqw18o 200 in 14ms
+ GET / 200 in 436ms
+ GET / 200 in 83ms
+ GET /favicon.ico 200 in 28ms
+ GET /api/posts?scope=today&session_id=mock_session_id 200 in 22ms
+ GET /api/posts?scope=today&session_id=mock_session_id 200 in 11ms
+ POST /api/posts 201 in 28ms
+ GET /api/posts?scope=today&session_id=mock_session_id 200 in 14ms
+ GET /api/posts?scope=all&session_id=mock_session_id 200 in 18ms
+ ✓ Compiled in 297ms (246 modules)
+ ✓ Compiled in 121ms (246 modules)
+ ✓ Compiled in 531ms (548 modules)
+ ✓ Compiled in 260ms (246 modules)
+ ✓ Compiled in 195ms (246 modules)
+ ✓ Compiled in 224ms (562 modules)
+ ✓ Compiled in 602ms (502 modules)
+ ✓ Compiled in 1461ms (502 modules)
+ ✓ Compiled in 295ms (246 modules)
+ ○ Compiling /public ...
+ ✓ Compiled /public in 1286ms (552 modules)
+ GET /public 200 in 1865ms
+ ✓ Compiled /api/posts/count/today in 246ms (314 modules)
+ ✓ Compiled (344 modules)
+ GET /api/posts?scope=public 200 in 917ms
+ GET /api/posts/count/today 200 in 965ms
+ GET /favicon.ico 200 in 1071ms
+ GET /api/posts?scope=public 200 in 259ms
+ GET /api/posts/count/today 200 in 293ms
+ ✓ Compiled /api/posts/[id]/repost in 258ms (346 modules)
+ POST /api/posts/5abb0c85-dfbd-470c-99cc-7fcfa0c51b7c/repost 201 in 541ms
+ GET /api/posts?scope=public 200 in 23ms
+ ✓ Compiled in 188ms (270 modules)
+ ✓ Compiled in 133ms (270 modules)
+ ✓ Compiled in 234ms (602 modules)
+ ✓ Compiled in 135ms (270 modules)
+ ✓ Compiled in 594ms (619 modules)
+ ✓ Compiled in 371ms (271 modules)
+ ✓ Compiled in 1341ms (541 modules)
+ ○ Compiling /test ...
+ ✓ Compiled /test in 3.8s (561 modules)
+ GET /test 200 in 4958ms
+ ✓ Compiled /api/posts/briefing in 303ms (320 modules)
+ ✓ Compiled /api/posts in 1ms (347 modules)
+ ✓ Compiled in 0ms (350 modules)
+ ✓ Compiled in 1ms (350 modules)
+ ✓ Compiled in 1ms (350 modules)
+ GET /api/posts/briefing 200 in 10ms
+ GET /api/posts?scope=public 200 in 14ms
+ ✓ Compiled /api/posts/[id]/repost in 178ms (352 modules)
+ POST /api/posts/b49bd8da-d0f7-4bb3-b56d-4fb7f985a113/repost 201 in 231ms
+ GET /api/posts?scope=today&session_id=manual_test_session_id 200 in 11ms
+   Reload env: .env.local
+ ✓ Compiled in 1002ms (557 modules)
+ ✓ Compiled in 203ms (273 modules)
+ ✓ Compiled /api/posts/briefing in 176ms (314 modules)
+Gemini API Error Response: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+ GET /api/posts/briefing 200 in 662ms
+ ✓ Compiled /api/posts in 103ms (317 modules)
+ GET /api/posts?scope=public 200 in 168ms
+ ✓ Compiled /api/posts/[id]/repost in 92ms (319 modules)
+ POST /api/posts/1fa116db-309e-43c5-89cd-8738e26a866d/repost 201 in 147ms
+ GET /api/posts?scope=today&session_id=manual_test_session_id 200 in 14ms

@@ -1,0 +1,92 @@
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git checkout --orphan temp-main 
+Switched to a new branch 'temp-main'
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git add . 
+warning: in the working copy of 'squash_main.bat', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git commit -m "Initial release: Dasom Warmth Wall" 
+[temp-main (root-commit) bb48fc7] Initial release: Dasom Warmth Wall
+ 69 files changed, 11364 insertions(+)
+ create mode 100644 .agents/rules/antigravity_core_rules.md
+ create mode 100644 .eslintrc.json
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 backup.bat
+ create mode 100644 docs/hackathon_strategy.md
+ create mode 100644 docs/layout-screenshot.png
+ create mode 100644 dump.txt
+ create mode 100644 dump2.txt
+ create mode 100644 fix_db.js
+ create mode 100644 generate_68_posts.js
+ create mode 100644 migrate_bonus.js
+ create mode 100644 move_dates.js
+ create mode 100644 next.config.mjs
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 patch_admin.py
+ create mode 100644 patch_page.py
+ create mode 100644 patch_repost.py
+ create mode 100644 patch_ui.py
+ create mode 100644 patch_ui2.py
+ create mode 100644 patch_zoom.py
+ create mode 100644 postcss.config.mjs
+ create mode 100644 project_state.md
+ create mode 100644 restore.py
+ create mode 100644 seed_gemini.js
+ create mode 100644 seed_grape_field.js
+ create mode 100644 set_event.js
+ create mode 100644 squash_main.bat
+ create mode 100644 src/app/api/auth/attend/route.ts
+ create mode 100644 src/app/api/auth/login/route.ts
+ create mode 100644 src/app/api/auth/me/route.ts
+ create mode 100644 src/app/api/auth/signup/route.ts
+ create mode 100644 src/app/api/cron/demo/route.ts
+ create mode 100644 src/app/api/cron/event/route.ts
+ create mode 100644 src/app/api/posts/[id]/repost/route.ts
+ create mode 100644 src/app/api/posts/[id]/route.ts
+ create mode 100644 src/app/api/posts/briefing/route.ts
+ create mode 100644 src/app/api/posts/count/today/route.ts
+ create mode 100644 src/app/api/posts/route.ts
+ create mode 100644 src/app/favicon.ico
+ create mode 100644 src/app/fonts/GeistMonoVF.woff
+ create mode 100644 src/app/fonts/GeistVF.woff
+ create mode 100644 src/app/globals.css
+ create mode 100644 src/app/layout.tsx
+ create mode 100644 src/app/page.tsx
+ create mode 100644 src/app/public/page.tsx
+ create mode 100644 src/app/test-layout/page.tsx
+ create mode 100644 src/app/test/page.tsx
+ create mode 100644 src/components/BriefingBanner.tsx
+ create mode 100644 src/components/CampaignBanner.tsx
+ create mode 100644 src/components/PostitCard.tsx
+ create mode 100644 src/components/PostitForm.tsx
+ create mode 100644 src/components/ScopeToggle.tsx
+ create mode 100644 src/components/WarmthCounter.tsx
+ create mode 100644 src/imports/chatgptimage.png
+ create mode 100644 src/imports/image-1.png
+ create mode 100644 src/imports/image-2.png
+ create mode 100644 src/imports/image.png
+ create mode 100644 src/imports/imports/chatgptimage.png
+ create mode 100644 src/imports/imports/image-1.png
+ create mode 100644 src/imports/imports/image-2.png
+ create mode 100644 src/imports/imports/image.png
+ create mode 100644 src/lib/campaignData.ts
+ create mode 100644 src/lib/db.ts
+ create mode 100644 src/lib/mockData.ts
+ create mode 100644 sync_points.js
+ create mode 100644 tailwind.config.ts
+ create mode 100644 tsconfig.json
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git push origin-b temp-main:main --force 
+To https://github.com/kimchi00100/Dasom_Warmth_Wall.git
+ + 4281cf4...bb48fc7 temp-main -> main (forced update)
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git push origin-b temp-main:local-dev --force 
+To https://github.com/kimchi00100/Dasom_Warmth_Wall.git
+ + b5ec741...bb48fc7 temp-main -> local-dev (forced update)
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git checkout local-dev 
+Switched to branch 'local-dev'
+Your branch is up to date with 'origin-a/local-dev'.
+�ġ � ã� � �ϴ�.

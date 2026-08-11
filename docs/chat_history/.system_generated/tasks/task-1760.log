@@ -1,0 +1,1059 @@
+
+> warmth-wall@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 3.2s
+ ○ Compiling / ...
+ ⨯ ./src/app/globals.css
+Module not found: Can't resolve 'tailwindcss'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/globals.css
+ GET / 500 in 17332ms
+ ⨯ ./src/app/globals.css
+Module not found: Can't resolve 'tailwindcss'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/globals.css
+ GET /_next/static/webpack/75f85e4f8da971b2.webpack.hot-update.json 500 in 18647ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 1271ms
+ GET /_next/static/webpack/75f85e4f8da971b2.webpack.hot-update.json 500 in 123ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 173ms
+ GET / 500 in 324ms
+ GET / 500 in 599ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\cache\webpack\client-development-fallback\0.pack.gz'
+ ✓ Compiled /_error in 872ms (730 modules)
+ GET / 200 in 547ms
+ ✓ Compiled in 1114ms (716 modules)
+ GET / 200 in 670ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 31ms
+ GET /_next/static/webpack/75f85e4f8da971b2.webpack.hot-update.json 404 in 769ms
+ GET / 200 in 64ms
+ ○ Compiling /api/posts/briefing ...
+ ✓ Compiled /api/posts/briefing in 642ms (327 modules)
+ GET /api/posts/briefing 200 in 819ms
+ GET /api/posts/briefing 200 in 24ms
+ GET /api/posts/briefing 200 in 26ms
+ GET /api/posts/briefing 200 in 19ms
+ GET / 200 in 84ms
+ GET /api/posts/briefing 200 in 15ms
+ GET /api/posts/briefing 200 in 14ms
+ ✓ Compiled /api/auth/login in 251ms (329 modules)
+ POST /api/auth/login 401 in 317ms
+ POST /api/auth/login 401 in 12ms
+ POST /api/auth/login 401 in 14ms
+ POST /api/auth/login 401 in 14ms
+ POST /api/auth/login 401 in 12ms
+ POST /api/auth/login 401 in 13ms
+ ✓ Compiled /api/auth/signup in 127ms (329 modules)
+ POST /api/auth/signup 400 in 160ms
+ POST /api/auth/login 200 in 96ms
+ ✓ Compiled /api/posts in 147ms (332 modules)
+ GET /api/posts 200 in 183ms
+ GET /api/posts 200 in 17ms
+ ✓ Compiled in 1228ms (725 modules)
+ GET / 200 in 440ms
+ ✓ Compiled /api/posts/briefing in 191ms (325 modules)
+ GET /api/posts/briefing 200 in 281ms
+ GET /api/posts/briefing 200 in 17ms
+ ✓ Compiled in 613ms (755 modules)
+ ✓ Compiled in 726ms (725 modules)
+ GET / 200 in 107ms
+ ✓ Compiled /api/posts/briefing in 188ms (325 modules)
+ GET /api/posts/briefing 200 in 261ms
+ GET /api/posts/briefing 200 in 23ms
+ GET / 200 in 127ms
+ GET /api/posts/briefing 200 in 18ms
+ GET /api/posts/briefing 200 in 25ms
+ ✓ Compiled /api/auth/login in 200ms (329 modules)
+ POST /api/auth/login 401 in 274ms
+ ✓ Compiled /api/auth/signup in 142ms (331 modules)
+ POST /api/auth/signup 201 in 264ms
+ ✓ Compiled /api/posts in 106ms (334 modules)
+ GET /api/posts 200 in 140ms
+ GET /api/posts 200 in 14ms
+ GET / 200 in 214ms
+ GET /api/posts/briefing 200 in 28ms
+ GET /api/posts/briefing 200 in 22ms
+ POST /api/auth/login 401 in 13ms
+ POST /api/auth/login 401 in 13ms
+ POST /api/auth/login 401 in 92ms
+ POST /api/auth/login 200 in 85ms
+ GET /api/posts 200 in 12ms
+ GET /api/posts 200 in 17ms
+ POST /api/auth/login 200 in 92ms
+ GET /api/posts 200 in 16ms
+ GET /api/posts 200 in 16ms
+ GET / 200 in 73ms
+ GET /api/posts/briefing 200 in 22ms
+ GET /api/posts/briefing 200 in 22ms
+ GET / 200 in 185ms
+ GET /api/posts/briefing 200 in 31ms
+ GET /api/posts/briefing 200 in 79ms
+ POST /api/auth/login 200 in 99ms
+ GET /api/posts 200 in 26ms
+ GET /api/posts 200 in 14ms
+ ✓ Compiled /api/posts in 797ms (725 modules)
+ ✓ Compiled in 0ms (327 modules)
+ GET /api/posts 200 in 551ms
+ GET /api/posts 200 in 45ms
+ ✓ Compiled in 769ms (757 modules)
+ ✓ Compiled in 0ms (327 modules)
+ ✓ Compiled in 2ms (327 modules)
+ ✓ Compiled in 1ms (327 modules)
+ GET /api/posts 200 in 599ms
+ ✓ Compiled in 606ms (757 modules)
+ GET /api/posts 200 in 46ms
+ ✓ Compiled in 568ms (757 modules)
+ ✓ Compiled in 0ms (327 modules)
+ ✓ Compiled in 1ms (327 modules)
+ ✓ Compiled in 0ms (327 modules)
+ GET /api/posts 200 in 523ms
+ GET / 200 in 95ms
+ ✓ Compiled /api/posts/briefing in 280ms (325 modules)
+ GET /api/posts/briefing 200 in 340ms
+ GET /api/posts/briefing 200 in 48ms
+ ✓ Compiled /api/auth/login in 168ms (329 modules)
+ POST /api/auth/login 401 in 204ms
+ POST /api/auth/login 401 in 13ms
+ ✓ Compiled /api/posts in 199ms (332 modules)
+ GET /api/posts 200 in 255ms
+ GET /api/posts 200 in 25ms
+ POST /api/auth/login 200 in 103ms
+ GET /api/posts 200 in 13ms
+ GET /api/posts 200 in 23ms
+ GET / 200 in 169ms
+ GET /api/posts/briefing 200 in 39ms
+ GET /api/posts/briefing 200 in 65ms
+ GET /api/posts 200 in 19ms
+ GET /api/posts 200 in 18ms
+ ✓ Compiled in 899ms (759 modules)
+ GET / 200 in 75ms
+ GET /api/posts/briefing 200 in 25ms
+ GET /api/posts/briefing 200 in 20ms
+ ✓ Compiled /api/auth/login in 146ms (329 modules)
+ POST /api/auth/login 401 in 185ms
+ ✓ Compiled /api/posts in 150ms (332 modules)
+ GET /api/posts 200 in 180ms
+ GET /api/posts 200 in 25ms
+ POST /api/auth/login 200 in 96ms
+ GET /api/posts 200 in 18ms
+ GET /api/posts 200 in 18ms
+ GET /api/posts 200 in 16ms
+ GET /api/posts 200 in 25ms
+ GET /api/posts 200 in 19ms
+ GET /api/posts 200 in 34ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1230ms (760 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1402ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 45ms
+ GET / 200 in 75ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 293ms
+ ✓ Compiled /api/posts/briefing in 343ms (330 modules)
+ GET /api/posts/briefing 200 in 457ms
+ GET /api/posts 200 in 200ms
+ GET /api/posts/briefing 200 in 66ms
+ GET /api/posts 200 in 58ms
+ ✓ Compiled in 809ms (725 modules)
+ ✓ Compiled /api/posts in 118ms (327 modules)
+ GET /api/posts 200 in 221ms
+ ✓ Compiled in 1109ms (725 modules)
+ ✓ Compiled /api/posts in 122ms (327 modules)
+ GET /api/posts 200 in 217ms
+ GET / 200 in 114ms
+ ✓ Compiled /api/posts in 464ms (325 modules)
+ ✓ Compiled (329 modules)
+ GET /api/posts/briefing 200 in 606ms
+ GET /api/posts 200 in 442ms
+ GET /api/posts/briefing 200 in 22ms
+ GET /api/posts 200 in 37ms
+ GET / 200 in 120ms
+ GET /api/posts/briefing 200 in 24ms
+ GET /api/posts/briefing 200 in 19ms
+ ✓ Compiled /api/auth/login in 136ms (332 modules)
+ POST /api/auth/login 401 in 173ms
+ POST /api/auth/login 200 in 95ms
+ GET /api/posts 200 in 11ms
+ GET /api/posts 200 in 19ms
+ ✓ Compiled /api/posts/[id]/repost in 250ms (334 modules)
+ POST /api/posts/8/repost 404 in 1176ms
+ POST /api/posts/8/repost 404 in 44ms
+ POST /api/posts/8/repost 404 in 21ms
+ POST /api/posts/8/repost 404 in 20ms
+ POST /api/posts/8/repost 404 in 12ms
+ POST /api/posts/8/repost 404 in 11ms
+ POST /api/posts/8/repost 404 in 22ms
+ POST /api/posts/8/repost 404 in 15ms
+ POST /api/posts/10/repost 404 in 18ms
+ POST /api/posts/10/repost 404 in 15ms
+ POST /api/posts/10/repost 404 in 18ms
+ POST /api/posts/10/repost 404 in 11ms
+ ✓ Compiled /api/posts in 871ms (725 modules)
+ ✓ Compiled in 1ms (327 modules)
+ GET /api/posts 200 in 438ms
+ GET / 200 in 87ms
+ ✓ Compiled /api/posts/briefing in 267ms (325 modules)
+ ✓ Compiled /api/posts in 109ms (329 modules)
+ GET /api/posts/briefing 200 in 901ms
+ GET /api/posts 200 in 736ms
+ GET /api/posts/briefing 200 in 129ms
+ GET /api/posts 200 in 64ms
+ ✓ Compiled /api/auth/login in 153ms (332 modules)
+ POST /api/auth/login 401 in 207ms
+ POST /api/auth/login 200 in 146ms
+ GET /api/posts 200 in 16ms
+ GET /api/posts 200 in 21ms
+ POST /api/posts 201 in 23ms
+ GET /api/posts 200 in 15ms
+ POST /api/posts 201 in 13ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 13ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 10ms
+ GET /api/posts 200 in 11ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 11ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts 200 in 10ms
+ POST /api/posts 201 in 17ms
+ GET /api/posts 200 in 25ms
+ ✓ Compiled in 877ms (725 modules)
+ ✓ Compiled in 434ms (430 modules)
+ ✓ Compiled /api/posts in 169ms (327 modules)
+ GET /api/posts 200 in 440ms
+ GET /api/posts 200 in 59ms
+ ✓ Compiled in 802ms (757 modules)
+ GET /api/posts 200 in 28ms
+ GET / 200 in 104ms
+ ✓ Compiled /api/posts in 451ms (325 modules)
+ ✓ Compiled (329 modules)
+ GET /api/posts 200 in 784ms
+ GET /api/posts 200 in 11ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 12ms
+ GET /api/posts/briefing 200 in 6413ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 33.772586256s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "33s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 173ms
+ POST /api/posts 201 in 14ms
+ GET /api/posts 200 in 16ms
+ POST /api/posts 201 in 14ms
+ GET /api/posts 200 in 12ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 18ms
+ POST /api/posts 201 in 13ms
+ GET /api/posts 200 in 12ms
+ POST /api/posts 201 in 10ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 16ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 17ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 28ms
+ GET /api/posts 200 in 12ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 11ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 12ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 20ms
+ GET /api/posts 200 in 10ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts 200 in 19ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 22ms
+ GET /api/posts 200 in 12ms
+ POST /api/posts 201 in 14ms
+ GET /api/posts 200 in 17ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 11ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 16ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 12ms
+ POST /api/posts 201 in 13ms
+ GET /api/posts 200 in 13ms
+ ✓ Compiled in 709ms (430 modules)
+ ✓ Compiled in 296ms (430 modules)
+ ✓ Compiled /api/posts in 1179ms (725 modules)
+ ✓ Compiled in 1ms (327 modules)
+ GET /api/posts 200 in 975ms
+ ✓ Compiled in 799ms (725 modules)
+ ✓ Compiled /api/auth/login in 224ms (327 modules)
+ POST /api/auth/login 200 in 681ms
+ ✓ Compiled /api/posts in 143ms (330 modules)
+ GET /api/posts 200 in 251ms
+ GET /api/posts 200 in 15ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts 200 in 13ms
+ ✓ Compiled /api/posts/[id] in 168ms (332 modules)
+ POST /api/posts 201 in 16ms
+ GET /api/posts 200 in 18ms
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 1185ms
+ GET /api/posts 200 in 15ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 11ms
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 20ms
+ GET /api/posts 200 in 25ms
+ DELETE /api/posts/10?user_id=@dasom_ai&keyword=REPOST:@yooyoo_j 200 in 17ms
+ GET /api/posts 200 in 17ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts 200 in 15ms
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 18ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 13ms
+ GET /api/posts 200 in 14ms
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 19ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 21ms
+ POST /api/posts 201 in 20ms
+ GET /api/posts 200 in 14ms
+ DELETE /api/posts/10?user_id=@dasom_ai&keyword=REPOST:@yooyoo_j 200 in 18ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts 200 in 17ms
+ DELETE /api/posts/10?user_id=@dasom_ai&keyword=REPOST:@yooyoo_j 200 in 23ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 20ms
+ GET /api/posts 200 in 19ms
+ DELETE /api/posts/10?user_id=@dasom_ai&keyword=REPOST:@yooyoo_j 200 in 18ms
+ GET /api/posts 200 in 24ms
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 18ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 10ms
+ GET /api/posts 200 in 16ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 16ms
+ ✓ Compiled /api/posts in 865ms (725 modules)
+ ✓ Compiled in 1ms (327 modules)
+ GET /api/posts 200 in 750ms
+ ✓ Compiled in 893ms (757 modules)
+ ✓ Compiled in 1ms (327 modules)
+ ✓ Compiled in 0ms (327 modules)
+ ✓ Compiled in 1ms (327 modules)
+ GET /api/posts 200 in 767ms
+ GET / 200 in 84ms
+ ✓ Compiled /api/posts/briefing in 487ms (329 modules)
+ GET /api/posts 200 in 488ms
+ GET /api/posts 200 in 37ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 40.973894747s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "40s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 1221ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 40.809187978s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "40s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 161ms
+ GET / 200 in 142ms
+ GET /api/posts 200 in 22ms
+ GET /api/posts 200 in 21ms
+ GET /api/posts/briefing 200 in 5034ms
+ GET /api/posts/briefing 200 in 17ms
+ POST /api/posts 201 in 16ms
+ GET /api/posts 200 in 13ms
+ ✓ Compiled /api/posts/[id] in 288ms (331 modules)
+ DELETE /api/posts/dffd48cc-4e0e-40fd-9f06-b9a84ef42443?user_id=@dasom_ai&keyword=REPOST:%EC%8B%9C%EC%97%B0%EC%9A%A9%EC%B2%9C%EC%82%AC6 200 in 358ms
+ GET /api/posts 200 in 122ms
+ ✓ Compiled /api/posts in 1104ms (725 modules)
+ ✓ Compiled in 0ms (327 modules)
+ GET /api/posts 200 in 438ms
+ GET / 200 in 126ms
+ ✓ Compiled /api/posts/briefing in 338ms (329 modules)
+ GET /api/posts/briefing 200 in 494ms
+ GET /api/posts 200 in 334ms
+ GET /api/posts/briefing 200 in 24ms
+ GET /api/posts 200 in 24ms
+ GET / 200 in 97ms
+ GET /api/posts/briefing 200 in 31ms
+ GET /api/posts 200 in 75ms
+ GET /api/posts/briefing 200 in 198ms
+ GET /api/posts 200 in 43ms
+ ✓ Compiled in 1113ms (759 modules)
+ ✓ Compiled in 1ms (329 modules)
+ ✓ Compiled in 1ms (329 modules)
+ ✓ Compiled in 0ms (329 modules)
+ GET /api/posts 200 in 1031ms
+ GET / 200 in 63ms
+ GET /api/posts/briefing 200 in 25ms
+ GET /api/posts/briefing 200 in 18ms
+ GET /api/posts 200 in 14ms
+ GET /api/posts 200 in 25ms
+ GET / 200 in 108ms
+ GET /api/posts/briefing 200 in 27ms
+ GET /api/posts/briefing 200 in 141ms
+ GET /api/posts 200 in 157ms
+ GET /api/posts 200 in 30ms
+ POST /api/posts 201 in 20ms
+ GET /api/posts 200 in 13ms
+ ✓ Compiled /api/posts/[id] in 166ms (331 modules)
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 268ms
+ GET /api/posts 200 in 24ms
+ POST /api/posts 201 in 22ms
+ GET /api/posts 200 in 15ms
+ ✓ Compiled in 664ms (761 modules)
+ ✓ Compiled in 262ms (430 modules)
+ GET /api/posts 200 in 50ms
+ GET / 200 in 131ms
+ GET /api/posts 200 in 55ms
+ GET /api/posts 200 in 15ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 14.138052479s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "14s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 515ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 13.970494621s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "13s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 162ms
+ ✓ Compiled in 568ms (430 modules)
+ ✓ Compiled in 1398ms (761 modules)
+ GET /api/posts 200 in 1231ms
+ GET / 200 in 127ms
+ GET /api/posts 200 in 54ms
+ GET /api/posts 200 in 23ms
+ GET /api/posts/briefing 200 in 4523ms
+ GET /api/posts/briefing 200 in 17ms
+ GET / 200 in 63ms
+ GET /api/posts/briefing 200 in 17ms
+ GET /api/posts/briefing 200 in 60ms
+ GET /api/posts 200 in 45ms
+ GET /api/posts 200 in 38ms
+ ✓ Compiled in 1156ms (759 modules)
+ ✓ Compiled in 0ms (329 modules)
+ ✓ Compiled in 0ms (329 modules)
+ ✓ Compiled in 1ms (329 modules)
+ GET /api/posts 200 in 652ms
+ POST /api/posts 201 in 19ms
+ GET /api/posts 200 in 20ms
+ ✓ Compiled /api/posts/[id] in 146ms (331 modules)
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 223ms
+ GET /api/posts 200 in 20ms
+ POST /api/posts 201 in 10ms
+ GET /api/posts 200 in 12ms
+ DELETE /api/posts/3?user_id=@dasom_ai&keyword=REPOST:@sky_cloud 200 in 19ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 12ms
+ GET /api/posts 200 in 13ms
+ DELETE /api/posts/3?user_id=@dasom_ai&keyword=REPOST:@sky_cloud 200 in 19ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 10ms
+ GET /api/posts 200 in 10ms
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 21ms
+ GET /api/posts 200 in 14ms
+ GET / 200 in 77ms
+ GET /api/posts/briefing 200 in 25ms
+ GET /api/posts/briefing 200 in 22ms
+ GET /api/posts 200 in 34ms
+ GET /api/posts 200 in 43ms
+ POST /api/posts 201 in 13ms
+ GET /api/posts 200 in 14ms
+ DELETE /api/posts/3?user_id=@dasom_ai&keyword=REPOST:@sky_cloud 200 in 23ms
+ GET /api/posts 200 in 16ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 13ms
+ DELETE /api/posts/3?user_id=@dasom_ai&keyword=REPOST:@sky_cloud 200 in 22ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 15ms
+ GET /api/posts 200 in 14ms
+ DELETE /api/posts/2?user_id=@dasom_ai&keyword=REPOST:@spring_sun 200 in 20ms
+ GET /api/posts 200 in 23ms
+ GET / 200 in 219ms
+ GET /api/posts 200 in 14ms
+ GET /api/posts 200 in 15ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 33.637280826s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "33s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 478ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 33.323185187s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "33s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 312ms
+ POST /api/posts 201 in 10ms
+ GET /api/posts 200 in 13ms
+ DELETE /api/posts/9?user_id=@dasom_ai&keyword=REPOST:@kind_neighbor 200 in 19ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 13ms
+ DELETE /api/posts/3?user_id=@dasom_ai&keyword=REPOST:@sky_cloud 200 in 20ms
+ GET /api/posts 200 in 14ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 14ms
+ DELETE /api/posts/3?user_id=@dasom_ai&keyword=REPOST:@sky_cloud 200 in 29ms
+ GET /api/posts 200 in 15ms
+ POST /api/posts 201 in 13ms
+ GET /api/posts 200 in 17ms
+ DELETE /api/posts/3?user_id=@dasom_ai&keyword=REPOST:@sky_cloud 200 in 12ms
+ GET /api/posts 200 in 15ms
+ POST /api/posts 201 in 11ms
+ GET /api/posts 200 in 14ms
+ DELETE /api/posts/3?user_id=@dasom_ai&keyword=REPOST:@sky_cloud 200 in 24ms
+ GET /api/posts 200 in 16ms
+ ✓ Compiled in 740ms (761 modules)
+ GET /api/posts 200 in 27ms
+ GET / 200 in 64ms
+ GET /api/posts 200 in 22ms
+ GET /api/posts 200 in 53ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 46.94032452s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "46s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 547ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 46.622138301s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "46s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 314ms
+ GET / 200 in 79ms
+ GET /api/posts 200 in 18ms
+ GET /api/posts 200 in 29ms
+ GET /api/posts/briefing 200 in 6291ms
+ GET /api/posts/briefing 200 in 35ms
+ GET / 200 in 37ms
+ GET /api/posts/briefing 200 in 19ms
+ GET /api/posts/briefing 200 in 29ms
+ GET /api/posts 200 in 22ms
+ GET /api/posts 200 in 30ms
+ GET / 200 in 59ms
+ GET / 200 in 62ms
+ GET /api/posts/briefing 200 in 19ms
+ GET /api/posts/briefing 200 in 23ms
+ GET /api/posts 200 in 34ms
+ GET /api/posts 200 in 19ms
+ GET / 200 in 86ms
+ GET /api/posts/briefing 200 in 21ms
+ GET /api/posts/briefing 200 in 27ms
+ GET /api/posts 200 in 64ms
+ GET /api/posts 200 in 18ms
+ GET / 200 in 67ms
+ GET /api/posts 200 in 28ms
+ GET /api/posts 200 in 23ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 53.286157583s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "53s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 494ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 52.976350676s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "52s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 306ms
+ POST /api/posts 201 in 18ms
+ GET /api/posts 200 in 16ms
+ DELETE /api/posts/12?user_id=@dasom_ai&keyword=REPOST:@street_cat 200 in 25ms
+ GET /api/posts 200 in 21ms
+ ✓ Compiled in 770ms (761 modules)
+ POST /api/posts 201 in 24ms
+ GET /api/posts 200 in 11ms
+ DELETE /api/posts/8?user_id=@dasom_ai&keyword=REPOST:@guide_k 200 in 20ms
+ GET /api/posts 200 in 12ms
+ POST /api/posts 201 in 19ms
+ GET /api/posts 200 in 14ms
+ DELETE /api/posts/2?user_id=@dasom_ai&keyword=REPOST:@spring_sun 200 in 21ms
+ GET /api/posts 200 in 15ms
+ GET / 200 in 180ms
+ GET /api/posts 200 in 19ms
+ GET /api/posts 200 in 30ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 29.445362146s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "29s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 472ms
+Gemini API Error Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 29.284260472s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "29s"
+      }
+    ]
+  }
+}
+
+ GET /api/posts/briefing 200 in 163ms
+ ✓ Compiled /api/posts in 1042ms (757 modules)
+ GET /api/posts 200 in 579ms
+ POST /api/posts 201 in 17ms
+ GET /api/posts 200 in 23ms
+ ✓ Compiled /api/posts/[id] in 88ms (329 modules)
+ DELETE /api/posts/9?user_id=@dasom_ai&keyword=REPOST:@kind_neighbor 200 in 131ms
+ GET /api/posts 200 in 13ms
+ POST /api/posts 201 in 14ms
+ GET /api/posts 200 in 24ms
+ DELETE /api/posts/9?user_id=@dasom_ai&keyword=REPOST:@kind_neighbor 200 in 23ms
+ GET /api/posts 200 in 10ms
+ ⨯ ./src/components/BriefingBanner.tsx
+Error: Failed to read source code from C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\components\BriefingBanner.tsx
+
+Caused by:
+    지정된 경로를 찾을 수 없습니다. (os error 3)
+
+Import trace for requested module:
+./src/components/BriefingBanner.tsx
+./src/app/layout.tsx
+ ⨯ ./src/components/BriefingBanner.tsx
+Error: Failed to read source code from C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\components\BriefingBanner.tsx
+
+Caused by:
+    지정된 경로를 찾을 수 없습니다. (os error 3)
+
+Import trace for requested module:
+./src/components/BriefingBanner.tsx
+./src/app/layout.tsx
+ GET / 500 in 31ms
+ ○ Compiling /_error ...

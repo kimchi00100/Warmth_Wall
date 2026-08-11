@@ -1,0 +1,55 @@
+Switched to a new branch 'public-release'
+[public-release (root-commit) c908c63] 🎉 Initial Release: Dasom Warmth Wall
+ 47 files changed, 9837 insertions(+)
+ create mode 100644 .agents/rules/antigravity_core_rules.md
+ create mode 100644 .eslintrc.json
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 docs/hackathon_strategy.md
+ create mode 100644 docs/layout-screenshot.png
+ create mode 100644 next.config.mjs
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 postcss.config.mjs
+ create mode 100644 project_state.md
+ create mode 100644 src/app/api/auth/login/route.ts
+ create mode 100644 src/app/api/auth/signup/route.ts
+ create mode 100644 src/app/api/cron/demo/route.ts
+ create mode 100644 src/app/api/posts/[id]/repost/route.ts
+ create mode 100644 src/app/api/posts/[id]/route.ts
+ create mode 100644 src/app/api/posts/briefing/route.ts
+ create mode 100644 src/app/api/posts/count/today/route.ts
+ create mode 100644 src/app/api/posts/route.ts
+ create mode 100644 src/app/favicon.ico
+ create mode 100644 src/app/fonts/GeistMonoVF.woff
+ create mode 100644 src/app/fonts/GeistVF.woff
+ create mode 100644 src/app/globals.css
+ create mode 100644 src/app/layout.tsx
+ create mode 100644 src/app/page.tsx
+ create mode 100644 src/app/public/page.tsx
+ create mode 100644 src/app/test-layout/page.tsx
+ create mode 100644 src/app/test/page.tsx
+ create mode 100644 src/components/BriefingBanner.tsx
+ create mode 100644 src/components/CampaignBanner.tsx
+ create mode 100644 src/components/PostitCard.tsx
+ create mode 100644 src/components/PostitForm.tsx
+ create mode 100644 src/components/ScopeToggle.tsx
+ create mode 100644 src/components/WarmthCounter.tsx
+ create mode 100644 src/imports/chatgptimage.png
+ create mode 100644 src/imports/image-1.png
+ create mode 100644 src/imports/image-2.png
+ create mode 100644 src/imports/image.png
+ create mode 100644 src/imports/imports/chatgptimage.png
+ create mode 100644 src/imports/imports/image-1.png
+ create mode 100644 src/imports/imports/image-2.png
+ create mode 100644 src/imports/imports/image.png
+ create mode 100644 src/lib/campaignData.ts
+ create mode 100644 src/lib/db.ts
+ create mode 100644 src/lib/mockData.ts
+ create mode 100644 tailwind.config.ts
+ create mode 100644 tsconfig.json
+To https://github.com/kimchi00100/Dasom_Warmth_Wall.git
+ + 09f4bdf...c908c63 public-release -> main (forced update)
+Switched to branch 'local-dev'
+Your branch is up to date with 'origin-a/local-dev'.
+Deleted branch public-release (was c908c63).

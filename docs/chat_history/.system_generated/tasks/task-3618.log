@@ -1,0 +1,28 @@
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git add README.md 
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git commit -m "docs: beautifully decorate README" 
+[local-dev ffc2c7a] docs: beautifully decorate README
+ 1 file changed, 23 insertions(+), 14 deletions(-)
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git push origin-a local-dev 
+To https://github.com/kimchi00100/Warmth_Wall.git
+   a42d399..ffc2c7a  local-dev -> local-dev
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git push origin-b local-dev:main 
+To https://github.com/kimchi00100/Dasom_Warmth_Wall.git
+ ! [rejected]        local-dev -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/kimchi00100/Dasom_Warmth_Wall.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon>git push origin-b local-dev 
+To https://github.com/kimchi00100/Dasom_Warmth_Wall.git
+ ! [rejected]        local-dev -> local-dev (non-fast-forward)
+error: failed to push some refs to 'https://github.com/kimchi00100/Dasom_Warmth_Wall.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.

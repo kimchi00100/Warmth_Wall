@@ -1,0 +1,53 @@
+- [x] 1. DB Schema Update
+  - [x] Add `total_points` and `last_attendance` to `users`
+  - [x] Add `config` table for events
+- [x] 2. Scoring Logic (Backend)
+  - [x] `/api/auth/login` (Attendance points)
+  - [x] `/api/posts` (Posting points)
+  - [x] `/api/posts/[id]/repost` (Repost points)
+- [x] 3. Quotes UI (Frontend)
+  - [x] Extract styling from Figma `App.tsx`
+  - [x] Inject into `AuthScreen` in `page.tsx`
+- [x] 4. Points & Reset UI (Frontend)
+  - [x] Extract Points UI from Figma `App.tsx`
+  - [x] Add Reset Button logic in `page.tsx`
+- [x] 5. Dynamic AI Event
+  - [x] Create `/api/cron/event/route.ts`
+  - [x] Implement Gemini aggregation logic
+- [x] 6. Points Sync & UI Polish
+  - [x] Run `sync_points.js` to calculate points retroactively
+- [x] 6. Points Sync & UI Polish
+  - [x] Run `sync_points.js` to calculate points retroactively
+  - [x] Add `client_date` to login/attend APIs for hackathon testing
+  - [x] Update frontend to dynamically change UI score on interactions
+- [x] 7. Admin Buttons & Real-time Fixes
+  - [x] Add `11:40 이벤트 갱신` button and link to Gemini API
+  - [x] Group admin buttons (`자정초기화`, `이벤트갱신`)
+  - [x] Fix real-time point update bugs by forcing `fetchProfile` on actions
+- [x] 8. Event Points Limit & Repost Bug
+  - [x] Add `has_received_event_bonus` to DB schema
+  - [x] Update `POST /api/posts` to limit bonus to 1 time per event
+  - [x] Update `POST /api/posts/[id]/repost` to award and deduct bonus correctly
+- [x] 9. Gemini Test Environment
+  - [x] Update Gemini prompt to ignore 0-count categories
+  - [x] Create and run `seed_gemini.js` to insert realistic test data
+- [x] 10. Infinite Zoom for Wall
+  - [x] Add `zoom` state and `onWheel` event listener
+  - [x] Implement math to zoom smoothly towards mouse pointer
+  - [x] Un-restrict pan clamp to allow infinite panning when zoomed out
+- [x] 11. UI and Gemini API Refinements
+  - [x] Update Gemini model to `gemini-3.5-flash-lite` and add fallback logic
+  - [x] Fix `didNadoro` hardcoded true value in SEED_POSTS
+  - [x] Fix `PostDetailModal` real-time state sync
+  - [x] Remove dummy SEED_POSTS belonging to the current user to prevent UI desync
+- [x] 12. Large Scale Data Generation
+  - [x] Generate 40 unique virtual users
+  - [x] Generate 68 highly contextual, unique good deed posts across 5 categories
+  - [x] Safely inject data into DB without modifying existing user posts
+- [x] 13. Grape Field Historical Data Seeding
+  - [x] Generate 50 unique historical posts for `@dasom_ai` spanning the last 3 months
+  - [x] Sync user total points accurately in the database
+- [x] 14. Own Post Deletion Feature
+  - [x] Add delete button (🗑️) to `PostDetailModal` for user's own posts
+  - [x] Create `action=delete_post` in API `DELETE /api/posts/[id]`
+  - [x] Safely deduct points in DB and clean up child 'nadoro' posts upon deletion

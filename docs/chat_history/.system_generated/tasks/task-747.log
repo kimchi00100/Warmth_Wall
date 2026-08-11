@@ -1,0 +1,1719 @@
+
+> warmth-wall@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 4.7s
+ ○ Compiling /api/auth/signup ...
+ ✓ Compiled /api/auth/signup in 755ms (61 modules)
+ POST /api/auth/signup 201 in 1101ms
+ ✓ Compiled /api/auth/login in 84ms (63 modules)
+ POST /api/auth/login 200 in 290ms
+ ✓ Compiled /api/posts in 164ms (65 modules)
+ POST /api/posts 201 in 215ms
+ GET /api/posts?scope=today&user_id=876f7901-c21e-492b-bf26-1884dab8d000 200 in 19ms
+ ✓ Compiled /api/posts/[id]/repost in 106ms (67 modules)
+ POST /api/posts/6e89cafb-2567-4620-8a06-91848ac020e0/repost 201 in 840ms
+ GET /api/posts?scope=public 200 in 13ms
+ ✓ Compiled in 1385ms (203 modules)
+ ✓ Compiled /api/posts/briefing in 186ms (59 modules)
+ GET /api/posts/briefing 200 in 4798ms
+ ✓ Compiled /api/cron/demo in 71ms (62 modules)
+ POST /api/cron/demo 201 in 127ms
+ GET /api/posts/briefing 200 in 6082ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.1s (527 modules)
+ ✓ Compiled in 349ms (249 modules)
+ GET / 200 in 4504ms
+ ○ Compiling /api/posts/briefing ...
+ ✓ Compiled /api/auth/signup in 2.5s (290 modules)
+ ✓ Compiled (294 modules)
+ POST /api/auth/signup 400 in 465ms
+ GET /api/posts/briefing 200 in 2762ms
+ GET /api/posts/briefing 200 in 14ms
+ POST /api/auth/signup 400 in 9ms
+ ✓ Compiled /api/auth/login in 82ms (296 modules)
+ POST /api/auth/login 400 in 127ms
+ ✓ Compiled /api/cron/demo in 408ms (298 modules)
+ POST /api/cron/demo 201 in 533ms
+ GET / 200 in 95ms
+ ✓ Compiled /favicon.ico in 255ms (327 modules)
+ GET /favicon.ico 200 in 416ms
+ POST /api/cron/demo 201 in 18ms
+ GET / 200 in 100ms
+ GET /api/posts/briefing 200 in 2570ms
+ GET /favicon.ico 200 in 24ms
+ GET /api/posts/briefing 200 in 6144ms
+ GET /api/posts/briefing 200 in 16ms
+ POST /api/auth/signup 201 in 116ms
+ ✓ Compiled /api/posts in 122ms (330 modules)
+ POST /api/posts 201 in 281ms
+ POST /api/posts 201 in 166ms
+ ○ Compiling /public ...
+ ✓ Compiled /public in 780ms (629 modules)
+ GET /public 200 in 949ms
+ ✓ Compiled /api/posts/count/today in 192ms (358 modules)
+ GET /api/posts?scope=public 200 in 409ms
+ GET /api/posts/count/today 200 in 425ms
+ GET /api/posts?scope=public 200 in 209ms
+ GET /api/posts/count/today 200 in 90ms
+ GET /api/posts/briefing 200 in 6133ms
+ GET /api/posts/briefing 200 in 32ms
+ POST /api/auth/signup 400 in 14ms
+ POST /api/auth/login 400 in 14ms
+ POST /api/auth/signup 400 in 9ms
+ POST /api/auth/signup 201 in 90ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 14ms
+ POST /api/cron/demo 201 in 12ms
+ GET / 200 in 115ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 52ms
+ GET /favicon.ico 200 in 86ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 78ms
+ POST /api/cron/demo 201 in 10ms
+ GET / 200 in 52ms
+ GET /api/posts/briefing 200 in 848ms
+ GET /favicon.ico 200 in 29ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 29ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 19ms
+ POST /api/cron/demo 201 in 9ms
+ GET / 200 in 62ms
+ GET /api/posts/briefing 200 in 2603ms
+ GET /favicon.ico 200 in 27ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 51ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 22ms
+ GET / 200 in 63ms
+ GET /api/posts/briefing 200 in 593ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 38ms
+ GET /favicon.ico 200 in 42ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 27ms
+ POST /api/cron/demo 201 in 13ms
+ GET / 200 in 67ms
+ GET /api/posts/briefing 200 in 1589ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 34ms
+ GET /favicon.ico 200 in 34ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 21ms
+ POST /api/cron/demo 201 in 11ms
+ GET / 200 in 73ms
+ GET /api/posts/briefing 200 in 689ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 38ms
+ GET /favicon.ico 200 in 42ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 38ms
+ GET /api/posts/briefing 200 in 5013ms
+ GET /api/posts/briefing 200 in 19ms
+Gemini API Error Response: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+ POST /api/auth/login 200 in 91ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 16ms
+ GET /public 200 in 75ms
+ GET /api/posts/briefing 200 in 28ms
+ GET /api/posts?scope=public 200 in 36ms
+ GET /api/posts/count/today 200 in 46ms
+ GET /api/posts/briefing 200 in 56ms
+ GET /api/posts?scope=public 200 in 39ms
+ GET /api/posts/count/today 200 in 89ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 21ms
+ GET /api/posts?scope=today&user_id=f3e060f4-b1c8-4fc9-ab3b-6e27a1497cb8 200 in 30ms
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ✓ Compiled in 273ms (268 modules)
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ✓ Compiled in 208ms (268 modules)
+ ○ Compiling /_error ...
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 500 in 3933ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/bcryptjs' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\bcryptjs.js', but to 'Error: Can't resolve './vendor-chunks/bcryptjs' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/bcryptjs (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\bcryptjs.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\handle-externals.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\handle-externals.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\@swc.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\handle-externals.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\handle-externals.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+ GET / 500 in 16ms
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+Error: 
+  x You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :          ^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                    ^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+  x You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  | Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  | 
+  | 
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+   :                            ^^^^^^^^^
+ 2 | 
+ 3 | /* ─── Types ──────────────────────────────────────────────────── */
+ 4 | type TabId = 'wall' | 'today' | 'diary'
+   `----
+
+Import trace for requested module:
+./src/app/page.tsx
+ GET /_next/static/webpack/75f85e4f8da971b2.webpack.hot-update.json 500 in 1460ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 806ms
+ GET /favicon.ico 500 in 1495ms
+ GET / 500 in 24ms
+ GET /favicon.ico 500 in 22ms
+ GET / 500 in 20ms
+ GET /favicon.ico 500 in 21ms
+ GET / 500 in 19ms
+ GET /favicon.ico 500 in 13ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/bcryptjs' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\bcryptjs.js', but to 'Error: Can't resolve './vendor-chunks/bcryptjs' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/bcryptjs (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\bcryptjs.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\@swc.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\next.js', but to 'Error: Can't resolve './vendor-chunks/next' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\next.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\public\page.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ✓ Compiled /_not-found in 861ms (777 modules)
+ ⨯ ./src/app/page.tsx
+Error: 
+  x Expected ';', '}' or <eof>
+   ,-[C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\src\app\page.tsx:1:1]
+ 1 | Technical Reviewer님의 최종 통합 지시서를 완벽히 확인했습니다. 전달해주신 지침과 제약 사항(Fallback UI 방어, 인증 폼 필드 규격, 코어 비즈니스 로직 100% 보존, 피그마 UI 바인딩 등)을 모두 엄격하게 적용하여 `page.tsx` 최종 코드를 작성했습니다.
+   : ^^^^|^^^^ ^^^^^^^^^^^^^^
+   :     `-- This is the expression part of an expression statement
+ 2 | 
+ 3 | 특히 아래 사항들을 완벽히 조치했습니다.
+   `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+ ✓ Compiled in 313ms (454 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/count/today/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/count/today/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/count/today/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\cache\webpack\client-development\6.pack.gz_' -> 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\cache\webpack\client-development\6.pack.gz'
+ ✓ Compiled in 1100ms (777 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/count/today/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/count/today/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/count/today/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 200 in 236ms
+ ✓ Compiled /api/posts in 270ms (354 modules)
+ ✓ Compiled (385 modules)
+ GET /api/posts?scope=public 200 in 707ms
+ GET /favicon.ico 200 in 803ms
+ GET /api/posts/briefing 200 in 786ms
+ GET /api/posts/briefing 200 in 41ms
+ GET / 200 in 106ms
+ GET /api/posts/briefing 200 in 36ms
+ GET /api/posts?scope=public 200 in 108ms
+ GET /api/posts/briefing 200 in 143ms
+ GET /favicon.ico 200 in 164ms
+ GET / 200 in 114ms
+ GET /favicon.ico 200 in 32ms
+ GET /api/posts/briefing 200 in 52ms
+ GET /api/posts?scope=public 200 in 97ms
+ GET /api/posts/briefing 200 in 126ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 200 in 78ms
+ GET /favicon.ico 200 in 24ms
+ GET /api/posts/briefing 200 in 54ms
+ GET /api/posts?scope=public 200 in 83ms
+ GET /api/posts/briefing 200 in 111ms
+ GET / 200 in 83ms
+ GET /api/posts/briefing 200 in 16ms
+ GET /api/posts/briefing 200 in 16ms
+ GET /api/posts?scope=public 200 in 23ms
+ GET / 200 in 86ms
+ GET /api/posts/briefing 200 in 22ms
+ GET /api/posts?scope=public 200 in 82ms
+ GET /api/posts/briefing 200 in 114ms
+ GET /favicon.ico 200 in 212ms
+ GET / 200 in 81ms
+ GET /api/posts/briefing 200 in 35ms
+ GET /api/posts?scope=public 200 in 44ms
+ GET /favicon.ico 200 in 69ms
+ GET /api/posts/briefing 200 in 86ms
+ GET / 200 in 75ms
+ GET / 200 in 71ms
+ GET / 200 in 57ms
+ GET / 200 in 100ms
+ GET / 200 in 73ms
+ GET / 200 in 58ms
+ GET / 200 in 83ms
+ GET / 200 in 82ms
+ GET / 200 in 43ms
+ GET /favicon.ico 200 in 21ms
+ GET /api/posts/briefing 200 in 29ms
+ GET /api/posts?scope=public 200 in 45ms
+ GET /api/posts/briefing 200 in 56ms
+ ⨯ ./src/app/globals.css
+Module not found: Can't resolve 'tailwindcss'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/globals.css
+ ✓ Compiled in 2.1s (777 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/count/today/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/count/today/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/count/today/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/[id]/repost/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\[id]\repost\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/[id]/repost/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/[id]/repost/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\[id]\repost\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ GET / 500 in 283ms
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ GET / 500 in 244ms
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ GET / 500 in 241ms
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ GET / 500 in 234ms
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ GET / 500 in 237ms
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ GET / 500 in 236ms
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ GET / 500 in 240ms
+ GET / 200 in 24ms
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ ⨯ SyntaxError: Unexpected non-whitespace character after JSON at position 361 (line 19 column 2)
+    at JSON.parse (<anonymous>)
+    at loadManifest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-manifest.js:36:25)
+    at loadManifestWithRetries (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:40:51)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:84:100)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 772ms (809 modules)
+ ⨯ Error: Cannot find module 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\pages\_document.js'
+Require stack:
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1517:15)
+    at C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1122:12)
+    at Module._load (node:internal/modules/cjs/loader:1294:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1617:12)
+    at mod.require (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at requirePage (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\pages\_document.js'
+Require stack:
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1517:15)
+    at C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1122:12)
+    at Module._load (node:internal/modules/cjs/loader:1294:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1617:12)
+    at mod.require (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at requirePage (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\xjwoz\\OneDrive\\Desktop\\_Dasom_Hackathon\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET / 500 in 932ms
+ GET /favicon.ico 200 in 977ms
+ ⨯ src\app\page.tsx (240:75) @ MY_ID
+ ⨯ ReferenceError: MY_ID is not defined
+    at eval (./src/app/page.tsx:406:17)
+    at (ssr)/./src/app/page.tsx (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\page.js:129:1)
+    at Object.__webpack_require__ [as require] (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js:33:42)
+digest: "1757991305"
+  238 |   { id:'11', color:'#FFBA80', content:'카페 직원분께 "수고하세요" 했어요',     author:'@warmspoon',    timeAgo:'6시간 전', nadoroCount:15, rotation:-0.3, didNadoro:false, category:'인사', date:TODAY,     isOwn:false },
+  239 |   { id:'12', color:'#9FEBA4', content:'동네 고양이한테 간식 챙겨줬어요',      author:'@street_cat',   timeAgo:'7시간 전', nadoroCount:10, rotation: 1.5, didNadoro:false, category:'환경', date:TODAY,     isOwn:false },
+> 240 |   { id:'4',  color:'#FFE234', content:'카페 테이블 닦고\n나왔어요',           author:MY_ID,           timeAgo:'1시간 전', nadoroCount:5,  rotation: 2.2, didNadoro:false, category:'배려', date:TODAY,     isOwn:true  },
+      |                                                                           ^
+  241 |   { id:'7',  color:'#FFE234', content:'엘리베이터 문\n잡아드렸어요',          author:MY_ID,           timeAgo:'3시간 전', nadoroCount:8,  rotation:-2.7, didNadoro:false, category:'도움', date:TODAY,     isOwn:true  },
+  242 |   { id:'d1', color:'#7EDDD7', content:'동네 공원\n쓰레기 봉사했어요',         author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation:-0.7, didNadoro:false, category:'환경', date:YESTERDAY, isOwn:true  },
+  243 |   { id:'d2', color:'#FFE234', content:'앞사람 커피값\n몰래 냈어요',           author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation: 1.6, didNadoro:false, category:'나눔', date:YESTERDAY, isOwn:true  },
+ GET / 500 in 182ms
+ GET /favicon.ico 200 in 36ms
+ ⨯ src\app\page.tsx (240:75) @ MY_ID
+ ⨯ ReferenceError: MY_ID is not defined
+    at eval (./src/app/page.tsx:406:17)
+    at (ssr)/./src/app/page.tsx (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\page.js:129:1)
+    at Object.__webpack_require__ [as require] (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js:33:42)
+digest: "1757991305"
+  238 |   { id:'11', color:'#FFBA80', content:'카페 직원분께 "수고하세요" 했어요',     author:'@warmspoon',    timeAgo:'6시간 전', nadoroCount:15, rotation:-0.3, didNadoro:false, category:'인사', date:TODAY,     isOwn:false },
+  239 |   { id:'12', color:'#9FEBA4', content:'동네 고양이한테 간식 챙겨줬어요',      author:'@street_cat',   timeAgo:'7시간 전', nadoroCount:10, rotation: 1.5, didNadoro:false, category:'환경', date:TODAY,     isOwn:false },
+> 240 |   { id:'4',  color:'#FFE234', content:'카페 테이블 닦고\n나왔어요',           author:MY_ID,           timeAgo:'1시간 전', nadoroCount:5,  rotation: 2.2, didNadoro:false, category:'배려', date:TODAY,     isOwn:true  },
+      |                                                                           ^
+  241 |   { id:'7',  color:'#FFE234', content:'엘리베이터 문\n잡아드렸어요',          author:MY_ID,           timeAgo:'3시간 전', nadoroCount:8,  rotation:-2.7, didNadoro:false, category:'도움', date:TODAY,     isOwn:true  },
+  242 |   { id:'d1', color:'#7EDDD7', content:'동네 공원\n쓰레기 봉사했어요',         author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation:-0.7, didNadoro:false, category:'환경', date:YESTERDAY, isOwn:true  },
+  243 |   { id:'d2', color:'#FFE234', content:'앞사람 커피값\n몰래 냈어요',           author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation: 1.6, didNadoro:false, category:'나눔', date:YESTERDAY, isOwn:true  },
+ GET / 500 in 252ms
+ GET /favicon.ico 200 in 50ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/count/today/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/count/today/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/count/today/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/[id]/repost/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\[id]\repost\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/[id]/repost/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/[id]/repost/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\[id]\repost\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ⨯ src\app\page.tsx (240:75) @ MY_ID
+ ⨯ ReferenceError: MY_ID is not defined
+    at eval (./src/app/page.tsx:406:17)
+    at (ssr)/./src/app/page.tsx (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\page.js:129:1)
+    at Object.__webpack_require__ [as require] (C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js:33:42)
+digest: "1757991305"
+  238 |   { id:'11', color:'#FFBA80', content:'카페 직원분께 "수고하세요" 했어요',     author:'@warmspoon',    timeAgo:'6시간 전', nadoroCount:15, rotation:-0.3, didNadoro:false, category:'인사', date:TODAY,     isOwn:false },
+  239 |   { id:'12', color:'#9FEBA4', content:'동네 고양이한테 간식 챙겨줬어요',      author:'@street_cat',   timeAgo:'7시간 전', nadoroCount:10, rotation: 1.5, didNadoro:false, category:'환경', date:TODAY,     isOwn:false },
+> 240 |   { id:'4',  color:'#FFE234', content:'카페 테이블 닦고\n나왔어요',           author:MY_ID,           timeAgo:'1시간 전', nadoroCount:5,  rotation: 2.2, didNadoro:false, category:'배려', date:TODAY,     isOwn:true  },
+      |                                                                           ^
+  241 |   { id:'7',  color:'#FFE234', content:'엘리베이터 문\n잡아드렸어요',          author:MY_ID,           timeAgo:'3시간 전', nadoroCount:8,  rotation:-2.7, didNadoro:false, category:'도움', date:TODAY,     isOwn:true  },
+  242 |   { id:'d1', color:'#7EDDD7', content:'동네 공원\n쓰레기 봉사했어요',         author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation:-0.7, didNadoro:false, category:'환경', date:YESTERDAY, isOwn:true  },
+  243 |   { id:'d2', color:'#FFE234', content:'앞사람 커피값\n몰래 냈어요',           author:MY_ID,           timeAgo:'어제',     nadoroCount:0,  rotation: 1.6, didNadoro:false, category:'나눔', date:YESTERDAY, isOwn:true  },
+ GET / 500 in 262ms
+ GET /favicon.ico 200 in 33ms
+ ✓ Compiled in 2.1s (777 modules)
+ GET / 200 in 465ms
+ ✓ Compiled /favicon.ico in 172ms (354 modules)
+ GET /favicon.ico 200 in 454ms
+ ○ Compiling /api/posts/briefing ...
+ ✓ Compiled /api/posts in 735ms (381 modules)
+ ✓ Compiled (385 modules)
+ GET /api/posts?scope=public 200 in 878ms
+ GET /api/posts/briefing 200 in 1437ms
+ GET /api/posts/briefing 200 in 20ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 200 in 158ms
+ GET /api/posts/briefing 200 in 19ms
+ GET /api/posts/briefing 200 in 25ms
+ GET /api/posts?scope=public 200 in 21ms
+ GET / 200 in 54ms
+ GET /api/posts/briefing 200 in 43ms
+ GET /api/posts/briefing 200 in 50ms
+ GET /api/posts?scope=public 200 in 55ms
+ GET / 200 in 87ms
+ GET /api/posts/briefing 200 in 40ms
+ GET /api/posts?scope=public 200 in 47ms
+ GET /api/posts/briefing 200 in 62ms
+ GET / 200 in 138ms
+ GET /api/posts/briefing 200 in 31ms
+ GET /api/posts/briefing 200 in 52ms
+ GET /api/posts?scope=public 200 in 56ms
+ GET / 200 in 54ms
+ GET /api/posts/briefing 200 in 30ms
+ GET /favicon.ico 200 in 58ms
+ GET /api/posts?scope=public 200 in 56ms
+ GET /api/posts/briefing 200 in 75ms
+ GET / 200 in 83ms
+ GET /favicon.ico 200 in 31ms
+ GET /api/posts/briefing 200 in 39ms
+ GET /api/posts?scope=public 200 in 62ms
+ GET /api/posts/briefing 200 in 69ms
+ GET / 200 in 88ms
+ GET /api/posts/briefing 200 in 23ms
+ GET /api/posts/briefing 200 in 39ms
+ GET /api/posts?scope=public 200 in 36ms
+ GET / 200 in 62ms
+ GET /api/posts/briefing 200 in 20ms
+ GET /api/posts/briefing 200 in 46ms
+ GET /api/posts?scope=public 200 in 56ms
+ POST /api/posts 201 in 18ms
+ ⨯ ./src/app/page.tsx:3:1
+Module not found: Can't resolve '@/imports/chatgptimage.png'
+  1 | 'use client'
+  2 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+> 3 | import boardBg from '@/imports/chatgptimage.png'
+    | ^
+  4 |
+  5 | /* ─── Types ──────────────────────────────────────────────────── */
+  6 | type TabId = 'wall' | 'today' | 'diary'
+
+https://nextjs.org/docs/messages/module-not-found
+ GET / 500 in 18ms
+ ⨯ ./src/app/page.tsx:3:1
+Module not found: Can't resolve '@/imports/chatgptimage.png'
+  1 | 'use client'
+  2 | import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+> 3 | import boardBg from '@/imports/chatgptimage.png'
+    | ^
+  4 |
+  5 | /* ─── Types ──────────────────────────────────────────────────── */
+  6 | type TabId = 'wall' | 'today' | 'diary'
+
+https://nextjs.org/docs/messages/module-not-found
+ GET /_next/static/chunks/fallback/webpack.js 500 in 514ms
+ GET /_next/static/chunks/fallback/main.js 500 in 492ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 485ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 484ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 489ms
+ ○ Compiling /_not-found ...
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/count/today/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/count/today/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/count/today/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ✓ Compiled /_not-found in 930ms (779 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\cache\webpack\client-development\1.pack.gz_' -> 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\cache\webpack\client-development\1.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/count/today/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/count/today/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/count/today/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 200 in 223ms
+ ○ Compiling /api/posts/briefing ...
+ ✓ Compiled /api/posts in 697ms (353 modules)
+ ✓ Compiled (357 modules)
+ GET /api/posts 200 in 776ms
+ GET /api/posts 200 in 18ms
+ GET /api/posts/briefing 200 in 6700ms
+ GET /api/posts/briefing 200 in 23ms
+ GET / 200 in 145ms
+ GET /api/posts/briefing 200 in 73ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 671ms (386 modules)
+ GET /api/posts 200 in 912ms
+ GET /api/posts/briefing 200 in 883ms
+ GET /favicon.ico 200 in 987ms
+ GET /api/posts 200 in 61ms
+ GET / 200 in 90ms
+ GET /favicon.ico 200 in 50ms
+ GET /api/posts/briefing 200 in 56ms
+ GET /api/posts 200 in 116ms
+ GET /api/posts/briefing 200 in 165ms
+ GET /api/posts 200 in 240ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ✓ Compiled in 1211ms (779 modules)
+ ✓ Compiled /api/posts in 379ms (355 modules)
+ GET /api/posts 200 in 440ms
+ GET /api/posts 200 in 17ms
+ GET / 200 in 272ms
+ ✓ Compiled /api/posts/briefing in 198ms (384 modules)
+ ✓ Compiled (386 modules)
+ GET /api/posts/briefing 200 in 451ms
+ GET /favicon.ico 200 in 495ms
+ GET /api/posts 200 in 460ms
+ GET /api/posts/briefing 200 in 43ms
+ GET /api/posts 200 in 34ms
+ GET / 200 in 119ms
+ GET /favicon.ico 200 in 36ms
+ GET /api/posts/briefing 200 in 41ms
+ GET /api/posts/briefing 200 in 39ms
+ GET /api/posts 200 in 59ms
+ GET /api/posts 200 in 46ms
+ GET / 200 in 76ms
+ GET /api/posts/briefing 200 in 19ms
+ GET /api/posts/briefing 200 in 35ms
+ GET /api/posts 200 in 69ms
+ GET /api/posts 200 in 26ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 200 in 43ms
+ GET /api/posts/briefing 200 in 23ms
+ GET /api/posts/briefing 200 in 18ms
+ GET /api/posts 200 in 42ms
+ GET /api/posts 200 in 40ms
+ ✓ Compiled in 417ms (323 modules)
+ ✓ Compiled in 316ms (456 modules)
+ GET / 200 in 118ms
+ ✓ Compiled /favicon.ico in 313ms (353 modules)
+ ✓ Compiled (386 modules)
+ GET /api/posts 200 in 521ms
+ GET /api/posts/briefing 200 in 608ms
+ GET /favicon.ico 200 in 404ms
+ GET / 200 in 637ms
+ ✓ Compiled /_not-found in 486ms (845 modules)
+ GET /_next/static/css/app/layout.css?v=1786124011375 404 in 665ms
+ GET /_next/static/chunks/webpack.js?v=1786124011375 404 in 679ms
+ GET /_next/static/chunks/main-app.js?v=1786124011375 404 in 673ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 666ms
+ GET /_next/static/chunks/app/page.js 404 in 670ms
+ GET /_next/static/chunks/app/layout.js 404 in 597ms
+ GET / 404 in 163ms
+ GET /_next/static/css/app/layout.css?v=1786124012560 404 in 67ms
+ GET /_next/static/chunks/main-app.js?v=1786124012560 404 in 84ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 83ms
+ GET /favicon.ico 404 in 15ms
+ GET / 404 in 25ms
+ GET / 404 in 19ms
+ GET / 404 in 11ms
+ GET / 404 in 17ms
+ GET / 404 in 20ms
+ GET / 404 in 14ms
+ GET / 404 in 26ms
+ GET / 404 in 197ms
+ GET / 404 in 19ms
+ GET / 404 in 16ms
+ GET / 404 in 11ms
+ GET / 404 in 13ms
+ GET / 404 in 10ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 18ms
+ GET / 404 in 11ms
+ GET / 404 in 10ms
+ GET / 404 in 11ms
+ GET / 404 in 13ms
+ GET / 404 in 11ms
+ GET / 404 in 12ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 12ms
+ GET / 404 in 10ms
+ GET / 404 in 14ms
+ GET / 404 in 9ms
+ GET / 404 in 12ms
+ GET / 404 in 11ms
+ GET / 404 in 49ms
+ GET / 404 in 11ms
+ GET / 404 in 16ms
+ GET / 404 in 16ms
+ GET / 404 in 10ms
+ GET / 404 in 9ms
+ GET / 404 in 17ms
+ GET / 404 in 10ms
+ GET / 404 in 10ms
+ GET / 404 in 15ms
+ GET / 404 in 21ms
+ GET / 404 in 13ms
+ GET / 404 in 12ms
+ GET / 404 in 10ms
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\@swc.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\@swc.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\_not-found\page.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\_not-found\page.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\next.js', but to 'Error: Can't resolve './vendor-chunks/next' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\vendor-chunks\next.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\_not-found\page.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\_not-found\page.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 404 in 17ms
+ ✓ Compiled in 1298ms (845 modules)
+ GET / 200 in 745ms
+ GET / 200 in 60ms
+ GET /_next/static/css/app/layout.css?v=1786124075748 404 in 35ms
+ GET /_next/static/chunks/main-app.js?v=1786124075748 404 in 48ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 41ms
+ ✓ Compiled in 1154ms (782 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 200 in 165ms
+ GET /_next/static/css/app/layout.css?v=1786124176351 404 in 29ms
+ GET /_next/static/chunks/main-app.js?v=1786124176351 404 in 320ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 355ms
+ ✓ Compiled in 910ms (782 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/login/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/login/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/login/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\login\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/auth/signup/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/auth/signup/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/auth/signup/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\auth\signup\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/count/today/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/count/today/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/count/today/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\count\today\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/posts/[id]/repost/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\[id]\repost\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/posts/[id]/repost/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/posts/[id]/repost/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\posts\[id]\repost\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 200 in 102ms
+ GET / 200 in 76ms
+ GET / 200 in 78ms
+ GET / 200 in 85ms
+ GET / 200 in 82ms
+ GET / 200 in 74ms
+ GET / 200 in 76ms
+ GET / 200 in 98ms
+ GET / 200 in 79ms
+ GET / 200 in 62ms
+ GET / 200 in 72ms
+ GET / 200 in 62ms
+ GET / 200 in 62ms
+ ✓ Compiled in 845ms (782 modules)
+ GET / 200 in 97ms
+ GET /_next/static/css/app/layout.css?v=1786124584401 404 in 254ms
+ GET /_next/static/chunks/main-app.js?v=1786124584401 404 in 521ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 562ms
+ ✓ Compiled in 710ms (458 modules)
+ ✓ Compiled in 766ms (782 modules)
+ GET / 200 in 95ms
+ GET /_next/static/css/app/layout.css?v=1786124601689 404 in 28ms
+ GET /_next/static/chunks/main-app.js?v=1786124601689 404 in 54ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 52ms
+ GET / 200 in 61ms
+ GET /_next/static/css/app/layout.css?v=1786124603050 404 in 23ms
+ GET /_next/static/chunks/main-app.js?v=1786124603050 404 in 34ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 33ms
+ GET / 200 in 76ms
+ GET /_next/static/css/app/layout.css?v=1786124604071 404 in 29ms
+ GET /_next/static/chunks/main-app.js?v=1786124604071 404 in 30ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 29ms
+ GET / 200 in 87ms
+ GET /_next/static/css/app/layout.css?v=1786124604279 404 in 50ms
+ GET /_next/static/chunks/main-app.js?v=1786124604279 404 in 70ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 69ms
+ GET / 200 in 87ms
+ GET /_next/static/css/app/layout.css?v=1786124604490 404 in 30ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 40ms
+ GET /_next/static/chunks/main-app.js?v=1786124604490 404 in 36ms
+ GET / 200 in 117ms
+ GET /_next/static/css/app/layout.css?v=1786124604673 404 in 50ms
+ GET /_next/static/chunks/main-app.js?v=1786124604673 404 in 112ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 107ms
+ GET / 200 in 166ms
+ GET /_next/static/css/app/layout.css?v=1786124604974 404 in 110ms
+ GET /_next/static/chunks/main-app.js?v=1786124604974 404 in 132ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 122ms
+ GET / 200 in 144ms
+ GET /_next/static/css/app/layout.css?v=1786124605318 404 in 59ms
+ GET /_next/static/chunks/main-app.js?v=1786124605318 404 in 105ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 105ms
+ GET / 200 in 59ms
+ GET /_next/static/css/app/layout.css?v=1786124606841 404 in 45ms
+ GET /_next/static/chunks/main-app.js?v=1786124606841 404 in 90ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 91ms
+ GET / 404 in 16ms
+ GET / 404 in 31ms
+ GET / 404 in 17ms
+ GET / 404 in 47ms
+ GET / 404 in 11ms
+ GET / 404 in 29ms
+ GET / 404 in 19ms
+ GET / 404 in 67ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/_not-found/page' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\_not-found\page.js', but to 'Error: Can't resolve '../../../../.next/server/app/_not-found/page' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/_not-found/page (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\_not-found\page.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/page' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\page.js', but to 'Error: Can't resolve '../../../../.next/server/app/page' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/page (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\page.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/api/cron/demo/route' in C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/api/cron/demo/route' in 'C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/api/cron/demo/route (expected C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\.next\server\app\api\cron\demo\route.js)
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\xjwoz\OneDrive\Desktop\_Dasom_Hackathon\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET / 404 in 17ms
+ GET / 404 in 30ms
+ GET / 404 in 14ms
+ GET / 404 in 20ms
+ GET / 404 in 13ms
+ GET / 404 in 18ms
+ GET / 404 in 15ms
+ GET / 404 in 50ms
+ GET / 404 in 17ms
+ GET / 404 in 23ms
+ GET / 404 in 25ms
+ GET / 404 in 23ms
+ GET / 404 in 39ms
+ GET / 404 in 18ms
+ GET / 404 in 21ms
+ GET / 404 in 17ms
+ GET / 404 in 15ms
+ GET / 404 in 16ms
+ GET / 404 in 15ms
+ GET / 404 in 20ms
+ GET / 404 in 17ms
+ GET / 404 in 31ms
+ GET / 404 in 31ms
+ GET / 404 in 42ms
+ GET / 404 in 26ms
+ GET / 404 in 27ms
+ GET / 404 in 15ms
+ GET / 404 in 17ms
+ GET / 404 in 16ms
+ GET / 404 in 17ms
+ GET / 404 in 11ms
+ GET / 404 in 16ms
+ GET / 404 in 11ms
+ GET / 404 in 9ms
+ GET / 404 in 12ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 15ms
+ GET / 404 in 29ms
+ GET / 404 in 16ms
+ GET / 404 in 12ms
+ GET / 404 in 21ms
+ GET / 404 in 18ms
+ GET / 404 in 12ms
+ GET / 404 in 13ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 24ms
+ GET / 404 in 19ms
+ GET / 404 in 13ms
+ GET / 404 in 17ms
+ GET / 404 in 66ms
+ GET / 404 in 12ms
+ GET / 404 in 12ms
+ GET / 404 in 16ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 15ms
+ GET / 404 in 10ms
+ GET / 404 in 11ms
+ GET / 404 in 11ms
+ GET / 404 in 18ms
+ GET / 404 in 15ms
